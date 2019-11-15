@@ -7,6 +7,87 @@ import SEO from "../components/seo"
 import Scroller from "../components/scroller"
 import PortfolioModal from "../components/portfolio/modal"
 import PortfolioCarousel from "../components/portfolio/carousel"
+import {
+  Card,
+  Nav,
+  Tab,
+  Navbar,
+  NavDropdown,
+  Row,
+  Col,
+  Container,
+  Jumbotron,
+  Button,
+  Modal,
+  ProgressBar,
+} from "react-bootstrap"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons"
+import { faCode } from "@fortawesome/free-solid-svg-icons"
+import { faFilm } from "@fortawesome/free-solid-svg-icons"
+import { faPalette } from "@fortawesome/free-solid-svg-icons"
+import { faPhotoVideo } from "@fortawesome/free-solid-svg-icons"
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons"
+import { Parallax, Background } from "react-parallax"
+
+const navtabs = {
+  display: "flex",
+  borderColor: "black",
+  justifyContent: "center",
+}
+const styles = {
+  fontFamily: "sans-serif",
+  textAlign: "center",
+}
+
+const text = {
+  fontSize: "12px",
+  marginTop: "20px",
+  marginRight: "10px",
+}
+
+function Bands(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Bands by Taylor Alexandria
+        </Modal.Title>
+      </Modal.Header>
+      <div>
+        <p>
+          Company profile and Interview with Miami based fashion designer Taylor
+          Alexandria.
+        </p>
+      </div>
+      <Modal.Body>
+        <div class="d-flex justify-content-center bg-secondary mb-3">Hello</div>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  )
+}
+
+function BandsModal() {
+  const [modalShow, setModalShow] = React.useState(false)
+
+  return (
+    <div>
+      <Button variant="primary" onClick={() => setModalShow(true)}>
+        Launch vertically centered modal
+      </Button>
+
+      <Bands show={modalShow} onHide={() => setModalShow(false)} />
+    </div>
+  )
+}
 
 export default class IndexPage extends React.Component {
   constructor(props) {
@@ -103,128 +184,588 @@ export default class IndexPage extends React.Component {
           </section>
         </section>
 
-        <section className="page-section" id="services"></section>
+        <section className="page-section" id="services">
+          <section
+            class="ftco-section ftco-no-pb goto-here"
+            id="resume-section"
+          >
+            <div class="container">
+              <div class="col-md-12 heading-section text-center ">
+                <h1 class="big big-2">Resume</h1>
+                <h2 class="mb-4">Resume</h2>
+                <p> </p>
+              </div>
+              <div class="row">
+                <div class="col-sm-3 md-3">
+                  <nav id="navi">
+                    <ul>
+                      <li>
+                        <a href="#page-1">Education</a>
+                      </li>
+                      <li>
+                        <a href="#page-2">Experience</a>
+                      </li>
+                      <li>
+                        <a href="#page-3">Skills</a>
+                      </li>
+                      <li>
+                        <a href="#page-4">Expertise</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-md-9">
+                  <div id="page-1" class="page">
+                    <h2 class="heading">Education</h2>
+                    <div class="resume-wrap d-flex ">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="flaticon-ideas">
+                          <FontAwesomeIcon icon={faGraduationCap} />
+                        </span>
+                      </div>
+                      <div class="text pl-3">
+                        <span class="date">AUG 2018 - OCT 2018</span>
+                        <h2>Full Stack Web Development Program</h2>
+                        <span class="position">
+                          Wyncode Academy - Miami, FL
+                        </span>
+                        <p>
+                          Certificate of compeletion certified by Florida
+                          Department of Education.{" "}
+                        </p>
+                      </div>
+                    </div>
+                    <div class="resume-wrap d-flex">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="flaticon-ideas">
+                          <FontAwesomeIcon icon={faGraduationCap} />
+                        </span>
+                      </div>
+                      <div class="text pl-3">
+                        <span class="date">2002-2004</span>
+                        <h2>Video Production Internship</h2>
+                        <span class="position">
+                          Stepstone Productions - St. Louis, MO
+                        </span>
+                        <p>
+                          Certificate of compeletion certified by St. Louis
+                          Agency on Training and Employment.{" "}
+                        </p>
+                      </div>
+                    </div>
+                    <div class="resume-wrap d-flex">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="flaticon-ideas">
+                          <FontAwesomeIcon icon={faGraduationCap} />
+                        </span>
+                      </div>
+                      <div class="text pl-3">
+                        <span class="date">2002-2004</span>
+                        <h2>A.S. Mass Communication</h2>
+                        <span class="position">
+                          St. Louis Community College
+                        </span>
+                      </div>
+                    </div>
+                  </div>
 
-        <section id="portfolio">
-          <div className="container-fluid p-0">
-            <div className="row no-gutters">
-              <div className="col-lg-4 col-sm-6">
-                <a
-                  className="portfolio-box"
-                  href="img/portfolio/fullsize/1.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 0)}
-                >
-                  <Img
-                    fluid={
-                      this.props.data.images.edges[0].node.childImageSharp.fluid
-                    }
-                  />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
+                  <div id="page-2" class="page two">
+                    <h2 class="heading">Experience</h2>
+                    <div class="resume-wrap d-flex">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="flaticon-ideas">
+                          <FontAwesomeIcon icon={faCode} />
+                        </span>
+                      </div>
+                      <div class="text pl-3">
+                        <span class="date">AUG 2019 - PRESENT</span>
+                        <h2>Web Developer</h2>
+                        <span class="position">
+                          1st Take Youth Film Program - Miami, Florida
+                        </span>
+                        <p>
+                          Web Developer for non-profit organization dedicated to
+                          teaching kids film production.
+                        </p>
+                        <li class="mt-2">
+                          Responsibile for development of new full stack web
+                          application using MongoDB, Express, React and Node to
+                          register new applicants and share program related
+                          information.{" "}
+                        </li>
+                        <li class="mt-2">
+                          Designing and coding custom HTML emails for
+                          clients/in-house newsletters and invitations for
+                          distribution through mailchimp and campaign monitor.
+                        </li>
+                      </div>
                     </div>
-                    <div className="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a
-                  className="portfolio-box"
-                  href="img/portfolio/fullsize/2.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 1)}
-                >
-                  <Img
-                    fluid={
-                      this.props.data.images.edges[1].node.childImageSharp.fluid
-                    }
-                  />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
+                    <div class="resume-wrap d-flex">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="flaticon-ideas">
+                          <FontAwesomeIcon icon={faPhotoVideo} />
+                        </span>
+                      </div>
+                      <div class="text pl-3">
+                        <span class="date">OCT 2017- AUG 2019</span>
+                        <h2>Digital Media Producer</h2>
+                        <span class="position">Florida Film House</span>
+                        <p>
+                          Digital Media Producer for commerical film production
+                          company specializing in creating video content for
+                          national businesses and brands.
+                        </p>
+                        <li class="mt-2">
+                          Produced commericals and video interviews used for
+                          social media advertisments and marketing campaigns for
+                          the Urban Film Festival.{" "}
+                        </li>
+                        <li class="mt-2">
+                          Performed audio and video editing services in order to
+                          develop content from raw input into a polished,
+                          professional, and compelling final product.
+                        </li>
+                      </div>
                     </div>
-                    <div className="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a
-                  className="portfolio-box"
-                  href="img/portfolio/fullsize/3.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 2)}
-                >
-                  <Img
-                    fluid={
-                      this.props.data.images.edges[2].node.childImageSharp.fluid
-                    }
-                  />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
+                    <div class="resume-wrap d-flex ">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="flaticon-ideas">
+                          <FontAwesomeIcon icon={faFilm} />
+                        </span>
+                      </div>
+                      <div class="text pl-3">
+                        <span class="date">SEPT 2013-2016</span>
+                        <h2>Videographer & Editor</h2>
+                        <span class="position">
+                          Rum Bum Film and HD Studios
+                        </span>
+                        <h6>Miami, Florida</h6>
+                        <p>
+                          Videographer & Editor for live shows, music videos,
+                          independent films, sporting events and documentries on
+                          over 500+ productions.
+                        </p>
+
+                        <li class="mt-2">
+                          After Effects Editor for Fox Sports 3D experience at
+                          the 2016 Daytona 500
+                        </li>
+                        <li class="mt-2">
+                          On-Stage videographer during live stream broadcast of
+                          the 2016 Three Points Music Festival in Miami, FL.
+                        </li>
+                      </div>
                     </div>
-                    <div className="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a
-                  className="portfolio-box"
-                  href="images/portfolio/fullsize/4.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 3)}
-                >
-                  <Img
-                    fluid={
-                      this.props.data.images.edges[3].node.childImageSharp.fluid
-                    }
-                  />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
+                    <div class="resume-wrap d-flex ">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="flaticon-ideas">
+                          <FontAwesomeIcon icon={faPalette} />
+                        </span>
+                      </div>
+                      <div class="text pl-3">
+                        <span class="date">2007-2012</span>
+                        <h2>Freelance Multimedia Artist</h2>
+                        <span class="position">Independent Contractor</span>
+                        <h6>Atlanta, GA / Miami, FL</h6>
+
+                        <p>
+                          Freelance Media artist working with business
+                          professionals, small businesses and local brands
+                          including lawyers, real estate agents, event
+                          promoters, restaurants and local radio stations.
+                        </p>
+                        <li class="mt-2">
+                          Communicated effectively with clients to develop
+                          custom print advertisements and visual marketing
+                          material.
+                        </li>
+                        <li class="mt-2">
+                          Projects included logos, flyers, business cards,
+                          brochures, website banners, page layouts and video
+                          commericial and interviews for small amd local
+                          businesses.
+                        </li>
+                        <li class="mt-2">
+                          Maintained management skills coupled with my customer
+                          service skills, for increased retention rate of
+                          clients.
+                        </li>
+                      </div>
                     </div>
-                    <div className="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a
-                  className="portfolio-box"
-                  href="img/portfolio/fullsize/5.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 4)}
-                >
-                  <Img
-                    fluid={
-                      this.props.data.images.edges[4].node.childImageSharp.fluid
-                    }
-                  />
-                  <div className="portfolio-box-caption">
-                    <div className="project-category text-white-50">
-                      Category
+                    <div class="resume-wrap d-flex ">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="flaticon-ideas">
+                          <FontAwesomeIcon icon={faBriefcase} />
+                        </span>
+                      </div>
+                      <div class="text pl-3">
+                        <span class="date">2004-2006</span>
+                        <h2>Marketing Assistant</h2>
+                        <span class="position">
+                          The Palace Skating Rink and Family Entertainment
+                          Center
+                        </span>
+                        <h6>St. Louis, MO</h6>
+                        <p>
+                          Marketing Assistant for popluar roller skating rink
+                          known for hosting birthday parties, live events and
+                          various family related activities.
+                        </p>
+                        <li class="mt-2">
+                          Assisted in planning, designing and distribution of
+                          marketing materials including flyers, posters and
+                          brochures for all events and programs.
+                        </li>
+                        <li class="mt-2">
+                          Created weekly database of attendees used for surveys
+                          and marketing research.
+                        </li>
+                        <li class="mt-2">
+                          Provided general administrative and organizational
+                          support; such as faxing documents to clients, copying,
+                          filing, responding to emails, answering directed calls
+                          and ordering products and services related to specific
+                          events.
+                        </li>
+                      </div>
                     </div>
-                    <div className="project-name">Project Name</div>
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-4 col-sm-6">
-                <a
-                  className="portfolio-box"
-                  href="img/portfolio/fullsize/6.jpg"
-                  onClick={this.handlePortfolioClick.bind(this, 5)}
-                >
-                  <Img
-                    fluid={
-                      this.props.data.images.edges[5].node.childImageSharp.fluid
-                    }
-                  />
-                  <div className="portfolio-box-caption p-3">
-                    <div className="project-category text-white-50">
-                      Category
+
+                    <div class="resume-wrap d-flex ">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="flaticon-ideas">
+                          <FontAwesomeIcon icon={faBriefcase} />
+                        </span>
+                      </div>
+                      <div class="text pl-3">
+                        <span class="date">2003-2004</span>
+                        <h2>Radio Broadcasting Internship</h2>
+                        <span class="position">
+                          Clear Channel Communications - 100.3 The Beat
+                        </span>
+                        <h6>St. Louis, MO</h6>
+                        <p>
+                          Fall internship with local radio station 100.3 The
+                          Beat. Learned and gained experience in broadcasting,
+                          live production, marketing and promotions.
+                        </p>
+                        <li class="mt-2">
+                          Assited with planning of promotional campagins to
+                          connect with listeners and promote contests throughout
+                          the community.
+                        </li>
+
+                        <li class="mt-2">
+                          Perfomed office and administrative duties including,
+                          answers phones, copying and filing paperwork
+                        </li>
+
+                        <li class="mt-2">
+                          Responsible preparing scripts for on-air talent for
+                          advertisements and providing the radio host with
+                          reading and research material.
+                        </li>
+                      </div>
                     </div>
-                    <div className="project-name">Project Name</div>
                   </div>
-                </a>
+                  <div id="page-3" class="page three">
+                    <h2 class="heading">Skills</h2>
+                    <div>
+                      <h6 style={styles}>Coding</h6>
+                      <div class="row">
+                        {" "}
+                        <div class="col-md-6 ">
+                          {" "}
+                          <div class="progress-wrap">
+                            <h3>HTML/CSS</h3>
+                            <ProgressBar now={80} label={"80%"} />
+                          </div>
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            <h3>JavaScript</h3>
+                            <ProgressBar now={73} label={"73%"} />
+                          </div>
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            <h3>Bootstrap</h3>
+                            <ProgressBar now={80} label={"80%"} />
+                          </div>
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            <h3>React.Js</h3>
+                            <ProgressBar now={70} label={"70%"} />
+                          </div>
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            <h3>Gatsby.Js</h3>
+                            <ProgressBar now={78} label={"78%"} />
+                          </div>
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            <h3>Ruby on Rails</h3>
+                            <ProgressBar now={67} label={"67%"} />
+                          </div>
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            <h3>Node.Js</h3>
+                            <ProgressBar now={70} label={"75%"} />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-5">
+                      <h6>Creative Skills</h6>
+                      <div class="row">
+                        {" "}
+                        <div class="col-md-6 ">
+                          {" "}
+                          <div class="progress-wrap">
+                            <h3> Video Production</h3>
+                            <ProgressBar now={95} label={"95%"} />
+                          </div>
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            <h3> Graphic Design</h3>
+                            <ProgressBar now={90} label={"95%"} />
+                          </div>
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            <h3>Motion Graphics</h3>
+                            <ProgressBar now={78} label={"78%"} />
+                          </div>
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            <h3>Brochure & Page Layout</h3>
+                            <ProgressBar now={90} label={"90%"} />
+                          </div>
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            <h3>Web Design</h3>
+                            <ProgressBar now={88} label={"88%"} />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="page-4" class="page four">
+                    <h2 class="heading">Expertise</h2>
+                    <div class="row">
+                      <div class="col-md-6 ">
+                        <div class="resume-wrap d-flex ">
+                          <div class="text ">
+                            <p>
+                              <span class="position"> Proven Ability</span> in
+                              full stack web development, UX/UI design for web
+                              applications, video production and graphic design
+                              for marketing campaigns
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 ">
+                        <div class="resume-wrap d-flex ">
+                          <div class="text ">
+                            <p>
+                              <span class="position"> In depth-knowledge</span>{" "}
+                              in graphic design for creating visual idenity.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 ">
+                        <div class="resume-wrap d-flex ">
+                          <div class="text ">
+                            <p>
+                              <span class="position">
+                                {" "}
+                                Comprehensive understanding and experience{" "}
+                              </span>{" "}
+                              in full stack web development, UX/UI design for
+                              web applications, video production and graphic
+                              design for marketing campaigns
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 ">
+                        <div class="resume-wrap d-flex ">
+                          <div class="text ">
+                            <p>
+                              <span class="position"> Excellent</span> of full
+                              stack web development, UX/UI design for web
+                              applications, video production and graphic design
+                              for marketing campaigns
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 ">
+                        <div class="resume-wrap d-flex ">
+                          <div class="text ">
+                            <p>
+                              <span class="position"> Exceptional</span> of full
+                              stack web development, UX/UI design for web
+                              applications, video production and graphic design
+                              for marketing campaigns
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
         </section>
+
+        <div style={text}>
+          <Tab.Container defaultActiveKey="first">
+            <Nav variant="pills" style={navtabs}>
+              <Nav.Item>
+                <Nav.Link eventKey="first">Web Development</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="second">Video Production</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="third">Digital Design</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="fourth">Motion Graphics</Nav.Link>
+              </Nav.Item>
+            </Nav>
+
+            <Tab.Content>
+              <Tab.Pane eventKey="first">
+                <section id="portfolio">
+                  <div className="container-fluid ">
+                    <div className="row no-gutters ">
+                      <div className="col-md-5 col-sm-6 ">
+                        <a className="portfolio-box">
+                          <Img
+                            fluid={
+                              this.props.data.images.edges[0].node
+                                .childImageSharp.fluid
+                            }
+                            className="img d-flex justify-content-center align-items-center"
+                          />
+                          <div className="portfolio-box-caption">
+                            <div className="project-category text-white-50">
+                              Category
+                            </div>
+                            <div className="project-name">
+                              <BandsModal />
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="col-md-5 col-sm-6">
+                        <a
+                          className="portfolio-box"
+                          href="img/portfolio/fullsize/2.jpg"
+                          onClick={this.handlePortfolioClick.bind(this, 1)}
+                        >
+                          <Img
+                            fluid={
+                              this.props.data.images.edges[1].node
+                                .childImageSharp.fluid
+                            }
+                          />
+                          <div className="portfolio-box-caption">
+                            <div className="project-category text-white-50">
+                              Category
+                            </div>
+                            <div className="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </Tab.Pane>
+              <Tab.Pane eventKey="second">
+                <section id="portfolio">
+                  <div className="container-fluid p-0">
+                    <div className="row no-gutters">
+                      <div className="col-lg-4 col-sm-6">
+                        <a
+                          className="portfolio-box"
+                          href="images/portfolio/fullsize/4.jpg"
+                          onClick={this.handlePortfolioClick.bind(this, 3)}
+                        >
+                          <Img
+                            fluid={
+                              this.props.data.images.edges[3].node
+                                .childImageSharp.fluid
+                            }
+                          />
+                          <div className="portfolio-box-caption">
+                            <div className="project-category text-white-50">
+                              Category
+                            </div>
+                            <div className="project-name"></div>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="col-lg-4 col-sm-6">
+                        <a
+                          className="portfolio-box"
+                          href="img/portfolio/fullsize/5.jpg"
+                          onClick={this.handlePortfolioClick.bind(this, 4)}
+                        >
+                          <Img
+                            fluid={
+                              this.props.data.images.edges[4].node
+                                .childImageSharp.fluid
+                            }
+                          />
+                          <div className="portfolio-box-caption">
+                            <div className="project-category text-white-50">
+                              Category
+                            </div>
+                            <div className="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="col-lg-4 col-sm-6">
+                        <a
+                          className="portfolio-box"
+                          href="img/portfolio/fullsize/6.jpg"
+                          onClick={this.handlePortfolioClick.bind(this, 2)}
+                        >
+                          <Img
+                            fluid={
+                              this.props.data.images.edges[2].node
+                                .childImageSharp.fluid
+                            }
+                          />
+                          <div className="portfolio-box-caption p-3">
+                            <div className="project-category text-white-50">
+                              Category
+                            </div>
+                            <div className="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </Tab.Pane>
+              <Tab.Pane eventKey="third">Design</Tab.Pane>
+              <Tab.Pane eventKey="fourth">Motion</Tab.Pane>
+            </Tab.Content>
+          </Tab.Container>
+        </div>
 
         <section className="page-section bg-dark text-white">
           <div className="container text-center">

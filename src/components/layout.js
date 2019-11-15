@@ -9,12 +9,16 @@ import React from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
 import "./layout.scss"
+import { Parallax, Background } from "react-parallax"
 
-const getScrollNode = (element) => {
-  return element.ownerDocument.scrollingElement || element.ownerDocument.documentElement
+const getScrollNode = element => {
+  return (
+    element.ownerDocument.scrollingElement ||
+    element.ownerDocument.documentElement
+  )
 }
 
-const isScrolled = (element) => {
+const isScrolled = element => {
   const scrollNode = getScrollNode(element)
   return scrollNode.scrollTop > 0
 }
@@ -54,15 +58,16 @@ export default class Layout extends React.Component {
     if (this.state.scrolled) className += " navbar-scrolled"
 
     return (
-      <div
-        className={className}
-        ref={this.siteContainer}
-        id="page-top">
-        <Header/>
+      <div className={className} ref={this.siteContainer} id="page-top">
+        <Header />
+
         <main>{this.props.children}</main>
+
         <footer className="bg-light py-5">
           <div className="container">
-            <div className="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
+            <div className="small text-center text-muted">
+              Copyright &copy; 2019 - Start Bootstrap
+            </div>
           </div>
         </footer>
       </div>
