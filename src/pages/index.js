@@ -654,7 +654,7 @@ export default class IndexPage extends React.Component {
                         <a className="portfolio-box">
                           <Img
                             fluid={
-                              this.props.data.images.edges[0].node
+                              this.props.data.images.edges[1].node
                                 .childImageSharp.fluid
                             }
                             className="img d-flex justify-content-center align-items-center"
@@ -677,7 +677,7 @@ export default class IndexPage extends React.Component {
                         >
                           <Img
                             fluid={
-                              this.props.data.images.edges[1].node
+                              this.props.data.images.edges[2].node
                                 .childImageSharp.fluid
                             }
                           />
@@ -741,11 +741,11 @@ export default class IndexPage extends React.Component {
                         <a
                           className="portfolio-box"
                           href="img/portfolio/fullsize/6.jpg"
-                          onClick={this.handlePortfolioClick.bind(this, 2)}
+                          onClick={this.handlePortfolioClick.bind(this, 5)}
                         >
                           <Img
                             fluid={
-                              this.props.data.images.edges[2].node
+                              this.props.data.images.edges[5].node
                                 .childImageSharp.fluid
                             }
                           />
@@ -761,8 +761,142 @@ export default class IndexPage extends React.Component {
                   </div>
                 </section>
               </Tab.Pane>
-              <Tab.Pane eventKey="third">Design</Tab.Pane>
-              <Tab.Pane eventKey="fourth">Motion</Tab.Pane>
+              <Tab.Pane eventKey="third">
+                <section id="portfolio">
+                  <div className="container-fluid p-0">
+                    <div className="row no-gutters">
+                      <div className="col-lg-4 col-sm-6">
+                        <a
+                          className="portfolio-box"
+                          href="images/portfolio/fullsize/4.jpg"
+                          onClick={this.handlePortfolioClick.bind(this, 9)}
+                        >
+                          <Img
+                            fluid={
+                              this.props.data.images.edges[9].node
+                                .childImageSharp.fluid
+                            }
+                          />
+                          <div className="portfolio-box-caption">
+                            <div className="project-category text-white-50">
+                              Category
+                            </div>
+                            <div className="project-name"></div>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="col-lg-4 col-sm-6">
+                        <a
+                          className="portfolio-box"
+                          href="img/portfolio/fullsize/5.jpg"
+                          onClick={this.handlePortfolioClick.bind(this, 7)}
+                        >
+                          <Img
+                            fluid={
+                              this.props.data.images.edges[7].node
+                                .childImageSharp.fluid
+                            }
+                          />
+                          <div className="portfolio-box-caption">
+                            <div className="project-category text-white-50">
+                              Category
+                            </div>
+                            <div className="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="col-lg-4 col-sm-6">
+                        <a
+                          className="portfolio-box"
+                          href="img/portfolio/fullsize/6.jpg"
+                          onClick={this.handlePortfolioClick.bind(this, 8)}
+                        >
+                          <Img
+                            fluid={
+                              this.props.data.images.edges[8].node
+                                .childImageSharp.fluid
+                            }
+                          />
+                          <div className="portfolio-box-caption p-3">
+                            <div className="project-category text-white-50">
+                              Category
+                            </div>
+                            <div className="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </Tab.Pane>
+              <Tab.Pane eventKey="fourth">
+                <section id="portfolio">
+                  <div className="container-fluid p-0">
+                    <div className="row no-gutters">
+                      <div className="col-lg-4 col-sm-6">
+                        <a
+                          className="portfolio-box"
+                          href="images/portfolio/fullsize/4.jpg"
+                          onClick={this.handlePortfolioClick.bind(this, 9)}
+                        >
+                          <Img
+                            fluid={
+                              this.props.data.images.edges[9].node
+                                .childImageSharp.fluid
+                            }
+                          />
+                          <div className="portfolio-box-caption">
+                            <div className="project-category text-white-50">
+                              Category
+                            </div>
+                            <div className="project-name"></div>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="col-lg-4 col-sm-6">
+                        <a
+                          className="portfolio-box"
+                          href="img/portfolio/fullsize/5.jpg"
+                          onClick={this.handlePortfolioClick.bind(this, 7)}
+                        >
+                          <Img
+                            fluid={
+                              this.props.data.images.edges[7].node
+                                .childImageSharp.fluid
+                            }
+                          />
+                          <div className="portfolio-box-caption">
+                            <div className="project-category text-white-50">
+                              Category
+                            </div>
+                            <div className="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                      <div className="col-lg-4 col-sm-6">
+                        <a
+                          className="portfolio-box"
+                          href="img/portfolio/fullsize/6.jpg"
+                          onClick={this.handlePortfolioClick.bind(this, 8)}
+                        >
+                          <Img
+                            fluid={
+                              this.props.data.images.edges[8].node
+                                .childImageSharp.fluid
+                            }
+                          />
+                          <div className="portfolio-box-caption p-3">
+                            <div className="project-category text-white-50">
+                              Category
+                            </div>
+                            <div className="project-name">Project Name</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </Tab.Pane>
             </Tab.Content>
           </Tab.Container>
         </div>
