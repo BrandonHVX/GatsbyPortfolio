@@ -118,8 +118,12 @@ function BandsModal() {
 
   return (
     <div>
-      <Button variant="primary" onClick={() => setModalShow(true)}>
-        Launch vertically centered modal
+      <Button
+        className="btn-modal"
+        variant="transparent"
+        onClick={() => setModalShow(true)}
+      >
+        View Project
       </Button>
 
       <Bands show={modalShow} onHide={() => setModalShow(false)} />
@@ -221,23 +225,27 @@ export default class IndexPage extends React.Component {
             </div>
           </section>
         </section>
-        <Parallax className="custom-bg" strength={-400}>
+        <Parallax strength={400}>
           <div />
-          <section id="services-section ">
-            <div class="col-md-6 heading-section text-center ">
-              <h1 class="heading">Services</h1>
-
-              <p> </p>
-            </div>
-
+          <section id="services-section">
             <div class="container-fluid px-md-5">
+              <div class="row justify-content-center py-5 mt-5">
+                <div class="col-md-12 heading-section text-center ">
+                  <h1 class="big big-2">Services</h1>
+
+                  <p>
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia
+                  </p>
+                </div>
+              </div>
               <div class="row justify-content-md-center">
                 <div class="col-md-6 text-center  d-flex ftco-animate">
-                  <div class="services-1 bg-white  shadow">
+                  <div class="services-1  shadow">
                     <span class="icon">
                       <i class="flaticon-analysis"></i>
                     </span>
-                    <div class="desc bg-white">
+                    <div class="desc ">
                       <h3 class="mb-5">Full Stack Web Development</h3>
                       <p>
                         <span class="mr-2">
@@ -261,11 +269,11 @@ export default class IndexPage extends React.Component {
                   </div>
                 </div>
                 <div class="col-md-6 text-center d-flex ftco-animate">
-                  <div class="services-1 bg-white shadow">
+                  <div class="services-1 shadow">
                     <span class="icon">
                       <i class="flaticon-flasks"></i>
                     </span>
-                    <div class="desc bg-white">
+                    <div class="desc">
                       <h3 class="mb-5">Content Creation</h3>
                       <p>
                         <span class="mr-2">
@@ -289,11 +297,11 @@ export default class IndexPage extends React.Component {
                   </div>
                 </div>
                 <div class="col-md-6 text-center d-flex ftco-animate">
-                  <div class="services-1 bg-white shadow">
+                  <div class="services-1 shadow">
                     <span class="icon">
                       <i class="flaticon-ideas"></i>
                     </span>
-                    <div class="desc bg-white">
+                    <div class="desc">
                       <h3 class="mb-5"> Graphic & Web Design</h3>
                       <p>
                         <span class="mr-2">
@@ -325,11 +333,11 @@ export default class IndexPage extends React.Component {
                 </div>
 
                 <div class="col-md-6 text-center d-flex ftco-animate">
-                  <div class="services-1 bg-white shadow">
+                  <div class="services-1 shadow">
                     <span class="icon">
                       <i class="flaticon-ux-design"></i>
                     </span>
-                    <div class="desc bg-white">
+                    <div class="desc">
                       <h3 class="mb-5">Motion Graphics</h3>
 
                       <p>
@@ -355,8 +363,8 @@ export default class IndexPage extends React.Component {
           </section>
 
           <Background>
-            <div style={{ height: "100vh" }}>
-              <img src={bgheader} />
+            <div style={{ height: "1800px" }}>
+              <img src={bgheader} className="custom-bg" />
             </div>
           </Background>
         </Parallax>
@@ -372,7 +380,7 @@ export default class IndexPage extends React.Component {
                   <Nav.Link eventKey="first">WEB DEVELOPMENT</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">VIDEO CONTENT</Nav.Link>
+                  <Nav.Link eventKey="second">VIDEO CONENT</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="third">GRAPHIC DESIGN</Nav.Link>
@@ -397,8 +405,8 @@ export default class IndexPage extends React.Component {
                               className="img d-flex justify-content-center align-items-center"
                             />
                             <div className="portfolio-box-caption">
-                              <div className="project-category text-white-50">
-                                Category
+                              <div className="project-category text-white">
+                                <h1>Jobs Now</h1>
                               </div>
                               <div className="project-name">
                                 <BandsModal />
@@ -419,8 +427,8 @@ export default class IndexPage extends React.Component {
                               }
                             />
                             <div className="portfolio-box-caption">
-                              <div className="project-category text-white-50">
-                                Category
+                              <div className="project-category text-white">
+                                <h1>Jobs Now</h1>
                               </div>
                               <div className="project-name">Project Name</div>
                             </div>
@@ -504,7 +512,7 @@ export default class IndexPage extends React.Component {
                 <Tab.Pane eventKey="third">
                   <section id="portfolio">
                     <div className="container-fluid p-0">
-                      <div className="row gutters">
+                      <div className="row gutters justify-content-md-center">
                         <div className="col-lg-6 col-sm-6">
                           <a
                             className="portfolio-box"
@@ -545,7 +553,7 @@ export default class IndexPage extends React.Component {
                             </div>
                           </a>
                         </div>
-                        <div className="col-lg-6 col-sm-6 mt-4">
+                        <div className="col-lg-6 col-sm-6">
                           <a
                             className="portfolio-box"
                             href="img/portfolio/fullsize/6.jpg"

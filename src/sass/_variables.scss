@@ -187,7 +187,7 @@ $navbar-height: 72px;
 .services-1 {
   margin-bottom: 40px;
   padding: 2em;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(255, 255, 255);
   width: 100%;
 }
 .services-1 .icon {
@@ -248,4 +248,10 @@ $navbar-height: 72px;
 }
 .services-1:hover h3:after {
   background: #000000;
+}
+
+@media (max-width: 767.98px) {
+  .custom-bg {
+    display: none;
+  }
 }

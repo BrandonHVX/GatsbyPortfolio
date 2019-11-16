@@ -38,6 +38,21 @@ hr.light {
   border-radius: 10rem;
 }
 
+.btn {
+  font-family: $font-family-sans-serif;
+}
+
+.btn-modal {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid white;
+  background-color: "black";
+  border-radius: 10rem;
+}
+
 // Page section padding
 .page-section {
   padding: 8rem 0;
