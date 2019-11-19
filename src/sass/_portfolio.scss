@@ -31,11 +31,13 @@
         }
         .project-name {
           font-size: 1.2rem;
+          color: white;
         }
       }
       &:hover {
         .portfolio-box-caption {
           opacity: 1;
+          color: white;
         }
       }
     }

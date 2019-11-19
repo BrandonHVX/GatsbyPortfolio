@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Image from "../components/image"
 import Layout from "../components/layout"
+import JobsNowModal from "../components/projects/jobsnow"
+import NyxModal from "../components/projects/nyx"
 import SEO from "../components/seo"
 import Scroller from "../components/scroller"
 import PortfolioModal from "../components/portfolio/modal"
@@ -67,68 +69,6 @@ const text = {
   fontSize: "20px",
   marginTop: "20px",
   marginRight: "10px",
-}
-
-function Bands(props) {
-  return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-      class=" bg-secondary mb-3"
-    >
-      <Modal.Header
-        closeButton
-        style={{ color: "#f4623a", backgroundColor: "#000000bf" }}
-      >
-        <Modal.Title id="contained-modal-title-vcenter">
-          <h2 className="text-uppercase text-white font-weight-bold">
-            Bands by Taylor Alexandria
-          </h2>
-        </Modal.Title>
-      </Modal.Header>
-
-      <div class="text-white " style={{ backgroundColor: "#000000bf" }}>
-        <div class="container">
-          <p>
-            Company profile and Interview with Miami based fashion designer
-            Taylor Alexandria.
-          </p>
-        </div>
-      </div>
-
-      <Modal.Body style={{ color: "white", backgroundColor: "#000000b1" }}>
-        <div class="d-flex justify-content-center mb-3">
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=FE5VhXSu3TU"
-            playing
-          />
-        </div>
-      </Modal.Body>
-      <Modal.Footer style={{ color: "white", backgroundColor: "#000000bf" }}>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
-  )
-}
-
-function BandsModal() {
-  const [modalShow, setModalShow] = React.useState(false)
-
-  return (
-    <div>
-      <Button
-        className="btn-modal"
-        variant="transparent"
-        onClick={() => setModalShow(true)}
-      >
-        View Project
-      </Button>
-
-      <Bands show={modalShow} onHide={() => setModalShow(false)} />
-    </div>
-  )
 }
 
 export default class IndexPage extends React.Component {
@@ -225,149 +165,142 @@ export default class IndexPage extends React.Component {
             </div>
           </section>
         </section>
-        <Parallax strength={400}>
-          <div />
-          <section id="services-section">
-            <div class="container-fluid px-md-5">
-              <div class="row justify-content-center py-5 mt-5">
-                <div class="col-md-12 heading-section text-center ">
-                  <h1 class="big big-2">Services</h1>
 
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia
-                  </p>
+        <div />
+        <section id="services-section">
+          <div class="container-fluid px-md-5">
+            <div class="row justify-content-center py-5 mt-5">
+              <div class="col-md-12 heading-section text-center ">
+                <h1 class="big big-2">Services</h1>
+
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col-md-6 text-center  d-flex ftco-animate">
+                <div class="services-1  shadow">
+                  <span class="icon">
+                    <i class="flaticon-analysis"></i>
+                  </span>
+                  <div class="desc ">
+                    <h3 class="mb-5">Full Stack Web Development</h3>
+                    <p>
+                      <span class="mr-2">
+                        <img src={mongo} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={node} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={ex} width={80} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={reactsvg} width={40} alt="" />
+                      </span>
+                    </p>
+                    <p>
+                      A small river named Duden flows by their place and
+                      supplies it with the necessary regelialia.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="row justify-content-md-center">
-                <div class="col-md-6 text-center  d-flex ftco-animate">
-                  <div class="services-1  shadow">
-                    <span class="icon">
-                      <i class="flaticon-analysis"></i>
-                    </span>
-                    <div class="desc ">
-                      <h3 class="mb-5">Full Stack Web Development</h3>
-                      <p>
-                        <span class="mr-2">
-                          <img src={mongo} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={node} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={ex} width={80} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={reactsvg} width={40} alt="" />
-                        </span>
-                      </p>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia.
-                      </p>
-                    </div>
+              <div class="col-md-6 text-center d-flex ftco-animate">
+                <div class="services-1 shadow">
+                  <span class="icon">
+                    <i class="flaticon-flasks"></i>
+                  </span>
+                  <div class="desc">
+                    <h3 class="mb-5">Content Creation</h3>
+                    <p>
+                      <span class="mr-2">
+                        <img src={pr} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={ae} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={finalcut} width={50} class="mb-1" alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={redcam} width={48} alt="" />
+                      </span>
+                    </p>
+                    <p>
+                      A small river named Duden flows by their place and
+                      supplies it with the necessary regelialia.
+                    </p>
                   </div>
                 </div>
-                <div class="col-md-6 text-center d-flex ftco-animate">
-                  <div class="services-1 shadow">
-                    <span class="icon">
-                      <i class="flaticon-flasks"></i>
-                    </span>
-                    <div class="desc">
-                      <h3 class="mb-5">Content Creation</h3>
-                      <p>
-                        <span class="mr-2">
-                          <img src={pr} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={ae} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={finalcut} width={50} class="mb-1" alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={redcam} width={48} alt="" />
-                        </span>
-                      </p>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia.
-                      </p>
-                    </div>
+              </div>
+              <div class="col-md-6 text-center d-flex ftco-animate">
+                <div class="services-1 shadow">
+                  <span class="icon">
+                    <i class="flaticon-ideas"></i>
+                  </span>
+                  <div class="desc">
+                    <h3 class="mb-5"> Graphic & Web Design</h3>
+                    <p>
+                      <span class="mr-2">
+                        <img src={ps} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={ai} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={xd} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={html5} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={sass} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={bootstrap} width={40} alt="" />
+                      </span>
+                    </p>
+
+                    <p>
+                      A small river named Duden flows by their place and
+                      supplies it with the necessary regelialia.
+                    </p>
                   </div>
                 </div>
-                <div class="col-md-6 text-center d-flex ftco-animate">
-                  <div class="services-1 shadow">
-                    <span class="icon">
-                      <i class="flaticon-ideas"></i>
-                    </span>
-                    <div class="desc">
-                      <h3 class="mb-5"> Graphic & Web Design</h3>
-                      <p>
-                        <span class="mr-2">
-                          <img src={ps} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={ai} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={xd} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={html5} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={sass} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={bootstrap} width={40} alt="" />
-                        </span>
-                      </p>
+              </div>
 
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div class="col-md-6 text-center d-flex ftco-animate">
+                <div class="services-1 shadow">
+                  <span class="icon">
+                    <i class="flaticon-ux-design"></i>
+                  </span>
+                  <div class="desc">
+                    <h3 class="mb-5">Motion Graphics</h3>
 
-                <div class="col-md-6 text-center d-flex ftco-animate">
-                  <div class="services-1 shadow">
-                    <span class="icon">
-                      <i class="flaticon-ux-design"></i>
-                    </span>
-                    <div class="desc">
-                      <h3 class="mb-5">Motion Graphics</h3>
-
-                      <p>
-                        <span class="mr-2">
-                          <img src={ae} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={ps} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={ai} width={40} alt="" />
-                        </span>
-                      </p>
-                      <p>
-                        A small river named Duden flows by their place and
-                        supplies it with the necessary regelialia.
-                      </p>
-                    </div>
+                    <p>
+                      <span class="mr-2">
+                        <img src={ae} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={ps} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={ai} width={40} alt="" />
+                      </span>
+                    </p>
+                    <p>
+                      A small river named Duden flows by their place and
+                      supplies it with the necessary regelialia.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-
-          <Background>
-            <div style={{ height: "1800px" }}>
-              <img src={bgheader} className="custom-bg" />
-            </div>
-          </Background>
-        </Parallax>
+          </div>
+        </section>
 
         <section className="page-section" id="portfolio">
           <div class="col-md-12 heading-section text-center">
@@ -405,21 +338,14 @@ export default class IndexPage extends React.Component {
                               className="img d-flex justify-content-center align-items-center"
                             />
                             <div className="portfolio-box-caption">
-                              <div className="project-category text-white">
-                                <h1>Jobs Now</h1>
-                              </div>
-                              <div className="project-name">
-                                <BandsModal />
+                              <div>
+                                <JobsNowModal />
                               </div>
                             </div>
                           </a>
                         </div>
                         <div className="col-lg-6 col-sm-6">
-                          <a
-                            className="portfolio-box"
-                            href="img/portfolio/fullsize/2.jpg"
-                            onClick={this.handlePortfolioClick.bind(this, 1)}
-                          >
+                          <div className="portfolio-box">
                             <Img
                               fluid={
                                 this.props.data.images.edges[2].node
@@ -427,12 +353,11 @@ export default class IndexPage extends React.Component {
                               }
                             />
                             <div className="portfolio-box-caption">
-                              <div className="project-category text-white">
-                                <h1>Jobs Now</h1>
+                              <div>
+                                <NyxModal />
                               </div>
-                              <div className="project-name">Project Name</div>
                             </div>
-                          </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -937,7 +862,7 @@ export default class IndexPage extends React.Component {
                     <h2 class="heading">Skills</h2>
                     <div>
                       <h6 style={styles}>Coding</h6>
-                      <div class="row">
+                      <div class="row ">
                         {" "}
                         <div class="col-md-6 ">
                           {" "}
