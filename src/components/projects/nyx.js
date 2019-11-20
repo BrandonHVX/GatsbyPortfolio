@@ -1,7 +1,15 @@
 import React, { Component } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-
+import bootstrap from "../../images/bootstrap.svg"
+import bgheader from "../../images/slide-4.jpg"
+import node from "../../images/node.svg"
+import vue from "../../images/vuejs.svg"
+import reactsvg from "../../images/react.svg"
+import ex from "../../images/ex.png"
+import nyt from "../../images/nyt.svg"
+import redcam from "../../images/redcam-png.png"
+import mongo from "../../images/mongo.png"
 import {
   Card,
   Nav,
@@ -89,9 +97,9 @@ function Nyx(props) {
                 <div class="container">
                   <div id="page-3" class="page three">
                     <p class="lead mt-5 font-weight-light">
-                      With ShowTrackr you can track your favorite TV shows
-                      automatically, so you never loose track of your TV shows
-                      ever again. 🍿
+                      NYX NEWS is the new way to get your daily top stories. Our
+                      platform is designed to display your favorite sections of
+                      the New York Times upon request.
                     </p>
                   </div>
                 </div>
@@ -107,29 +115,39 @@ function Nyx(props) {
                     <div class="row  text-center">
                       <div class="col-lg-4">
                         <div class="features-item mb-5 mb-lg-0">
-                          <div class="gradient-icon gradient-1">
-                            <img src="portrait_black.png" alt="" />
+                          <div>
+                            <img src={nyt} alt="" width={185} />
                           </div>
-                          <h3 class="h5">New York Times API</h3>
+                          <h3 class="h5 mt-2">New York Times API</h3>
                           <p>
-                            Track your favorite shows automatically without
-                            switching between apps.
+                            Ability for client and server-side commuincation
+                            with the back-end server of the New York Times
+                            website.
                           </p>
-                          <a href="#" class="features-link">
-                            Learn more
-                            <i class="icon ion-ios-arrow-forward ml-2"></i>
-                          </a>
                         </div>
                       </div>
                       <div class="col-lg-4">
                         <div class="features-item mb-5 mb-lg-0">
-                          <div class="gradient-icon gradient-2">
-                            <i class="icon ion-ios-cog"></i>
+                          <div>
+                            <img src={ex} alt="" width={125} />
                           </div>
-                          <h3 class="h5">Express.Js</h3>
+                          <h3 class="h5 mt-2">Express.Js</h3>
                           <p>
-                            Get recommendations like never before, which are
-                            truly customized for your taste.
+                            Javascript framework running on Node used for our
+                            back-end server routes and communication with the
+                            New York Times Developers API.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="features-item mb-5 mb-lg-0">
+                          <div>
+                            <img src={ex} alt="" width={125} />
+                          </div>
+                          <h3 class="h5">Axios</h3>
+                          <p>
+                            Receive smart notifications exactly at the right
+                            moments when you need them.
                           </p>
                           <a href="#" class="features-link">
                             Learn more
@@ -139,51 +157,27 @@ function Nyx(props) {
                       </div>
                       <div class="col-lg-4 mb-5">
                         <div class="features-item mb-5 mb-lg-0">
-                          <div class="gradient-icon gradient-3">
-                            <i class="icon ion-ios-notifications"></i>
+                          <div>
+                            <img src={reactsvg} alt="" width={80} />
                           </div>
                           <h3 class="h5">React.Js</h3>
                           <p>
-                            Receive smart notifications exactly at the right
-                            moments when you need them.
+                            Javascript libaray used to develop our user
+                            interface and experience for front-end development.
                           </p>
-                          <a href="#" class="features-link">
-                            Learn more
-                            <i class="icon ion-ios-arrow-forward ml-2"></i>
-                          </a>
                         </div>
-                      </div>
-
+                      </div>{" "}
                       <div class="col-lg-4">
                         <div class="features-item mb-5 mb-lg-0">
-                          <div class="gradient-icon gradient-3">
-                            <i class="icon ion-ios-notifications"></i>
+                          <div>
+                            <img src={bootstrap} alt="" width={80} />
                           </div>
                           <h3 class="h5">Bootstrap</h3>
                           <p>
-                            Receive smart notifications exactly at the right
-                            moments when you need them.
+                            Based HTML and CSS use for our moblie responsive
+                            layout, colors, buttons, forms, text and navigation
+                            components.
                           </p>
-                          <a href="#" class="features-link">
-                            Learn more
-                            <i class="icon ion-ios-arrow-forward ml-2"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="features-item mb-5 mb-lg-0">
-                          <div class="gradient-icon gradient-3">
-                            <i class="icon ion-ios-notifications"></i>
-                          </div>
-                          <h3 class="h5">HMTL/CSS</h3>
-                          <p>
-                            Receive smart notifications exactly at the right
-                            moments when you need them.
-                          </p>
-                          <a href="#" class="features-link">
-                            Learn more
-                            <i class="icon ion-ios-arrow-forward ml-2"></i>
-                          </a>
                         </div>
                       </div>
                     </div>
@@ -202,7 +196,7 @@ function Nyx(props) {
                         ever again. 🍿
                       </p>
                     </div>
-                    <div class="col-lg-6 d-flex d-lg-block">
+                    <div class="col-lg-6 d-lg-block">
                       <div class="device-wrapper mx-auto">
                         <div
                           data-device="iPhone7-2"

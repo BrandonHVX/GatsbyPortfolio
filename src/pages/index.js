@@ -14,6 +14,7 @@ import ps from "../images/ps.svg"
 import ai from "../images/ai.svg"
 import xd from "../images/xd.svg"
 import pr from "../images/Pr.svg"
+import jobsnowlogo from "../images/JOBSNOW.png"
 import rails from "../images/rails.svg"
 import sass from "../images/sass.svg"
 import bootstrap from "../images/bootstrap.svg"
@@ -200,10 +201,21 @@ export default class IndexPage extends React.Component {
                       <span class="mr-2">
                         <img src={reactsvg} width={40} alt="" />
                       </span>
+                      <span class="mr-2">
+                        <img src={html5} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={sass} width={40} alt="" />
+                      </span>
+                      <span class="mr-2">
+                        <img src={bootstrap} width={40} alt="" />
+                      </span>
                     </p>
                     <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
+                      MongoDB, Node.js, Express.js, React.js, HTML, CSS, SASS
+                      and Bootstrap for developing full-stack web applications
+                      using JavaScript excution environments for both client and
+                      server-side rendering.
                     </p>
                   </div>
                 </div>
@@ -214,7 +226,7 @@ export default class IndexPage extends React.Component {
                     <i class="flaticon-flasks"></i>
                   </span>
                   <div class="desc">
-                    <h3 class="mb-5">Content Creation</h3>
+                    <h3 class="mb-5">Video Production</h3>
                     <p>
                       <span class="mr-2">
                         <img src={pr} width={40} alt="" />
@@ -230,8 +242,11 @@ export default class IndexPage extends React.Component {
                       </span>
                     </p>
                     <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
+                      Adobe Premreie Pro, Affter Effects and Final Cut Pro for
+                      video editing, motion graphics and finalizing content for
+                      commericials, social media content, webisodes and company
+                      interviews. High difinition 4K-8K digital content captured
+                      with Red Digital Cinema Cameras.
                     </p>
                   </div>
                 </div>
@@ -265,8 +280,10 @@ export default class IndexPage extends React.Component {
                     </p>
 
                     <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
+                      Adobe Photoshop, Illustrator and XD used to design
+                      stunning graphics, vector designs, print,web and moblie
+                      media layouts for social media, advertisements, marketing
+                      campagins and interactive websites.
                     </p>
                   </div>
                 </div>
@@ -292,8 +309,10 @@ export default class IndexPage extends React.Component {
                       </span>
                     </p>
                     <p>
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia.
+                      Adobe Affer Effects, Photoshop and Illustrator used to
+                      design, create and animate text, titles, graphics and
+                      vector elements used to enhance commericalized video
+                      content.
                     </p>
                   </div>
                 </div>
@@ -313,7 +332,7 @@ export default class IndexPage extends React.Component {
                   <Nav.Link eventKey="first">WEB DEVELOPMENT</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">VIDEO CONENT</Nav.Link>
+                  <Nav.Link eventKey="second">VIDEO PR0DUCTION</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="third">GRAPHIC DESIGN</Nav.Link>
@@ -338,7 +357,9 @@ export default class IndexPage extends React.Component {
                               className="img d-flex justify-content-center align-items-center"
                             />
                             <div className="portfolio-box-caption">
-                              <div>
+                              <div class="desc">
+                                <img src={jobsnowlogo} width={100} />
+
                                 <JobsNowModal />
                               </div>
                             </div>

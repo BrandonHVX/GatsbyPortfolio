@@ -1,6 +1,14 @@
 import React, { Component } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import bootstrap from "../../images/bootstrap.svg"
+import bgheader from "../../images/slide-4.jpg"
+import node from "../../images/node.svg"
+import vue from "../../images/vuejs.svg"
+import reactsvg from "../../images/react.svg"
+import ex from "../../images/ex.png"
+import redcam from "../../images/redcam-png.png"
+import mongo from "../../images/mongo.png"
 
 import {
   Card,
@@ -89,9 +97,8 @@ function Jobs(props) {
                 <div class="container">
                   <div id="page-3" class="page three">
                     <p class="lead mt-5 font-weight-light">
-                      With ShowTrackr you can track your favorite TV shows
-                      automatically, so you never loose track of your TV shows
-                      ever again. 🍿
+                      With Jobs Now you can create a career profile, post a job,
+                      and like or comment on a post of your interest.
                     </p>
                   </div>
                 </div>
@@ -107,98 +114,64 @@ function Jobs(props) {
                     <div class="row  text-center">
                       <div class="col-lg-4">
                         <div class="features-item mb-5 mb-lg-0">
-                          <div class="gradient-icon gradient-1">
-                            <img src="portrait_black.png" alt="" />
+                          <div>
+                            <img src={mongo} alt="" width={80} />
                           </div>
                           <h3 class="h5">MongoDB</h3>
                           <p>
-                            Track your favorite shows automatically without
-                            switching between apps.
+                            NonSQL database for storing our users, profiles,
+                            posts, likes and comment data.
                           </p>
-                          <a href="#" class="features-link">
-                            Learn more
-                            <i class="icon ion-ios-arrow-forward ml-2"></i>
-                          </a>
                         </div>
                       </div>
                       <div class="col-lg-4">
                         <div class="features-item mb-5 mb-lg-0">
-                          <div class="gradient-icon gradient-2">
-                            <i class="icon ion-ios-cog"></i>
+                          <div>
+                            <img src={ex} alt="" width={175} />
                           </div>
                           <h3 class="h5">Express.Js</h3>
                           <p>
-                            Get recommendations like never before, which are
-                            truly customized for your taste.
+                            Javascript framework running on Node used for our
+                            back-end server routes and communication with
+                            MongooDB database.
                           </p>
-                          <a href="#" class="features-link">
-                            Learn more
-                            <i class="icon ion-ios-arrow-forward ml-2"></i>
-                          </a>
                         </div>
                       </div>
                       <div class="col-lg-4 mb-5">
                         <div class="features-item mb-5 mb-lg-0">
-                          <div class="gradient-icon gradient-3">
-                            <i class="icon ion-ios-notifications"></i>
+                          <div>
+                            <img src={reactsvg} alt="" width={80} />
                           </div>
                           <h3 class="h5">React.Js</h3>
                           <p>
-                            Receive smart notifications exactly at the right
-                            moments when you need them.
+                            Javascript libaray used to develop our user
+                            interface and experience for front-end development.
                           </p>
-                          <a href="#" class="features-link">
-                            Learn more
-                            <i class="icon ion-ios-arrow-forward ml-2"></i>
-                          </a>
                         </div>
                       </div>
                       <div class="col-lg-4">
                         <div class="features-item mb-5 mb-lg-0">
-                          <div class="gradient-icon gradient-3">
-                            <i class="icon ion-ios-notifications"></i>
+                          <div>
+                            <img src={node} alt="" width={80} />
                           </div>
                           <h3 class="h5">Node.Js</h3>
                           <p>
-                            Receive smart notifications exactly at the right
-                            moments when you need them.
+                            Javascript run-time environment for the server-side
+                            execution of our web application.
                           </p>
-                          <a href="#" class="features-link">
-                            Learn more
-                            <i class="icon ion-ios-arrow-forward ml-2"></i>
-                          </a>
                         </div>
                       </div>
                       <div class="col-lg-4">
                         <div class="features-item mb-5 mb-lg-0">
-                          <div class="gradient-icon gradient-3">
-                            <i class="icon ion-ios-notifications"></i>
+                          <div>
+                            <img src={bootstrap} alt="" width={80} />
                           </div>
                           <h3 class="h5">Bootstrap</h3>
                           <p>
-                            Receive smart notifications exactly at the right
-                            moments when you need them.
+                            Based HTML and CSS use for our moblie responsive
+                            layout, colors, buttons, forms, text and navigation
+                            components.
                           </p>
-                          <a href="#" class="features-link">
-                            Learn more
-                            <i class="icon ion-ios-arrow-forward ml-2"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="features-item mb-5 mb-lg-0">
-                          <div class="gradient-icon gradient-3">
-                            <i class="icon ion-ios-notifications"></i>
-                          </div>
-                          <h3 class="h5">Node.Js</h3>
-                          <p>
-                            Receive smart notifications exactly at the right
-                            moments when you need them.
-                          </p>
-                          <a href="#" class="features-link">
-                            Learn more
-                            <i class="icon ion-ios-arrow-forward ml-2"></i>
-                          </a>
                         </div>
                       </div>
                     </div>
@@ -217,7 +190,7 @@ function Jobs(props) {
                         ever again. 🍿
                       </p>
                     </div>
-                    <div class="col-lg-6 d-flex d-lg-block">
+                    <div class="col-lg-6 d-lg-block">
                       <div class="device-wrapper mx-auto">
                         <div
                           data-device="iPhone7-2"
