@@ -321,6 +321,92 @@ export default class IndexPage extends React.Component {
           </div>
         </section>
 
+        <div class="container">
+          <div class="card">
+            <h2>North</h2>
+            <i class="fas fa-arrow-right"></i>
+            <p>a lonely trip.</p>
+            <div class="pic"></div>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="social">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-github"></i>
+            </div>
+            <button></button>
+          </div>
+          <div class="card card2">
+            <h2>Vauxhall</h2>
+            <i class="fas fa-arrow-right"></i>
+            <p>a lonely trip.</p>
+            <div class="pic"></div>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="social">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-github"></i>
+            </div>
+            <button></button>
+          </div>
+        </div>
+
+        <a href="https://dribbble.com/YancyMin" class="dr-url" target="_blank">
+          <img
+            class="dr"
+            src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png"
+            alt=""
+          />
+        </a>
         <section className="page-section" id="portfolio">
           <div class="col-md-12 heading-section text-center">
             <h1 class="heading">Projects</h1>
@@ -347,37 +433,98 @@ export default class IndexPage extends React.Component {
                   <section id="portfolio">
                     <div className="container-fluid ">
                       <div className="row gutters justify-content-md-center">
-                        <div className="col-lg-6 col-md-6">
-                          <a className="portfolio-box">
-                            <Img
-                              fluid={
-                                this.props.data.images.edges[1].node
-                                  .childImageSharp.fluid
-                              }
-                              className="img d-flex justify-content-center align-items-center"
-                            />
-                            <div className="portfolio-box-caption">
-                              <div class="desc">
-                                <img src={jobsnowlogo} width={100} />
-
-                                <JobsNowModal />
-                              </div>
+                        <div className="col-md-6 d-flex justify-content-center">
+                          <div class="card">
+                            <h2>North</h2>
+                            <i class="fas fa-arrow-right"></i>
+                            <p>a lonely trip.</p>
+                            <div class="pic">
+                              <Img
+                                fluid={
+                                  this.props.data.images.edges[3].node
+                                    .childImageSharp.fluid
+                                }
+                              />
                             </div>
-                          </a>
+                            <ul>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                            </ul>
+                            <div class="social">
+                              <i class="fab fa-facebook-f"></i>
+                              <i class="fab fa-twitter"></i>
+                              <i class="fab fa-instagram"></i>
+                              <i class="fab fa-github"></i>
+                            </div>
+                            <button></button>
+                          </div>
                         </div>
-                        <div className="col-lg-6 col-sm-6">
-                          <div className="portfolio-box">
-                            <Img
-                              fluid={
-                                this.props.data.images.edges[2].node
-                                  .childImageSharp.fluid
-                              }
-                            />
-                            <div className="portfolio-box-caption">
-                              <div>
-                                <NyxModal />
-                              </div>
+                        <div className="col-md-6 d-flex justify-content-center">
+                          <div class="card">
+                            <h2>North</h2>
+                            <i class="fas fa-arrow-right"></i>
+                            <p>a lonely trip.</p>
+                            <div class="pic">
+                              <Img
+                                fluid={
+                                  this.props.data.images.edges[3].node
+                                    .childImageSharp.fluid
+                                }
+                              />
                             </div>
+                            <ul>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                            </ul>
+                            <div class="social">
+                              <i class="fab fa-facebook-f"></i>
+                              <i class="fab fa-twitter"></i>
+                              <i class="fab fa-instagram"></i>
+                              <i class="fab fa-github"></i>
+                            </div>
+                            <button></button>
                           </div>
                         </div>
                       </div>
