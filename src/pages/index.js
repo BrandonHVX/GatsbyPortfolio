@@ -432,101 +432,107 @@ export default class IndexPage extends React.Component {
                 <Tab.Pane eventKey="first">
                   <section id="portfolio">
                     <div className="container-fluid ">
-                      <div className="row gutters justify-content-md-center">
-                        <div className="col-md-6 d-flex justify-content-center">
-                          <div class="card">
-                            <h2 class="hide-title">North</h2>
-                            <i class="fas fa-arrow-right">
-                              <JobsNowModal />
-                            </i>
-                            <p>a lonely trip.</p>
-                            <div class="pic">
-                              <Img
-                                fluid={
-                                  this.props.data.images.edges[3].node
-                                    .childImageSharp.fluid
-                                }
-                              />
+                      <div className="row gutters">
+                        <div className="col-lg-6 col-sm-6">
+                          <div className="col">
+                            <div class="card">
+                              <h4 class="hide-title">North</h4>
+                              <i class="fas fa-arrow-right">
+                                <JobsNowModal />
+                              </i>
+                              <p>a lonely trip.</p>
+                              <div class="pic">
+                                <Img
+                                  fluid={
+                                    this.props.data.images.edges[1].node
+                                      .childImageSharp.fluid
+                                  }
+                                />
+                              </div>
+                              <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                              <div class="social">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-github"></i>
+                              </div>
+                              <button></button>
                             </div>
-                            <ul>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                            </ul>
-                            <div class="social">
-                              <i class="fab fa-facebook-f"></i>
-                              <i class="fab fa-twitter"></i>
-                              <i class="fab fa-instagram"></i>
-                              <i class="fab fa-github"></i>
-                            </div>
-                            <button></button>
                           </div>
                         </div>
-                        <div className="col-md-6 d-flex justify-content-center">
-                          <div class="card">
-                            <h2>North</h2>
-                            <i class="fas fa-arrow-right"></i>
-                            <p>a lonely trip.</p>
-                            <div class="pic">
-                              <Img
-                                fluid={
-                                  this.props.data.images.edges[3].node
-                                    .childImageSharp.fluid
-                                }
-                              />
+                        <div className="col-lg-6 col-sm-6">
+                          <div className="col">
+                            <div class="card">
+                              <h4 class="hide-title">North</h4>
+                              <i class="fas fa-arrow-right">
+                                <JobsNowModal />
+                              </i>
+                              <p>a lonely trip.</p>
+                              <div class="pic">
+                                <Img
+                                  fluid={
+                                    this.props.data.images.edges[2].node
+                                      .childImageSharp.fluid
+                                  }
+                                />
+                              </div>
+                              <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                              <div class="social">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-github"></i>
+                              </div>
+                              <button></button>
                             </div>
-                            <ul>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                            </ul>
-                            <div class="social">
-                              <i class="fab fa-facebook-f"></i>
-                              <i class="fab fa-twitter"></i>
-                              <i class="fab fa-instagram"></i>
-                              <i class="fab fa-github"></i>
-                            </div>
-                            <button> </button> <p>a lonely trip.</p>
                           </div>
                         </div>
                       </div>
@@ -538,44 +544,106 @@ export default class IndexPage extends React.Component {
                     <div className="container-fluid p-0">
                       <div className="row gutters">
                         <div className="col-lg-6 col-sm-6">
-                          <a
-                            className="portfolio-box"
-                            href="images/portfolio/fullsize/4.jpg"
-                            onClick={this.handlePortfolioClick.bind(this, 3)}
-                          >
-                            <Img
-                              fluid={
-                                this.props.data.images.edges[3].node
-                                  .childImageSharp.fluid
-                              }
-                            />
-                            <div className="portfolio-box-caption">
-                              <div className="project-category text-white-50">
-                                Category
+                          <div className="col">
+                            <div class="card">
+                              <h4 class="hide-title">North</h4>
+                              <i class="fas fa-arrow-right">
+                                <JobsNowModal />
+                              </i>
+                              <p>a lonely trip.</p>
+                              <div class="pic">
+                                <Img
+                                  fluid={
+                                    this.props.data.images.edges[4].node
+                                      .childImageSharp.fluid
+                                  }
+                                />
                               </div>
-                              <div className="project-name"></div>
+                              <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                              <div class="social">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-github"></i>
+                              </div>
+                              <button></button>
                             </div>
-                          </a>
+                          </div>
                         </div>
                         <div className="col-lg-6 col-sm-6">
-                          <a
-                            className="portfolio-box"
-                            href="img/portfolio/fullsize/5.jpg"
-                            onClick={this.handlePortfolioClick.bind(this, 4)}
-                          >
-                            <Img
-                              fluid={
-                                this.props.data.images.edges[4].node
-                                  .childImageSharp.fluid
-                              }
-                            />
-                            <div className="portfolio-box-caption">
-                              <div className="project-category text-white-50">
-                                Category
+                          <div className="col">
+                            <div class="card">
+                              <h4 class="hide-title">North</h4>
+                              <i class="fas fa-arrow-right">
+                                <JobsNowModal />
+                              </i>
+                              <p>a lonely trip.</p>
+                              <div class="pic">
+                                <Img
+                                  fluid={
+                                    this.props.data.images.edges[3].node
+                                      .childImageSharp.fluid
+                                  }
+                                />
                               </div>
-                              <div className="project-name">Project Name</div>
+                              <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                              <div class="social">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-github"></i>
+                              </div>
+                              <button></button>
                             </div>
-                          </a>
+                          </div>
                         </div>
                         <div
                           className="col-lg-6 col-sm-6 mt-4

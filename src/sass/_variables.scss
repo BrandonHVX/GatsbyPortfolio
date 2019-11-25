@@ -2105,13 +2105,13 @@ i {
   transition: all 0.2s ease;
 }
 
-h2 {
+h4 {
   pointer-events: none;
 }
 
 .card {
   position: relative;
-  width: 500px;
+  width: 100%;
   height: 100%;
   background-color: #fff;
   overflow: hidden;
@@ -2155,7 +2155,7 @@ h2 {
       background-color: $bg-color;
     }
   }
-  h2 {
+  h4 {
     z-index: 99;
     font-family: "Poppins", sans-serif;
     position: absolute;
@@ -2163,7 +2163,7 @@ h2 {
     color: $orange;
     bottom: 0;
     right: 110px;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -2180,9 +2180,11 @@ h2 {
   p {
     z-index: 99;
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 70px;
+    padding-top: 40px;
     color: #333;
+
     opacity: 0.7;
     font-size: 12px;
     letter-spacing: 1px;
@@ -2193,7 +2195,7 @@ h2 {
   .pic {
     z-index: -0;
     width: 100%;
-    height: 200px;
+    height: 100%;
     background-image: url($img-url);
     background-size: 100% 100%;
     filter: grayscale(100%);
@@ -2268,6 +2270,8 @@ h2 {
 
   &:hover p {
     color: #fff;
+    transition: all 0.3s ease;
+    background-color: #000000;
   }
 
   &:hover .hide-title {
