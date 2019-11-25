@@ -2159,19 +2159,22 @@ h2 {
     z-index: 99;
     font-family: "Poppins", sans-serif;
     position: absolute;
+
+    color: $orange;
     bottom: 0;
-    right: 130px;
+    right: 110px;
     font-size: 60px;
     font-weight: 700;
-    color: #fff;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
 
   .fa-arrow-right {
     z-index: 100;
     position: absolute;
-    right: 75px;
+    right: 25px;
     bottom: 25px;
-    font-size: 40px;
+    font-size: 22px;
     cursor: pointer;
   }
   p {
@@ -2189,7 +2192,7 @@ h2 {
   }
   .pic {
     z-index: -0;
-    width: 400px;
+    width: 100%;
     height: 200px;
     background-image: url($img-url);
     background-size: 100% 100%;
@@ -2245,13 +2248,13 @@ h2 {
     bottom: 14px;
     width: 30px;
     height: 30px;
-    background-color: #ff5e00f3;
+    background-color: #ff5e00c5;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease;
-    mix-blend-mode: hard-light;
+    background-blend-mode: multiply;
 
     i {
       font-size: 3rem;
@@ -2259,11 +2262,17 @@ h2 {
   }
 
   &:hover button {
-    transform: scale(16.5);
+    transform: scale(10.5);
+    background-blend-mode: multiply;
   }
 
   &:hover p {
     color: #fff;
+  }
+
+  &:hover .hide-title {
+    display: none;
+    transition: all 0.3s ease;
   }
 
   &:hover .pic {

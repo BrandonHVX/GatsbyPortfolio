@@ -223,13 +223,7 @@ function JobsModal() {
 
   return (
     <div>
-      <Button
-        className="btn-modal"
-        variant="transparent"
-        onClick={() => setModalShow(true)}
-      >
-        View Project
-      </Button>
+      <a onClick={() => setModalShow(true)}>View Project</a>
 
       <Jobs show={modalShow} onHide={() => setModalShow(false)} />
     </div>

@@ -435,8 +435,10 @@ export default class IndexPage extends React.Component {
                       <div className="row gutters justify-content-md-center">
                         <div className="col-md-6 d-flex justify-content-center">
                           <div class="card">
-                            <h2>North</h2>
-                            <i class="fas fa-arrow-right"></i>
+                            <h2 class="hide-title">North</h2>
+                            <i class="fas fa-arrow-right">
+                              <JobsNowModal />
+                            </i>
                             <p>a lonely trip.</p>
                             <div class="pic">
                               <Img
@@ -524,7 +526,7 @@ export default class IndexPage extends React.Component {
                               <i class="fab fa-instagram"></i>
                               <i class="fab fa-github"></i>
                             </div>
-                            <button></button>
+                            <button> </button> <p>a lonely trip.</p>
                           </div>
                         </div>
                       </div>
