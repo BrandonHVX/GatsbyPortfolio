@@ -2081,6 +2081,226 @@ button.bg-secondary:focus {
 
 /////////////cards/////////////////////
 
+// $bg-color: #e6e5e1;
+// $shdow-gray: #d3d3d5;
+// $orange: #da4d1d;
+// $blue: #2b26c3;
+// $img-url: "https://images.unsplash.com/photo-1525543907410-b2562b6796d6?ixlib=rb-0.3.5&s=9ff8e5e718a6a40cbd0e1471235912f4&auto=format&fit=crop&w=3452&q=80";
+// $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80";
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// i {
+//   opacity: 0;
+// }
+
+// h4 {
+//   pointer-events: none;
+// }
+
+// .card {
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   background-color: #fff;
+//   overflow: hidden;
+//   margin-bottom: 4px;
+
+//   &:before {
+//     content: "";
+//     z-index: 99;
+//     position: absolute;
+//     top: -10px;
+//     left: 32px;
+//     display: block;
+//     width: 16px;
+//     height: 16px;
+//     border-radius: 16px;
+//     background-color: $bg-color;
+//   }
+//   &:after {
+//     content: "";
+//     z-index: 99;
+//     position: absolute;
+//     bottom: -10px;
+//     left: 32px;
+//     display: block;
+//     width: 16px;
+//     height: 16px;
+//     border-radius: 16px;
+//     background-color: $bg-color;
+//   }
+//   ul {
+//     z-index: 99;
+//     position: absolute;
+//     left: 39px;
+//     top: 5px;
+//     list-style-type: none;
+//     li {
+//       width: 2px;
+//       height: 2px;
+//       border-radius: 2px;
+//       margin: 6px 0;
+//       background-color: $bg-color;
+//     }
+//   }
+//   h4 {
+//     z-index: 99;
+
+//     position: absolute;
+
+//     color: $orange;
+//     bottom: 0;
+//     right: 110px;
+//     font-size: 40px;
+//     font-weight: 700;
+//     -webkit-transition: all 0.2s ease;
+//     transition: all 0.2s ease;
+//   }
+
+//   .right {
+//     z-index: 100;
+//     position: absolute;
+//     right: 25px;
+//     bottom: 18px;
+
+//     cursor: pointer;
+//   }
+//   p {
+//     z-index: 99;
+//     position: absolute;
+//     top: 0px;
+//     right: 70px;
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//     color: #333;
+
+//     letter-spacing: 0.2em;
+//     opacity: 0.7;
+//     font-size: 8px;
+//     letter-spacing: 1px;
+//     writing-mode: vertical-lr;
+//     -webkit-transition: all 0.2s ease;
+//     transition: all 0.2s ease;
+//   }
+//   .pic {
+//     z-index: -0;
+//     width: 100%;
+//     height: 100%;
+//     background-image: url($img-url);
+//     background-size: 100% 100%;
+//     filter: grayscale(100%);
+//   }
+
+//   .social {
+//     position: absolute;
+//     left: 60px;
+//     top: 0;
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -ms-flex-pack: distribute;
+//     justify-content: space-around;
+//     -webkit-box-align: center;
+//     -ms-flex-align: center;
+//     align-items: center;
+//     width: 180px;
+//     height: 64px;
+//     border-radius: 80px;
+//   }
+
+//   .social i:nth-of-type(1) {
+//     -webkit-transition-delay: 0.4s;
+//     transition-delay: 0.4s;
+//   }
+
+//   .social i:nth-of-type(2) {
+//     -webkit-transition-delay: 0.3s;
+//     transition-delay: 0.3s;
+//   }
+
+//   .social i:nth-of-type(3) {
+//     -webkit-transition-delay: 0.2s;
+//     transition-delay: 0.2s;
+//   }
+
+//   .social i:nth-of-type(4) {
+//     -webkit-transition-delay: 0.1s;
+//     transition-delay: 0.1s;
+//   }
+
+//   &:hover i {
+//     opacity: 1;
+//     -webkit-transform: scale(1);
+//     transform: scale(1);
+//   }
+
+//   button {
+//     position: absolute;
+//     right: 14px;
+//     bottom: 14px;
+//     width: 30px;
+//     height: 30px;
+//     background-color: #ff5e00f0;
+//     border: none;
+//     border-radius: 30px;
+//     cursor: pointer;
+//     outline: none;
+//     transition: all 0.3s ease;
+
+//     i {
+//       font-size: 3rem;
+//     }
+//   }
+
+//   &:hover button {
+//     transform: scaleX(90.5);
+//     border-radius: 0px;
+//     position: absolute;
+//     height: 55px;
+//     background-blend-mode: multiply;
+//   }
+
+//   &:hover p {
+//     color: #fff;
+//     transition: all 0.3s ease;
+//     background-color: #000000;
+//   }
+
+//   &:hover .hide-title {
+//     display: none;
+//     transition: all 0.3s ease;
+//   }
+
+//   &:hover .pic {
+//     filter: grayscale(0);
+//   }
+// }
+
+// .card2 {
+//   .pic {
+//     background-image: url($img-url2);
+//   }
+//   button {
+//     background-color: $blue;
+//   }
+// }
+
+// .dr {
+//   position: absolute;
+//   bottom: 16px;
+//   right: 16px;
+//   width: 100px;
+// }
+
+// .projects-tabs {
+//   background-color: "red";
+// }
+
 $bg-color: #e6e5e1;
 $shdow-gray: #d3d3d5;
 $orange: #da4d1d;
@@ -2105,7 +2325,7 @@ i {
   transition: all 0.2s ease;
 }
 
-h4 {
+h2 {
   pointer-events: none;
 }
 
@@ -2155,42 +2375,34 @@ h4 {
       background-color: $bg-color;
     }
   }
-  h4 {
+  h2 {
     z-index: 99;
     font-family: "Poppins", sans-serif;
     position: absolute;
-
-    color: $orange;
     bottom: 0;
-    right: 110px;
-    font-size: 40px;
+    right: 130px;
+    font-size: 60px;
     font-weight: 700;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    color: #fff;
   }
 
-  .right {
+  .fa-arrow-right {
     z-index: 100;
     position: absolute;
-    right: 25px;
-    font-family: "Poppins", sans-serif;
-    bottom: 18px;
-
-    font-size: 12px;
+    right: 15px;
+    bottom: 25px;
+    font-size: 20px;
     cursor: pointer;
   }
+
   p {
     z-index: 99;
     position: absolute;
-    top: 0px;
-    right: 70px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    top: 20px;
+    right: 20px;
     color: #333;
-
-    letter-spacing: 0.2em;
     opacity: 0.7;
-    font-size: 8px;
+    font-size: 12px;
     letter-spacing: 1px;
     writing-mode: vertical-lr;
     -webkit-transition: all 0.2s ease;
@@ -2254,7 +2466,7 @@ h4 {
     bottom: 14px;
     width: 30px;
     height: 30px;
-    background-color: #ff5e00f0;
+    background-color: #f4623aea;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -2267,22 +2479,18 @@ h4 {
   }
 
   &:hover button {
-    transform: scaleX(90.5);
-    border-radius: 0px;
-    position: absolute;
-    height: 55px;
-    background-blend-mode: multiply;
-  }
-
-  &:hover p {
-    color: #fff;
-    transition: all 0.3s ease;
-    background-color: #000000;
+    transform: scale(10.5);
+    right: 14px;
+    bottom: 14px;
   }
 
   &:hover .hide-title {
     display: none;
     transition: all 0.3s ease;
+  }
+
+  &:hover p {
+    color: #fff;
   }
 
   &:hover .pic {
@@ -2304,8 +2512,4 @@ h4 {
   bottom: 16px;
   right: 16px;
   width: 100px;
-}
-
-.projects-tabs {
-  background-color: "red";
 }

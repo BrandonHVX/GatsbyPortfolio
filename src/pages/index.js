@@ -320,7 +320,13 @@ export default class IndexPage extends React.Component {
             <h2>North</h2>
             <i class="fas fa-arrow-right"></i>
             <p>a lonely trip.</p>
-            <div class="pic"></div>
+            <div class="pic">
+              <Img
+                fluid={
+                  this.props.data.images.edges[4].node.childImageSharp.fluid
+                }
+              />
+            </div>
             <ul>
               <li></li>
               <li></li>
@@ -425,23 +431,18 @@ export default class IndexPage extends React.Component {
               <Tab.Content style={{ margin: "40px auto" }}>
                 <Tab.Pane eventKey="first">
                   <section id="portfolio">
-                    <div className="container-fluid p-0">
+                    <div>
                       <div className="row gutters">
-                        <div className="col-lg-6 col-sm-6">
+                        <div className="col-lg-6 col-md-6">
                           <div className="col">
                             <div class="card">
-                              <h4 class="hide-title">North</h4>
-                              <i class="right">
-                                <div class="row row-no-gutters">
-                                  <div class="col-xs-6 mr-5"></div>
-                                  <div class="col-xs-6 mr-2">
-                                    {" "}
-                                    <h5>Bands by Taylor Alexandria</h5>
-                                    <JobsNowModal />
-                                  </div>
-                                </div>
+                              <h2 class="hide-title">North</h2>
+
+                              <i class="fas fa-arrow-right">
+                                Bands by Taylor Alexandra
+                                <JobsNowModal />
                               </i>
-                              <p>Web Development</p>
+                              <p>a lonely trip.</p>
                               <div class="pic">
                                 <Img
                                   fluid={
@@ -475,25 +476,24 @@ export default class IndexPage extends React.Component {
                                 <li></li>
                                 <li></li>
                               </ul>
-
+                              <div class="social">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-github"></i>
+                              </div>
                               <button></button>
                             </div>
                           </div>
                         </div>
-                        <div className="col-lg-6 col-sm-6">
+                        <div className="col-lg-6 col-md-6">
                           <div className="col">
                             <div class="card">
-                              <h4 class="hide-title">North</h4>
-                              <i class="right">
-                                <div class="row row-no-gutters">
-                                  <div class="col-xs-6 mr-5"></div>
-                                  <div class="col-xs-6 mr-2">
-                                    {" "}
-                                    <JobsNowModal />
-                                  </div>
-                                </div>
+                              <h2>North</h2>
+                              <i class="fas fa-arrow-right">
+                                <JobsNowModal />
                               </i>
-                              <p>Web Development</p>
+                              <p>a lonely trip.</p>
                               <div class="pic">
                                 <Img
                                   fluid={
@@ -527,33 +527,15 @@ export default class IndexPage extends React.Component {
                                 <li></li>
                                 <li></li>
                               </ul>
-
+                              <div class="social">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-github"></i>
+                              </div>
                               <button></button>
                             </div>
                           </div>
-                        </div>
-                        <div
-                          className="col-lg-6 col-sm-6 mt-4
-                        "
-                        >
-                          <a
-                            className="portfolio-box"
-                            href="img/portfolio/fullsize/6.jpg"
-                            onClick={this.handlePortfolioClick.bind(this, 5)}
-                          >
-                            <Img
-                              fluid={
-                                this.props.data.images.edges[5].node
-                                  .childImageSharp.fluid
-                              }
-                            />
-                            <div className="portfolio-box-caption p-3">
-                              <div className="project-category text-white-50">
-                                Category
-                              </div>
-                              <div className="project-name">Project Name</div>
-                            </div>
-                          </a>
                         </div>
                       </div>
                     </div>
