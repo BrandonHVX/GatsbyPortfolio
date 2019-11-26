@@ -2169,12 +2169,14 @@ h4 {
     transition: all 0.2s ease;
   }
 
-  .fa-arrow-right {
+  .right {
     z-index: 100;
     position: absolute;
     right: 25px;
-    bottom: 25px;
-    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    bottom: 18px;
+
+    font-size: 12px;
     cursor: pointer;
   }
   p {
@@ -2182,11 +2184,13 @@ h4 {
     position: absolute;
     top: 0px;
     right: 70px;
-    padding-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #333;
 
+    letter-spacing: 0.2em;
     opacity: 0.7;
-    font-size: 12px;
+    font-size: 8px;
     letter-spacing: 1px;
     writing-mode: vertical-lr;
     -webkit-transition: all 0.2s ease;
@@ -2250,13 +2254,12 @@ h4 {
     bottom: 14px;
     width: 30px;
     height: 30px;
-    background-color: #ff5e00c5;
+    background-color: #ff5e00f0;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease;
-    background-blend-mode: multiply;
 
     i {
       font-size: 3rem;
@@ -2264,7 +2267,10 @@ h4 {
   }
 
   &:hover button {
-    transform: scale(10.5);
+    transform: scaleX(90.5);
+    border-radius: 0px;
+    position: absolute;
+    height: 55px;
     background-blend-mode: multiply;
   }
 
@@ -2298,4 +2304,8 @@ h4 {
   bottom: 16px;
   right: 16px;
   width: 100px;
+}
+
+.projects-tabs {
+  background-color: "red";
 }

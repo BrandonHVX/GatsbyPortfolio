@@ -58,18 +58,12 @@ import ReactPlayer from "react-player"
 
 const navtabs = {
   display: "flex",
-
+  color: "red",
   justifyContent: "center",
 }
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "center",
-}
-
-const text = {
-  fontSize: "20px",
-  marginTop: "20px",
-  marginRight: "10px",
 }
 
 export default class IndexPage extends React.Component {
@@ -411,7 +405,7 @@ export default class IndexPage extends React.Component {
           <div class="col-md-12 heading-section text-center">
             <h1 class="heading">Projects</h1>
           </div>
-          <div style={text}>
+          <div>
             <Tab.Container defaultActiveKey="first">
               <Nav variant="pills" style={navtabs}>
                 <Nav.Item>
@@ -431,20 +425,27 @@ export default class IndexPage extends React.Component {
               <Tab.Content style={{ margin: "40px auto" }}>
                 <Tab.Pane eventKey="first">
                   <section id="portfolio">
-                    <div className="container-fluid ">
+                    <div className="container-fluid p-0">
                       <div className="row gutters">
                         <div className="col-lg-6 col-sm-6">
                           <div className="col">
                             <div class="card">
                               <h4 class="hide-title">North</h4>
-                              <i class="fas fa-arrow-right">
-                                <JobsNowModal />
+                              <i class="right">
+                                <div class="row row-no-gutters">
+                                  <div class="col-xs-6 mr-5"></div>
+                                  <div class="col-xs-6 mr-2">
+                                    {" "}
+                                    <h5>Bands by Taylor Alexandria</h5>
+                                    <JobsNowModal />
+                                  </div>
+                                </div>
                               </i>
-                              <p>a lonely trip.</p>
+                              <p>Web Development</p>
                               <div class="pic">
                                 <Img
                                   fluid={
-                                    this.props.data.images.edges[1].node
+                                    this.props.data.images.edges[4].node
                                       .childImageSharp.fluid
                                   }
                                 />
@@ -474,12 +475,7 @@ export default class IndexPage extends React.Component {
                                 <li></li>
                                 <li></li>
                               </ul>
-                              <div class="social">
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-instagram"></i>
-                                <i class="fab fa-github"></i>
-                              </div>
+
                               <button></button>
                             </div>
                           </div>
@@ -488,14 +484,20 @@ export default class IndexPage extends React.Component {
                           <div className="col">
                             <div class="card">
                               <h4 class="hide-title">North</h4>
-                              <i class="fas fa-arrow-right">
-                                <JobsNowModal />
+                              <i class="right">
+                                <div class="row row-no-gutters">
+                                  <div class="col-xs-6 mr-5"></div>
+                                  <div class="col-xs-6 mr-2">
+                                    {" "}
+                                    <JobsNowModal />
+                                  </div>
+                                </div>
                               </i>
-                              <p>a lonely trip.</p>
+                              <p>Web Development</p>
                               <div class="pic">
                                 <Img
                                   fluid={
-                                    this.props.data.images.edges[2].node
+                                    this.props.data.images.edges[4].node
                                       .childImageSharp.fluid
                                   }
                                 />
@@ -525,15 +527,33 @@ export default class IndexPage extends React.Component {
                                 <li></li>
                                 <li></li>
                               </ul>
-                              <div class="social">
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-instagram"></i>
-                                <i class="fab fa-github"></i>
-                              </div>
+
                               <button></button>
                             </div>
                           </div>
+                        </div>
+                        <div
+                          className="col-lg-6 col-sm-6 mt-4
+                        "
+                        >
+                          <a
+                            className="portfolio-box"
+                            href="img/portfolio/fullsize/6.jpg"
+                            onClick={this.handlePortfolioClick.bind(this, 5)}
+                          >
+                            <Img
+                              fluid={
+                                this.props.data.images.edges[5].node
+                                  .childImageSharp.fluid
+                              }
+                            />
+                            <div className="portfolio-box-caption p-3">
+                              <div className="project-category text-white-50">
+                                Category
+                              </div>
+                              <div className="project-name">Project Name</div>
+                            </div>
+                          </a>
                         </div>
                       </div>
                     </div>
