@@ -438,15 +438,14 @@ export default class IndexPage extends React.Component {
                             <div class="card">
                               <h2 class="hide-title">North</h2>
 
-                              <i class="fas fa-arrow-right">
-                                Bands by Taylor Alexandra
+                              <div class="arrow-right">
                                 <JobsNowModal />
-                              </i>
+                              </div>
                               <p>a lonely trip.</p>
                               <div class="pic">
                                 <Img
                                   fluid={
-                                    this.props.data.images.edges[4].node
+                                    this.props.data.images.edges[1].node
                                       .childImageSharp.fluid
                                   }
                                 />
@@ -482,6 +481,8 @@ export default class IndexPage extends React.Component {
                                 <i class="fab fa-instagram"></i>
                                 <i class="fab fa-github"></i>
                               </div>
+                              <div class="overlay-text">Jobs Now</div>
+
                               <button></button>
                             </div>
                           </div>
@@ -489,15 +490,16 @@ export default class IndexPage extends React.Component {
                         <div className="col-lg-6 col-md-6">
                           <div className="col">
                             <div class="card">
-                              <h2>North</h2>
-                              <i class="fas fa-arrow-right">
+                              <h2 class="hide-title">North</h2>
+
+                              <div class="arrow-right">
                                 <JobsNowModal />
-                              </i>
+                              </div>
                               <p>a lonely trip.</p>
                               <div class="pic">
                                 <Img
                                   fluid={
-                                    this.props.data.images.edges[4].node
+                                    this.props.data.images.edges[2].node
                                       .childImageSharp.fluid
                                   }
                                 />

@@ -27,7 +27,9 @@ import {
 import Scroller from "../../components/scroller"
 import imacscreen from "../../images/imac-screen.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons"
+import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons"
 import { Parallax, Background } from "react-parallax"
 import ReactPlayer from "react-player"
 
@@ -223,8 +225,22 @@ function JobsModal() {
 
   return (
     <div>
-      <a onClick={() => setModalShow(true)}>View Project</a>
-
+      <a
+        onClick={() => setModalShow(true)}
+        style={{
+          letterSpacing: "1px",
+          textTransform: "uppercase",
+        }}
+      >
+        {" "}
+        View Project
+      </a>
+      <FontAwesomeIcon
+        icon={faArrowAltCircleRight}
+        style={{
+          marginLeft: "5px",
+        }}
+      />
       <Jobs show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   )
