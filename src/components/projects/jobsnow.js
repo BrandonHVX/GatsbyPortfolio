@@ -93,124 +93,122 @@ function Jobs(props) {
         <div>
           <JobsImage />
 
-          
-            <div class="page-holder">
-              <section class="hero">
-                <div class="container">
-                  <div id="page-3" class="page three">
+          <div>
+            <section>
+              <div class="container">
+                <div id="page-3" class="page three">
+                  <p class="lead mt-5 font-weight-light">
+                    With Jobs Now you can create a career profile, post a job,
+                    and like or comment on a post of your interest.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="features">
+              <div class="container">
+                <div id="page-3" class="page three">
+                  <h2 class="heading" style={{ textAlign: "center" }}>
+                    Technology
+                  </h2>
+
+                  <div class="row  text-center">
+                    <div class="col-lg-4">
+                      <div class="features-item mb-5 mb-lg-0">
+                        <div>
+                          <img src={mongo} alt="" width={80} />
+                        </div>
+                        <h3 class="h5">MongoDB</h3>
+                        <p>
+                          NonSQL database for storing our users, profiles,
+                          posts, likes and comment data.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="features-item mb-5 mb-lg-0">
+                        <div>
+                          <img src={ex} alt="" width={175} />
+                        </div>
+                        <h3 class="h5">Express.Js</h3>
+                        <p>
+                          Javascript framework running on Node used for our
+                          back-end server routes and communication with MongooDB
+                          database.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                      <div class="features-item mb-5 mb-lg-0">
+                        <div>
+                          <img src={reactsvg} alt="" width={80} />
+                        </div>
+                        <h3 class="h5">React.Js</h3>
+                        <p>
+                          Javascript libaray used to develop our user interface
+                          and experience for front-end development.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="features-item mb-5 mb-lg-0">
+                        <div>
+                          <img src={node} alt="" width={80} />
+                        </div>
+                        <h3 class="h5">Node.Js</h3>
+                        <p>
+                          Javascript run-time environment for the server-side
+                          execution of our web application.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="features-item mb-5 mb-lg-0">
+                        <div>
+                          <img src={bootstrap} alt="" width={80} />
+                        </div>
+                        <h3 class="h5">Bootstrap</h3>
+                        <p>
+                          Based HTML and CSS use for our moblie responsive
+                          layout, colors, buttons, forms, text and navigation
+                          components.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="gallery" style={{ backgroundColor: "#050aab" }}>
+              <div class="container text-center">
+                <div class="row align-items-center text-white">
+                  <div class="col-lg-6">
+                    <h2 class="hero-heading">Moblie Responsive</h2>
                     <p class="lead mt-5 font-weight-light">
-                      With Jobs Now you can create a career profile, post a job,
-                      and like or comment on a post of your interest.
+                      With ShowTrackr you can track your favorite TV shows
+                      automatically, so you never loose track of your TV shows
+                      ever again. 🍿
                     </p>
                   </div>
-                </div>
-              </section>
-
-              <section class="features">
-                <div class="container">
-                  <div id="page-3" class="page three">
-                    <h2 class="heading" style={{ textAlign: "center" }}>
-                      Technology
-                    </h2>
-
-                    <div class="row  text-center">
-                      <div class="col-lg-4">
-                        <div class="features-item mb-5 mb-lg-0">
-                          <div>
-                            <img src={mongo} alt="" width={80} />
-                          </div>
-                          <h3 class="h5">MongoDB</h3>
-                          <p>
-                            NonSQL database for storing our users, profiles,
-                            posts, likes and comment data.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="features-item mb-5 mb-lg-0">
-                          <div>
-                            <img src={ex} alt="" width={175} />
-                          </div>
-                          <h3 class="h5">Express.Js</h3>
-                          <p>
-                            Javascript framework running on Node used for our
-                            back-end server routes and communication with
-                            MongooDB database.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 mb-5">
-                        <div class="features-item mb-5 mb-lg-0">
-                          <div>
-                            <img src={reactsvg} alt="" width={80} />
-                          </div>
-                          <h3 class="h5">React.Js</h3>
-                          <p>
-                            Javascript libaray used to develop our user
-                            interface and experience for front-end development.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="features-item mb-5 mb-lg-0">
-                          <div>
-                            <img src={node} alt="" width={80} />
-                          </div>
-                          <h3 class="h5">Node.Js</h3>
-                          <p>
-                            Javascript run-time environment for the server-side
-                            execution of our web application.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="features-item mb-5 mb-lg-0">
-                          <div>
-                            <img src={bootstrap} alt="" width={80} />
-                          </div>
-                          <h3 class="h5">Bootstrap</h3>
-                          <p>
-                            Based HTML and CSS use for our moblie responsive
-                            layout, colors, buttons, forms, text and navigation
-                            components.
-                          </p>
+                  <div class="col-lg-6 d-lg-block">
+                    <div class="device-wrapper mx-auto">
+                      <div
+                        data-device="iPhone7-2"
+                        data-orientation="portrait"
+                        data-color="black"
+                        class="device"
+                      >
+                        <div class="screen">
+                          <img alt="..." class="img-fluid" />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </section>
-
-              <section class="gallery" style={{ backgroundColor: "#050aab" }}>
-                <div class="container text-center">
-                  <div class="row align-items-center text-white">
-                    <div class="col-lg-6">
-                      <h2 class="hero-heading">Moblie Responsive</h2>
-                      <p class="lead mt-5 font-weight-light">
-                        With ShowTrackr you can track your favorite TV shows
-                        automatically, so you never loose track of your TV shows
-                        ever again. 🍿
-                      </p>
-                    </div>
-                    <div class="col-lg-6 d-lg-block">
-                      <div class="device-wrapper mx-auto">
-                        <div
-                          data-device="iPhone7-2"
-                          data-orientation="portrait"
-                          data-color="black"
-                          class="device"
-                        >
-                          <div class="screen">
-                            <img alt="..." class="img-fluid" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-          
+              </div>
+            </section>
+          </div>
         </div>
       </Modal.Body>
       <Modal.Footer style={{ color: "white", backgroundColor: "#00000072" }}>
