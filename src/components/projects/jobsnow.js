@@ -95,7 +95,7 @@ function Jobs(props) {
 
           <div>
             <section>
-              <div class="container">
+              <div>
                 <div>
                   <p class="lead mt-5 font-weight-light">
                     With Jobs Now you can create a career profile, post a job,
