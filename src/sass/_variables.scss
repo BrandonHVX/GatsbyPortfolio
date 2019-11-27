@@ -325,7 +325,8 @@ section {
 }
 
 .page-holder {
-  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .shape-1 {
