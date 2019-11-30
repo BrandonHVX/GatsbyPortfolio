@@ -403,7 +403,10 @@ export default class IndexPage extends React.Component {
                               <div class="arrow-right">
                                 <JobsNowModal />
                               </div>
-                              <p class="pg">a lonely trip.</p>
+                              <h4 class="pg-title">NYX NEWS</h4>
+                              <p class="pg-text">
+                                Career Networking web application.
+                              </p>
                               <div class="pic">
                                 <Img
                                   fluid={
