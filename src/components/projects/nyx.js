@@ -26,7 +26,9 @@ import {
 } from "react-bootstrap"
 import Scroller from "../../components/scroller"
 import imacscreen from "../../images/imac-screen.jpg"
+import { faArrowAltCircleRight } from "@fortawesome/react-fontawesome"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons"
 import { Parallax, Background } from "react-parallax"
 import ReactPlayer from "react-player"
@@ -225,29 +227,37 @@ function Nyx(props) {
 }
 
 function NyxModal() {
-  const [modalShow, setModalShow] = React.useState(false)
+  const [modalShowNyx, setModalShowNyx] = React.useState(false)
 
   return (
     <div>
-      <Button
-        className="btn-modal"
-        variant="transparent"
-        onClick={() => setModalShow(true)}
+      <a
+        onClick={() => setModalShowNyx(true)}
+        style={{
+          letterSpacing: "1px",
+          textTransform: "uppercase",
+        }}
       >
+        {" "}
         View Project
-      </Button>
-
-      <Nyx show={modalShow} onHide={() => setModalShow(false)} />
+      </a>
+      <FontAwesomeIcon
+        icon={faArrowAltCircleRight}
+        style={{
+          marginLeft: "5px",
+        }}
+      />
+      <Nyx show={modalShowNyx} onHide={() => setModalShowNyx(false)} />
     </div>
   )
 }
 
-export default class Jobsnow extends Component {
+export default class NyxNews extends Component {
   constructor(props) {
     super(props)
     Scroller.handleAnchorScroll = Scroller.handleAnchorScroll.bind(this)
     this.state = {
-      modalShow: false,
+      modalShowNyx: false,
       modalCurrent: 0,
     }
     this.handlePortfolioClick = this.handlePortfolioClick.bind(this)
@@ -261,7 +271,7 @@ export default class Jobsnow extends Component {
 
   setModal(isShown, current) {
     this.setState({
-      modalShow: isShown,
+      modalShowNyx: isShown,
       modalCurrent: current,
     })
   }

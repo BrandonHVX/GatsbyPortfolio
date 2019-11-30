@@ -79,7 +79,7 @@ function Jobs(props) {
         >
           <Modal.Header
             closeButton
-            style={{ color: "black", backgroundColor: "white" }}
+            style={{ color: "white", backgroundColor: "#000000c6" }}
           >
             <Modal.Title id="contained-modal-title-vcenter">
               <h2 className="text-uppercase text-black font-weight-bold">
@@ -89,13 +89,13 @@ function Jobs(props) {
           </Modal.Header>
 
           <div class="text-black " style={{ backgroundColor: "white" }}>
-            <div class="container"></div>
+            <div class="container">
+              <JobsImage />
+            </div>
           </div>
 
           <Modal.Body style={{ color: "black", backgroundColor: "white" }}>
             <div>
-              <JobsImage />
-
               <div>
                 <section>
                   <div>
@@ -139,7 +139,9 @@ function Jobs(props) {
               </div>
             </div>
           </Modal.Body>
-          <Modal.Footer style={{ color: "white", backgroundColor: "white" }}>
+          <Modal.Footer
+            style={{ color: "white", backgroundColor: "#000000c6" }}
+          >
             <Button onClick={props.onHide}>
               <i class="fab fa-github" style={{ margin: "2px" }}></i> GitHub
             </Button>
@@ -168,12 +170,7 @@ function JobsModal() {
         {" "}
         View Project
       </a>
-      <FontAwesomeIcon
-        icon={faArrowAltCircleRight}
-        style={{
-          marginLeft: "5px",
-        }}
-      />
+
       <Jobs show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   )

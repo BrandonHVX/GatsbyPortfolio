@@ -484,11 +484,15 @@ section {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: $orange;
+  background: #540cfa;
   display: block;
-
+  opacity: 1;
   padding: 0;
   outline: none;
+}
+
+.modal-content .close span {
+  color: #fff;
 }
 
 /*
@@ -646,6 +650,7 @@ section {
 }
 
 .showcase-link i {
+  color: rgba(84, 12, 250, 0.5);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   font-size: 1.5rem;
@@ -663,6 +668,7 @@ section {
 
 .showcase-link.active i,
 .showcase-link:hover i {
+  color: #540cfa;
 }
 
 /*
@@ -2506,7 +2512,6 @@ h2 {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
-    background-color: #c74905;
   }
 
   button {
@@ -2583,7 +2588,6 @@ h2 {
 
 .modal-page {
   overflow-y: scroll;
-  background-color: #fff;
   -webkit-overflow-scrolling: touch;
   height: 100%;
 }

@@ -401,7 +401,7 @@ export default class IndexPage extends React.Component {
                           <div className="col">
                             <div class="card">
                               <div class="arrow-right">
-                                <JobsNowModal />
+                                <NyxModal />
                               </div>
                               <h4 class="pg-title">NYX NEWS</h4>
                               <p class="pg-text">
@@ -461,8 +461,8 @@ export default class IndexPage extends React.Component {
                         <div className="col-lg-6 col-sm-6">
                           <div className="col">
                             <div class="card">
-                              <i class="fas fa-arrow-right">
-                                <JobsNowModal />
+                              <i class="arrow-right">
+                                <NyxModal />
                               </i>
                               <p>a lonely trip.</p>
                               <div class="pic">
