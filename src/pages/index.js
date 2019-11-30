@@ -162,7 +162,7 @@ export default class IndexPage extends React.Component {
         </section>
 
         <div />
-        <section id="services-section">
+        <section id="services">
           <div class="container-fluid px-md-5">
             <div class="row justify-content-center py-5 mt-5">
               <div class="col-md-12 heading-section text-center ">
@@ -349,7 +349,7 @@ export default class IndexPage extends React.Component {
                               <div class="arrow-right">
                                 <JobsNowModal />
                               </div>
-                              <p>a lonely trip.</p>
+                              <p>WEB DEVELOPMENT</p>
                               <div class="pic">
                                 <Img
                                   fluid={
@@ -389,8 +389,17 @@ export default class IndexPage extends React.Component {
                                 <i class="fab fa-instagram"></i>
                                 <i class="fab fa-github"></i>
                               </div>
-                              <div class="overlay-text">Jobs Now</div>
-
+                              <div class="social-2">
+                                <div>
+                                  <strong>
+                                    <h3>JobsNow</h3>
+                                  </strong>
+                                  <div>
+                                    Career networking site developed for
+                                    business professionals
+                                  </div>
+                                </div>
+                              </div>
                               <button></button>
                             </div>
                           </div>
@@ -513,7 +522,7 @@ export default class IndexPage extends React.Component {
                               <i class="fas fa-arrow-right">
                                 <JobsNowModal />
                               </i>
-                              <p>a lonely trip.</p>
+                              <p> a lonely </p>
                               <div class="pic">
                                 <Img
                                   fluid={
@@ -725,11 +734,8 @@ export default class IndexPage extends React.Component {
           </div>
         </section>
 
-        <section className="page-section-resume" id="services">
-          <section
-            class="ftco-section ftco-no-pb goto-here"
-            id="resume-section"
-          >
+        <section>
+          <section class="page-section" id="resume">
             <div class="container">
               <div class="col-md-12 heading-section text-center ">
                 <h1 class="heading">Resume</h1>
