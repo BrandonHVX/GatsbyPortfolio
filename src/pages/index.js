@@ -344,12 +344,15 @@ export default class IndexPage extends React.Component {
                         <div className="col-lg-6 col-md-6">
                           <div className="col">
                             <div class="card">
-                              <h2 class="hide-title">North</h2>
-
                               <div class="arrow-right">
                                 <JobsNowModal />
                               </div>
-                              <p>WEB DEVELOPMENT</p>
+
+                              <h4 class="pg-title">JOBS NOW</h4>
+                              <p class="pg-text">
+                                Career Networking web application.
+                              </p>
+
                               <div class="pic">
                                 <Img
                                   fluid={
@@ -389,17 +392,7 @@ export default class IndexPage extends React.Component {
                                 <i class="fab fa-instagram"></i>
                                 <i class="fab fa-github"></i>
                               </div>
-                              <div class="social-2">
-                                <div>
-                                  <strong>
-                                    <h3>JobsNow</h3>
-                                  </strong>
-                                  <div>
-                                    Career networking site developed for
-                                    business professionals
-                                  </div>
-                                </div>
-                              </div>
+
                               <button></button>
                             </div>
                           </div>
@@ -407,12 +400,10 @@ export default class IndexPage extends React.Component {
                         <div className="col-lg-6 col-md-6">
                           <div className="col">
                             <div class="card">
-                              <h2 class="hide-title">North</h2>
-
                               <div class="arrow-right">
                                 <JobsNowModal />
                               </div>
-                              <p>a lonely trip.</p>
+                              <p class="pg">a lonely trip.</p>
                               <div class="pic">
                                 <Img
                                   fluid={
@@ -467,7 +458,6 @@ export default class IndexPage extends React.Component {
                         <div className="col-lg-6 col-sm-6">
                           <div className="col">
                             <div class="card">
-                              <h4 class="hide-title">North</h4>
                               <i class="fas fa-arrow-right">
                                 <JobsNowModal />
                               </i>
@@ -518,11 +508,16 @@ export default class IndexPage extends React.Component {
                         <div className="col-lg-6 col-sm-6">
                           <div className="col">
                             <div class="card">
-                              <h4 class="hide-title">North</h4>
                               <i class="fas fa-arrow-right">
                                 <JobsNowModal />
                               </i>
                               <p> a lonely </p>
+                              <div className="portfolio-box-caption p-3">
+                                <div className="project-category text-white-50">
+                                  Category
+                                </div>
+                                <div className="project-name">Project Name</div>
+                              </div>
                               <div class="pic">
                                 <Img
                                   fluid={
