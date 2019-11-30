@@ -73,7 +73,7 @@ function Jobs(props) {
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
-        class=" bg-secondary mb-3"
+        class="modal-page bg-secondary mb-3"
       >
         <Modal.Header
           closeButton
