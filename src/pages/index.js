@@ -99,59 +99,39 @@ export default class IndexPage extends React.Component {
             class="ftco-about img ftco-section ftco-no-pt ftco-no-pb"
             id="about-section"
           >
-            <div class="container">
-              {" "}
-              <div class="row d-flex no-gutters">
-                <div class="col-md-6 col-lg-6 d-flex justify-content-center">
-                  <Image />
+            <div class="container portfolio">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="heading-pic">
+                    <img src="https://image.ibb.co/cbCMvA/logo.png" />
+                  </div>
                 </div>
-
-                <div class="col-md-6 col-lg-6 pl-md-5 py-5">
-                  <div class="row justify-content-start pb-3">
-                    <div class="col-md-12 heading-section">
-                      <h2 class="mb-4">About Me</h2>
-                      <p>
-                        {" "}
-                        Creative self-motivated professional with
-                        cross-functional skills including expertise in digital
-                        media, video production, full stack web development,
-                        graphic design, marketing, project management and client
-                        engagement.
-                      </p>
-                      <ul class="about-info mt-4 px-md-0 px-2">
-                        <li class="d-flex">
-                          <span>Name:</span> <span>Brandon Gines </span>
-                        </li>
-                        <li class="d-flex">
-                          <span>Date of birth:</span>{" "}
-                          <span>November 28, 1989</span>
-                        </li>
-                        <li class="d-flex">
-                          <span>Address:</span> <span>Miami, FL 33138 USA</span>
-                        </li>
-                        <li class="d-flex">
-                          <span>Email:</span>{" "}
-                          <span>
-                            <a href="mailto: brandongines@gmail.com">
-                              brandongines@gmail.com
-                            </a>
-                          </span>
-                        </li>
-                        <li class="d-flex">
-                          <span>Phone: </span>{" "}
-                          <span>
-                            <a href="tel:310-651-1330">310-651-1330</a>
-                          </span>
-                        </li>
-                      </ul>
+              </div>
+              <div class="bio-info">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="bio-image">
+                          <Image />
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="counter-wrap  d-flex mt-md-3">
-                    <div class="text">
+                  <div class="col-md-6">
+                    <div class="bio-content">
+                      <h1>Hi there, I'm Kshiti</h1>
+                      <h6>
+                        I am a fresh web designer and I create custom web
+                        designs. I'm skilled at writing well-designed, testable
+                        and efficient code using current best practices in Web
+                        development. I'm a fast learner, hard worker and team
+                        player who is proficient in making creative and
+                        innovative web pages.
+                      </h6>
                       <p>
-                        <a href="#" class="btn btn-primary py-3 px-3">
-                          Download CV
-                        </a>
+                        P.S I have no special talent, I'm just passionately
+                        curious ;)
                       </p>
                     </div>
                   </div>

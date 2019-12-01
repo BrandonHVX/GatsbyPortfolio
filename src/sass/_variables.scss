@@ -26,6 +26,7 @@ $headings-font-family: $font-family-sans-serif !default;
 $navbar-height: 72px;
 
 .ftco-about {
+  background: linear-gradient(90deg, #e8e8e8 50%, #3d009e 50%);
 }
 
 .ftco-about .img-about {
@@ -2590,8 +2591,46 @@ h2 {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   height: 100%;
+  background-color: #fc3832;
 }
 
 .modal {
   -webkit-overflow-scrolling: touch;
+}
+
+.portfolio {
+  padding: 6%;
+  text-align: center;
+  background: linear-gradient(90deg, #e8e8e8 50%, #3d009e 50%);
+}
+.heading-pic {
+  background: #fff;
+  padding: 1%;
+  text-align: left;
+  box-shadow: 0px 0px 4px 0px #545b62;
+}
+.heading-pic img {
+  width: 10%;
+}
+.bio-info {
+  padding: 5%;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px #b0b3b7;
+}
+.name {
+  font-family: "Charmonman", cursive;
+  font-weight: 600;
+}
+.bio-image {
+  text-align: center;
+}
+.bio-image img {
+  border-radius: 50%;
+}
+.bio-content {
+  text-align: left;
+}
+.bio-content p {
+  font-weight: 600;
+  font-size: 30px;
 }
