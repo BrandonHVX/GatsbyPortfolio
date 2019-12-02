@@ -99,44 +99,50 @@ export default class IndexPage extends React.Component {
             class="ftco-about img ftco-section ftco-no-pt ftco-no-pb"
             id="about-section"
           >
-            <div class="container portfolio">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="heading-pic">
-                    <img src="https://image.ibb.co/cbCMvA/logo.png" />
+            <div class="blog-slider">
+              <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <Image />
+                  </div>
+                  <div>
+                    <p>
+                      Creative self-motivated professional with cross-functional
+                      skills including expertise in digital media, video
+                      production, full stack web development, graphic design,
+                      marketing, project management and client engagement.
+                    </p>
+                    <ul class="about-info  px-md-0 px-2">
+                      <li class="d-flex">
+                        <span>Name:</span> <span>Brandon Gines </span>
+                      </li>
+
+                      <li class="d-flex">
+                        <span>Location:</span> <span>Miami, FL 33138 USA</span>
+                      </li>
+                      <li class="d-flex">
+                        <span>Email:</span>{" "}
+                        <span>
+                          <a href="mailto: brandongines@gmail.com">
+                            brandongines@gmail.com
+                          </a>
+                        </span>
+                      </li>
+                      <li class="d-flex">
+                        <span>Phone: </span>{" "}
+                        <span>
+                          <a href="tel:310-651-1330">310-651-1330</a>
+                        </span>
+                      </li>
+                    </ul>
+
+                    <a href="#" class="blog-slider__button">
+                      READ MORE
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="bio-info">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="bio-image">
-                          <Image />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="bio-content">
-                      <h1>Hi there, I'm Kshiti</h1>
-                      <h6>
-                        I am a fresh web designer and I create custom web
-                        designs. I'm skilled at writing well-designed, testable
-                        and efficient code using current best practices in Web
-                        development. I'm a fast learner, hard worker and team
-                        player who is proficient in making creative and
-                        innovative web pages.
-                      </h6>
-                      <p>
-                        P.S I have no special talent, I'm just passionately
-                        curious ;)
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="blog-slider__pagination"></div>
             </div>
           </section>
         </section>
