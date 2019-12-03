@@ -94,6 +94,7 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Home" />
+
         <section className="page-section-about " id="about">
           <section
             class="ftco-about img ftco-section ftco-no-pt ftco-no-pb"
@@ -102,10 +103,10 @@ export default class IndexPage extends React.Component {
             <div class="blog-slider">
               <div class="blog-slider__wrp swiper-wrapper">
                 <div class="blog-slider__item swiper-slide">
-                  <div class="blog-slider__img">
+                  <div class="blog-slider__img d-flex justify-content-center">
                     <Image />
                   </div>
-                  <div>
+                  <div class="about-text">
                     <p>
                       Creative self-motivated professional with cross-functional
                       skills including expertise in digital media, video
@@ -148,8 +149,10 @@ export default class IndexPage extends React.Component {
         </section>
 
         <div />
+
         <section id="services">
-          <div class="container-fluid px-md-5">
+          {" "}
+          <div class="container">
             <div class="row justify-content-center py-5 mt-5">
               <div class="col-md-12 heading-section text-center ">
                 <h1 class="big big-2">Services</h1>
@@ -160,111 +163,242 @@ export default class IndexPage extends React.Component {
                 </p>
               </div>
             </div>
-            <div class="row justify-content-md-center">
-              <div class="col-md-6 text-center  d-flex ftco-animate">
-                <div class="services-1  shadow">
-                  <span class="icon">
-                    <i class="flaticon-analysis"></i>
-                  </span>
-                  <div class="desc ">
-                    <h3 class="mb-5">Full Stack Web Development</h3>
-                    <p>
-                      <span class="mr-2">
-                        <img src={mongo} width={40} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={node} width={40} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={ex} width={80} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={reactsvg} width={40} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={html5} width={40} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={sass} width={40} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={bootstrap} width={40} alt="" />
-                      </span>
-                    </p>
-                    <p>
-                      MongoDB, Node.js, Express.js, React.js, HTML, CSS, SASS
-                      and Bootstrap for developing full-stack web applications
-                      using JavaScript excution environments for both client and
-                      server-side rendering.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 text-center d-flex ftco-animate">
-                <div class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-flasks"></i>
-                  </span>
-                  <div class="desc">
-                    <h3 class="mb-5">Video Production</h3>
-                    <p>
-                      <span class="mr-2">
-                        <img src={pr} width={40} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={ae} width={40} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={finalcut} width={50} class="mb-1" alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={redcam} width={48} alt="" />
-                      </span>
-                    </p>
-                    <p>
-                      Adobe Premreie Pro, Affter Effects and Final Cut Pro for
-                      video editing, motion graphics and finalizing content for
-                      commericials, social media content, webisodes and company
-                      interviews. High difinition 4K-8K digital content captured
-                      with Red Digital Cinema Cameras.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 text-center d-flex ftco-animate">
-                <div class="services-1 shadow">
-                  <span class="icon">
-                    <i class="flaticon-ideas"></i>
-                  </span>
-                  <div class="desc">
-                    <h3 class="mb-5"> Graphic & Web Design</h3>
-                    <p>
-                      <span class="mr-2">
-                        <img src={ps} width={40} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={ai} width={40} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={xd} width={40} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={html5} width={40} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={sass} width={40} alt="" />
-                      </span>
-                      <span class="mr-2">
-                        <img src={bootstrap} width={40} alt="" />
-                      </span>
-                    </p>
 
-                    <p>
-                      Adobe Photoshop, Illustrator and XD used to design
-                      stunning graphics, vector designs, print,web and moblie
-                      media layouts for social media, advertisements, marketing
-                      campagins and interactive websites.
-                    </p>
+            <div class="row justify-content-md-center">
+              <div class="col-md-6 text-center d-flex ftco-animate">
+                <div class="card-service">
+                  <input
+                    type="checkbox"
+                    id="card1"
+                    class="more"
+                    aria-hidden="true"
+                  />
+                  <div class="content">
+                    <div class="front">
+                      <div class="inner">
+                        <h2>
+                          <h4>Full Stack</h4>Web Development
+                        </h2>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <label for="card1" class="button" aria-hidden="true">
+                          Details
+                        </label>
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div class="inner">
+                        <div class="info">
+                          <div>
+                            <img src={mongo} width={40} alt="" />
+                          </div>
+                        </div>
+                        <div class="info">
+                          <div class="icon">
+                            <img src={node} width={40} alt="" />
+                          </div>
+                        </div>
+                        <div class="info">
+                          <div class="icon">
+                            <img src={ex} width={80} alt="" />
+                          </div>
+                        </div>
+                        <div class="info">
+                          <div class="icon">
+                            <img src={reactsvg} width={40} alt="" />
+                          </div>
+                        </div>
+                        <div class="description">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Vitae, accusamus.
+                          </p>
+                          <p>
+                            MongoDB, Node.js, Express.js, React.js, HTML, CSS,
+                            SASS and Bootstrap for developing full-stack web
+                            applications using JavaScript excution environments
+                            for both client and server-side rendering.
+                          </p>
+                        </div>
+                        <div class="location">Warsaw, Poland</div>
+                        <div class="price">38€ / day</div>
+                        <label
+                          for="card1"
+                          class="button return"
+                          aria-hidden="true"
+                        >
+                          <i class="fas fa-arrow-left"></i>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 text-center d-flex ftco-animate">
+                <div class="card-service">
+                  <input type="checkbox" id="card2" class="more" />
+                  <div class="content">
+                    <div class="front">
+                      <div class="inner">
+                        <h2>
+                          <h4>Film&Video </h4>Production
+                        </h2>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <label for="card2" class="button" aria-hidden="true">
+                          Details
+                        </label>
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div class="inner">
+                        <div class="info">
+                          <span>4</span>
+                          <div class="icon">
+                            <i class="fas fa-users"></i>
+                            <span>people</span>
+                          </div>
+                        </div>
+                        <div class="info">
+                          <span>3</span>
+                          <div class="icon">
+                            <i class="fas fa-door-open"></i>
+                            <span>rooms</span>
+                          </div>
+                        </div>
+                        <div class="info">
+                          <span>2</span>
+                          <div class="icon">
+                            <i class="fas fa-bed"></i>
+                            <span>beds</span>
+                          </div>
+                        </div>
+                        <div class="info">
+                          <span>1</span>
+                          <div class="icon">
+                            <i class="fas fa-bath"></i>
+                            <span>bath</span>
+                          </div>
+                        </div>
+                        <div class="description">
+                          <p>
+                            Adobe Premreie Pro, Affter Effects and Final Cut Pro
+                            for video editing, motion graphics and finalizing
+                            content for commericials, social media content,
+                            webisodes and company interviews. High difinition
+                            4K-8K digital content captured with Red Digital
+                            Cinema Cameras.
+                          </p>
+                          <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>
+                              Lorem ipsum dolor sit, amet consectetur
+                              adipisicing elit.
+                            </li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                          </ul>
+                        </div>
+                        <div class="location">Warsaw, Poland</div>
+                        <div class="price">42€ / day</div>
+                        <label
+                          for="card2"
+                          class="button return"
+                          aria-hidden="true"
+                        >
+                          <i class="fas fa-arrow-left"></i>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 text-center d-flex ftco-animate">
+                <div class="card-service">
+                  <input type="checkbox" id="card3" class="more" />
+                  <div class="content">
+                    <div class="front">
+                      <div class="inner">
+                        <h2>Digital Design</h2>
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <label for="card3" class="button" aria-hidden="true">
+                          Details
+                        </label>
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div class="inner">
+                        <div class="info">
+                          <span>4</span>
+                          <div class="icon">
+                            <i class="fas fa-users"></i>
+                            <span>people</span>
+                          </div>
+                        </div>
+                        <div class="info">
+                          <span>3</span>
+                          <div class="icon">
+                            <i class="fas fa-door-open"></i>
+                            <span>rooms</span>
+                          </div>
+                        </div>
+                        <div class="info">
+                          <span>2</span>
+                          <div class="icon">
+                            <i class="fas fa-bed"></i>
+                            <span>beds</span>
+                          </div>
+                        </div>
+                        <div class="info">
+                          <span>1</span>
+                          <div class="icon">
+                            <i class="fas fa-bath"></i>
+                            <span>bath</span>
+                          </div>
+                        </div>
+                        <div class="description">
+                          <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Voluptatem unde ea voluptas fuga odio vel
+                            veniam eveniet, explicabo autem earum?
+                          </p>
+                          <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>
+                              Lorem ipsum dolor sit, amet consectetur
+                              adipisicing elit.
+                            </li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                          </ul>
+                        </div>
+                        <div class="location">Warsaw, Poland</div>
+                        <div class="price">42€ / day</div>
+                        <label
+                          for="card3"
+                          class="button return"
+                          aria-hidden="true"
+                        >
+                          <i class="fas fa-arrow-left"></i>
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -300,7 +434,6 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </section>
-
         <section className="page-section" id="portfolio">
           <div class="col-md-12 heading-section text-center">
             <h1 class="heading">Projects</h1>
@@ -442,15 +575,74 @@ export default class IndexPage extends React.Component {
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <section id="portfolio">
-                    <div className="container-fluid p-0">
+                    <div>
                       <div className="row gutters">
-                        <div className="col-lg-6 col-sm-6">
+                        <div className="col-lg-6 col-md-6">
                           <div className="col">
                             <div class="card">
-                              <i class="arrow-right">
+                              <div class="arrow-right">
+                                <JobsNowModal />
+                              </div>
+
+                              <h4 class="pg-title">JOBS NOW</h4>
+                              <p class="pg-text">
+                                Career Networking web application.
+                              </p>
+
+                              <div class="pic">
+                                <Img
+                                  fluid={
+                                    this.props.data.images.edges[3].node
+                                      .childImageSharp.fluid
+                                  }
+                                />
+                              </div>
+                              <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                              <div class="social">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-github"></i>
+                              </div>
+
+                              <button></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-lg-6 col-md-6">
+                          <div className="col">
+                            <div class="card">
+                              <div class="arrow-right">
                                 <NyxModal />
-                              </i>
-                              <p>a lonely trip.</p>
+                              </div>
+                              <h4 class="pg-title">NYX NEWS</h4>
+                              <p class="pg-text">
+                                Career Networking web application.
+                              </p>
                               <div class="pic">
                                 <Img
                                   fluid={
@@ -493,85 +685,6 @@ export default class IndexPage extends React.Component {
                               <button></button>
                             </div>
                           </div>
-                        </div>
-                        <div className="col-lg-6 col-sm-6">
-                          <div className="col">
-                            <div class="card">
-                              <i class="fas fa-arrow-right">
-                                <JobsNowModal />
-                              </i>
-                              <p> a lonely </p>
-                              <div className="portfolio-box-caption p-3">
-                                <div className="project-category text-white-50">
-                                  Category
-                                </div>
-                                <div className="project-name">Project Name</div>
-                              </div>
-                              <div class="pic">
-                                <Img
-                                  fluid={
-                                    this.props.data.images.edges[3].node
-                                      .childImageSharp.fluid
-                                  }
-                                />
-                              </div>
-                              <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                              <div class="social">
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-instagram"></i>
-                                <i class="fab fa-github"></i>
-                              </div>
-                              <button></button>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="col-lg-6 col-sm-6 mt-4
-                        "
-                        >
-                          <a
-                            className="portfolio-box"
-                            href="img/portfolio/fullsize/6.jpg"
-                            onClick={this.handlePortfolioClick.bind(this, 5)}
-                          >
-                            <Img
-                              fluid={
-                                this.props.data.images.edges[5].node
-                                  .childImageSharp.fluid
-                              }
-                            />
-                            <div className="portfolio-box-caption p-3">
-                              <div className="project-category text-white-50">
-                                Category
-                              </div>
-                              <div className="project-name">Project Name</div>
-                            </div>
-                          </a>
                         </div>
                       </div>
                     </div>
