@@ -40,7 +40,7 @@ const text = {
   marginRight: "10px",
 }
 
-function Salon(props) {
+function Bands(props) {
   return (
     <Modal
       {...props}
@@ -55,7 +55,7 @@ function Salon(props) {
       >
         <Modal.Title id="contained-modal-title-vcenter">
           <h2 className="text-uppercase text-white font-weight-bold">
-            Salotto Salon
+            Vibes and Views
           </h2>
         </Modal.Title>
       </Modal.Header>
@@ -64,7 +64,7 @@ function Salon(props) {
       </div>
       <Modal.Body style={{ color: "white", backgroundColor: "#000000b7" }}>
         <div class="d-flex justify-content-center  mb-3">
-          <ReactPlayer url="https://youtu.be/v9K2JFFpQjE" playing />
+          <ReactPlayer url="https://youtu.be/FE5VhXSu3TU" playing />
         </div>
       </Modal.Body>
 
@@ -78,9 +78,8 @@ function Salon(props) {
         <div class="row gutters mb-3">
           <div class="col-sm-6 mb-3 text-main">
             <h4 class="heading-title">Description</h4>
-            Company Profile and Interview with Head Stylist and Management of
-            the Salotto Salon inside of the luxurious One Hotel in Miami Beach,
-            FL
+            Company profile and Interview with Miami based Fashion
+            Designer/Stylist Taylor Alexandria.
           </div>
 
           <div class="col-sm-6">
@@ -88,10 +87,10 @@ function Salon(props) {
             <ul class="credits">
               <li>Producers: Ronnie Eith & Brandon Gines</li>
               <li>Director: Brandon Gines</li>
-              <li>Editor: Brandon Gines</li>
-              <li>Camera Operater: Ido Eyo</li>
-              <li>Lighting/Grip: Kufray Eyo </li>
-              <li>Production Assistant: Remy Jean</li>
+              <li>Editor/MotionFX: Brandon Gines</li>
+              <li>Camera A Operator: Brandon Gines</li>
+              <li>Camera B Operator: Ido Eyo</li>
+              <li>Production Assistant: Kufray Eyo & Remy Jean</li>
               <li>Production Company: Florida Film House</li>
             </ul>
           </div>
@@ -101,7 +100,7 @@ function Salon(props) {
   )
 }
 
-function SalonModal() {
+function BandsModal() {
   const [modalShowNyx, setModalShowNyx] = React.useState(false)
 
   return (
@@ -122,12 +121,11 @@ function SalonModal() {
           marginLeft: "5px",
         }}
       />
-      <Salon show={modalShowNyx} onHide={() => setModalShowNyx(false)} />
+      <Bands show={modalShowNyx} onHide={() => setModalShowNyx(false)} />
     </div>
   )
 }
-
-export default class Salotto extends Component {
+export default class BandsTA extends Component {
   constructor(props) {
     super(props)
     Scroller.handleAnchorScroll = Scroller.handleAnchorScroll.bind(this)
@@ -153,7 +151,7 @@ export default class Salotto extends Component {
   render() {
     return (
       <div>
-        <SalonModal />
+        <BandsModal />
       </div>
     )
   }

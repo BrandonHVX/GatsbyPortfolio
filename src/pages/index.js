@@ -4,6 +4,9 @@ import Img from "gatsby-image"
 import Image from "../components/image"
 import Layout from "../components/layout"
 import JobsNowModal from "../components/projects/jobsnow"
+import SalonModal from "../components/projects/salon"
+import VibesModal from "../components/projects/vibesvideo"
+import BandsModal from "../components/projects/bands"
 import NyxModal from "../components/projects/nyx"
 import SEO from "../components/seo"
 import Scroller from "../components/scroller"
@@ -505,10 +508,10 @@ export default class IndexPage extends React.Component {
                                   <li></li>
                                 </ul>
                                 <div class="social">
-                                  <i class="fab fa-facebook-f"></i>
-                                  <i class="fab fa-twitter"></i>
-                                  <i class="fab fa-instagram"></i>
-                                  <i class="fab fa-github"></i>
+                                  <i class="fab fa-react"></i>
+                                  <i class="fab fa-js"></i>
+                                  <i class="fab fa-node"></i>
+                                  <i class="fab fa-bootstrap"></i>
                                 </div>
 
                                 <button></button>
@@ -559,10 +562,10 @@ export default class IndexPage extends React.Component {
                                   <li></li>
                                 </ul>
                                 <div class="social">
-                                  <i class="fab fa-facebook-f"></i>
-                                  <i class="fab fa-twitter"></i>
-                                  <i class="fab fa-instagram"></i>
-                                  <i class="fab fa-github"></i>
+                                  <i class="fab fa-react"></i>
+                                  <i class="fab fa-js"></i>
+                                  <i class="fab fa-node"></i>
+                                  <i class="fab fa-bootstrap"></i>
                                 </div>
                                 <button></button>
                               </div>
@@ -580,14 +583,68 @@ export default class IndexPage extends React.Component {
                             <div className="col">
                               <div class="card">
                                 <div class="arrow-right">
-                                  <JobsNowModal />
+                                  <BandsModal />
                                 </div>
 
-                                <h4 class="pg-title">JOBS NOW</h4>
+                                <h5 class="pg-title">Taylor Alexandria</h5>
                                 <p class="pg-text">
-                                  Career Networking web application.
+                                  Company Profile and Interview
                                 </p>
 
+                                <div class="pic">
+                                  <Img
+                                    fluid={
+                                      this.props.data.images.edges[4].node
+                                        .childImageSharp.fluid
+                                    }
+                                  />
+                                </div>
+                                <ul>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                                </ul>
+                                <div class="social">
+                                  <i class="fas fa-film"></i>{" "}
+                                  <i class="fab fa-adobe"></i>
+                                  <i class="fas fa-desktop"></i>
+                                </div>
+
+                                <button></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="col-lg-6 col-md-6">
+                            <div className="col">
+                              <div class="card">
+                                <div class="arrow-right">
+                                  <VibesModal />
+                                </div>
+                                <h5 class="pg-title">Vibes and Views</h5>
+                                <p class="pg-text">
+                                  Reality Television Pilot based on the Miami
+                                  Lifstyle
+                                </p>
                                 <div class="pic">
                                   <Img
                                     fluid={
@@ -627,7 +684,6 @@ export default class IndexPage extends React.Component {
                                   <i class="fab fa-instagram"></i>
                                   <i class="fab fa-github"></i>
                                 </div>
-
                                 <button></button>
                               </div>
                             </div>
@@ -636,16 +692,16 @@ export default class IndexPage extends React.Component {
                             <div className="col">
                               <div class="card">
                                 <div class="arrow-right">
-                                  <NyxModal />
+                                  <SalonModal />
                                 </div>
-                                <h4 class="pg-title">NYX NEWS</h4>
+                                <h4 class="pg-title">Solatto Salon</h4>
                                 <p class="pg-text">
-                                  Career Networking web application.
+                                  Company Profile and Interview{" "}
                                 </p>
                                 <div class="pic">
                                   <Img
                                     fluid={
-                                      this.props.data.images.edges[4].node
+                                      this.props.data.images.edges[5].node
                                         .childImageSharp.fluid
                                     }
                                   />
@@ -916,74 +972,65 @@ export default class IndexPage extends React.Component {
                   <div id="page-2" class="page two">
                     <h2 class="heading">Experience</h2>
 
-                    <ul class="timeline">
-                      <li class="timeline-item  rounded ml-3 shadow">
-                        <div class="timeline-arrow"></div>
+                    <div class="timeline-arrow"></div>
 
-                        <div class="resume-wrap  d-flex">
-                          <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="flaticon-ideas">
-                              <FontAwesomeIcon icon={faCode} />
-                            </span>
-                          </div>
-                          <div class="text pl-3">
-                            <span class="date">AUG 2019 - PRESENT</span>
-                            <h2>Web Developer</h2>
-                            <span class="position">
-                              1st Take Youth Film Program - Miami, Florida
-                            </span>
-                            <p>
-                              Web Developer for non-profit organization
-                              dedicated to teaching kids film production.
-                            </p>
-                            <li class="mt-2">
-                              Responsibile for development of new full stack web
-                              application using MongoDB, Express, React and Node
-                              to register new applicants and share program
-                              related information.{" "}
-                            </li>
-                            <li class="mt-2">
-                              Designing and coding custom HTML emails for
-                              clients/in-house newsletters and invitations for
-                              distribution through mailchimp and campaign
-                              monitor.
-                            </li>
-                          </div>
-                        </div>
-                      </li>
+                    <div class="resume-wrap  d-flex">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="flaticon-ideas">
+                          <FontAwesomeIcon icon={faCode} />
+                        </span>
+                      </div>
+                      <div class="text pl-3">
+                        <span class="date">AUG 2019 - PRESENT</span>
+                        <h2>Web Developer</h2>
+                        <span class="position">
+                          1st Take Youth Film Program - Miami, Florida
+                        </span>
+                        <p>
+                          Web Developer for non-profit organization dedicated to
+                          teaching kids film production.
+                        </p>
+                        <li class="mt-2">
+                          Responsibile for development of new full stack web
+                          application using MongoDB, Express, React and Node to
+                          register new applicants and share program related
+                          information.{" "}
+                        </li>
+                        <li class="mt-2">
+                          Designing and coding custom HTML emails for
+                          clients/in-house newsletters and invitations for
+                          distribution through mailchimp and campaign monitor.
+                        </li>
+                      </div>
+                    </div>
 
-                      <li class="timeline-item  rounded ml-3 shadow">
-                        <div class="timeline-arrow"></div>
-                        <div class="resume-wrap d-flex">
-                          <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="flaticon-ideas">
-                              <FontAwesomeIcon icon={faFilm} />
-                            </span>
-                          </div>
-                          <div class="text pl-3">
-                            <span class="date">OCT 2017- AUG 2019</span>
-                            <h2>Digital Media Producer</h2>
-                            <span class="position">Florida Film House</span>
-                            <p class="bg-white">
-                              Digital Media Producer for commerical film
-                              production company specializing in creating video
-                              content for national businesses and brands.
-                            </p>
-                            <li class="mt-2">
-                              Produced commericals and video interviews used for
-                              social media advertisments and marketing campaigns
-                              for the Urban Film Festival.{" "}
-                            </li>
-                            <li class="mt-2">
-                              Performed audio and video editing services in
-                              order to develop content from raw input into a
-                              polished, professional, and compelling final
-                              product.
-                            </li>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
+                    <div class="resume-wrap d-flex">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="flaticon-ideas">
+                          <FontAwesomeIcon icon={faFilm} />
+                        </span>
+                      </div>
+                      <div class="text pl-3">
+                        <span class="date">OCT 2017- AUG 2019</span>
+                        <h2>Digital Media Producer</h2>
+                        <span class="position">Florida Film House</span>
+                        <p class="bg-white">
+                          Digital Media Producer for commerical film production
+                          company specializing in creating video content for
+                          national businesses and brands.
+                        </p>
+                        <li class="mt-2">
+                          Produced commericals and video interviews used for
+                          social media advertisments and marketing campaigns for
+                          the Urban Film Festival.{" "}
+                        </li>
+                        <li class="mt-2">
+                          Performed audio and video editing services in order to
+                          develop content from raw input into a polished,
+                          professional, and compelling final product.
+                        </li>
+                      </div>
+                    </div>
 
                     <div class="resume-wrap d-flex ">
                       <div class="icon d-flex align-items-center justify-content-center">
