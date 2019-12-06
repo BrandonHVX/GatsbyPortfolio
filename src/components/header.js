@@ -4,6 +4,17 @@ import { Navbar, Nav } from "react-bootstrap"
 import Scroller from "./scroller"
 import { Parallax, Background } from "react-parallax"
 import bgheader from "../images/slide-4.jpg"
+import Lottie from "react-lottie"
+import animationData from "../images/myname-is2.json"
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "",
+  },
+}
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -100,7 +111,7 @@ export default class Header extends React.Component {
             <div className="row h-100 align-items-center justify-content-center text-center">
               <div className="col-lg-10 align-self-end">
                 <h1 className="text-uppercase text-white font-weight-bold">
-                  Your Favorite Source of Free Bootstrap Themes
+                  <Lottie options={defaultOptions} width={"80vmin"} />
                 </h1>
                 <hr className="divider my-4" />
               </div>{" "}
