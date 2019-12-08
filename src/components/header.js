@@ -5,7 +5,7 @@ import Scroller from "./scroller"
 import { Parallax, Background } from "react-parallax"
 import bgheader from "../images/slide-4.jpg"
 import Lottie from "react-lottie"
-import animationData from "../images/myname-is2.json"
+import animationData from "../images/newname.json"
 
 const defaultOptions = {
   loop: true,
@@ -117,9 +117,10 @@ export default class Header extends React.Component {
               </div>{" "}
               <div className="col-lg-8 align-self-baseline">
                 <p className="text-white-75 font-weight-light mb-5">
-                  Start Bootstrap can help you build better websites using the
-                  Bootstrap framework! Just download a theme and start
-                  customizing, no strings attached!
+                  I'm a software engineer in frontend and backend development
+                  for complex scalable web apps. I write about software
+                  development on my blog. Want to know how I may help your
+                  project? Check out my project portfolio and online resume.
                 </p>
                 <a
                   className="btn btn-primary btn-xl js-scroll-trigger"

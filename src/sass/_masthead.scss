@@ -1,6 +1,7 @@
 // Styling for the masthead
 header.masthead {
   padding-top: 10rem;
+  height: 100vh;
   padding-bottom: calc(10rem - #{$navbar-height});
   // replace the masthead.jpg image in the /img directory to change the image
   // if the image name change, make sure to update the url path below!

@@ -325,10 +325,10 @@ export default class IndexPage extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 text-center d-flex ftco-animate">
+                <div class="col-md-6 text-center d-flex ftco-animate ">
                   <div class="card-service">
                     <input type="checkbox" id="card3" class="more" />
-                    <div class="content">
+                    <div class="content shadow">
                       <div class="front">
                         <div class="inner">
                           <h2>Digital Design</h2>
@@ -914,9 +914,11 @@ export default class IndexPage extends React.Component {
                     </ul>
                   </nav>
                 </div>
+
                 <div class="col-md-9">
                   <div id="page-1" class="page">
                     <h2 class="heading">Education</h2>
+
                     <div class="resume-wrap d-flex ">
                       <div class="icon d-flex align-items-center justify-content-center">
                         <span class="flaticon-ideas">
@@ -935,6 +937,7 @@ export default class IndexPage extends React.Component {
                         </p>
                       </div>
                     </div>
+
                     <div class="resume-wrap d-flex">
                       <div class="icon d-flex align-items-center justify-content-center">
                         <span class="flaticon-ideas">
