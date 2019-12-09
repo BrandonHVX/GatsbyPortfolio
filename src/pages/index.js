@@ -96,61 +96,64 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Home" />
+        <div class=" container-fluid">
+          <SEO title="Home" />
 
-        <section className="page-section-about " id="about">
-          <section
-            class="ftco-about img ftco-section ftco-no-pt ftco-no-pb"
-            id="about-section"
-          >
-            <div class="blog-slider">
-              <div class="blog-slider__wrp swiper-wrapper">
-                <div class="blog-slider__item swiper-slide">
-                  <div class="blog-slider__img d-flex justify-content-center">
-                    <Image />
-                  </div>
-                  <div class="about-text">
-                    <p>
-                      Creative self-motivated professional with cross-functional
-                      skills including expertise in digital media, video
-                      production, full stack web development, graphic design,
-                      marketing, project management and client engagement.
-                    </p>
-                    <ul class="about-info  px-md-0 px-2">
-                      <li class="d-flex">
-                        <span>Name:</span> <span>Brandon Gines </span>
-                      </li>
+          <section className="page-section-about " id="about">
+            <section
+              class="ftco-about img ftco-section ftco-no-pt ftco-no-pb"
+              id="about-section"
+            >
+              <div class="blog-slider">
+                <div class="blog-slider__wrp swiper-wrapper">
+                  <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img d-flex justify-content-center">
+                      <Image />
+                    </div>
+                    <div class="about-text">
+                      <p>
+                        Creative self-motivated professional with
+                        cross-functional skills including expertise in digital
+                        media, video production, full stack web development,
+                        graphic design, marketing, project management and client
+                        engagement.
+                      </p>
+                      <ul class="about-info  px-md-0 px-2">
+                        <li class="d-flex">
+                          <span>Name:</span> <span>Brandon Gines </span>
+                        </li>
 
-                      <li class="d-flex">
-                        <span>Location:</span> <span>Miami, FL 33138 USA</span>
-                      </li>
-                      <li class="d-flex">
-                        <span>Email:</span>{" "}
-                        <span>
-                          <a href="mailto: brandongines@gmail.com">
-                            brandongines@gmail.com
-                          </a>
-                        </span>
-                      </li>
-                      <li class="d-flex">
-                        <span>Phone: </span>{" "}
-                        <span>
-                          <a href="tel:310-651-1330">310-651-1330</a>
-                        </span>
-                      </li>
-                    </ul>
+                        <li class="d-flex">
+                          <span>Location:</span>{" "}
+                          <span>Miami, FL 33138 USA</span>
+                        </li>
+                        <li class="d-flex">
+                          <span>Email:</span>{" "}
+                          <span>
+                            <a href="mailto: brandongines@gmail.com">
+                              brandongines@gmail.com
+                            </a>
+                          </span>
+                        </li>
+                        <li class="d-flex">
+                          <span>Phone: </span>{" "}
+                          <span>
+                            <a href="tel:310-651-1330">310-651-1330</a>
+                          </span>
+                        </li>
+                      </ul>
 
-                    <a href="#" class="blog-slider__button">
-                      READ MORE
-                    </a>
+                      <a href="#" class="blog-slider__button">
+                        READ MORE
+                      </a>
+                    </div>
                   </div>
                 </div>
+                <div class="blog-slider__pagination"></div>
               </div>
-              <div class="blog-slider__pagination"></div>
-            </div>
+            </section>
           </section>
-        </section>
-        <div class="container">
+
           <section id="services">
             {" "}
             <div class="container">
@@ -174,22 +177,51 @@ export default class IndexPage extends React.Component {
                       class="more"
                       aria-hidden="true"
                     />
+
                     <div class="content">
                       <div class="front">
                         <div class="inner">
-                          <h2>
-                            <h4>Full Stack</h4>Web Development
-                          </h2>
-                          <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                          <div class="card-3__side card-3__side--front card__side--front-1">
+                            <div class="card profile-card-3">
+                              <div class="background-block">
+                                <img
+                                  src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                                  alt="profile-sample1"
+                                  class="background"
+                                />
+                              </div>
+                              <div class="profile-thumb-block">
+                                <img
+                                  src="https://randomuser.me/api/portraits/men/41.jpg"
+                                  alt="profile-image"
+                                  class="profile"
+                                />
+                              </div>
+                              <div class="card-content">
+                                <h5>Full Stack Web Development </h5>
+                                <div class="icon-block">
+                                  <p>
+                                    <span class="mr-2">
+                                      <img src={mongo} width={40} alt="" />
+                                    </span>
+                                    <span class="mr-2">
+                                      <img src={node} width={40} alt="" />
+                                    </span>
+                                    <span class="mr-2">
+                                      <img src={ai} width={40} alt="" />
+                                    </span>
+                                  </p>
+                                </div>
+                                <label
+                                  for="card1"
+                                  class="button"
+                                  aria-hidden="true"
+                                >
+                                  Details
+                                </label>
+                              </div>
+                            </div>
                           </div>
-                          <label for="card1" class="button" aria-hidden="true">
-                            Details
-                          </label>
                         </div>
                       </div>
                       <div class="back">
@@ -227,8 +259,7 @@ export default class IndexPage extends React.Component {
                               rendering.
                             </p>
                           </div>
-                          <div class="location">Warsaw, Poland</div>
-                          <div class="price">38€ / day</div>
+                          <div class="location">Web Development</div>
                           <label
                             for="card1"
                             class="button return"
@@ -242,167 +273,53 @@ export default class IndexPage extends React.Component {
                   </div>
                 </div>
                 <div class="col-md-6 text-center d-flex ftco-animate">
-                  <div class="card-service">
-                    <input type="checkbox" id="card2" class="more" />
-                    <div class="content">
-                      <div class="front">
-                        <div class="inner">
-                          <h2>
-                            <h4>Film&Video </h4>Production
-                          </h2>
-                          <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="far fa-star"></i>
+                  <div class="card-3">
+                    <div class="card-3__side card-3__side--front card-3__side--front-1">
+                      <div class="card profile-card-3">
+                        <div class="background-block">
+                          <img
+                            src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                            alt="profile-sample1"
+                            class="background"
+                          />
+                        </div>
+                        <div class="profile-thumb-block">
+                          <img
+                            src="https://randomuser.me/api/portraits/men/41.jpg"
+                            alt="profile-image"
+                            class="profile"
+                          />
+                        </div>
+                        <div class="card-content">
+                          <h5>Full Stack Web Development </h5>
+                          <div class="icon-block">
+                            <p>
+                              <span class="mr-2">
+                                <img src={mongo} width={40} alt="" />
+                              </span>
+                              <span class="mr-2">
+                                <img src={node} width={40} alt="" />
+                              </span>
+                              <span class="mr-2">
+                                <img src={ai} width={40} alt="" />
+                              </span>
+                            </p>
                           </div>
-                          <label for="card2" class="button" aria-hidden="true">
-                            Details
-                          </label>
                         </div>
                       </div>
-                      <div class="back">
-                        <div class="inner">
-                          <div class="info">
-                            <span>4</span>
-                            <div class="icon">
-                              <i class="fas fa-users"></i>
-                              <span>people</span>
-                            </div>
-                          </div>
-                          <div class="info">
-                            <span>3</span>
-                            <div class="icon">
-                              <i class="fas fa-door-open"></i>
-                              <span>rooms</span>
-                            </div>
-                          </div>
-                          <div class="info">
-                            <span>2</span>
-                            <div class="icon">
-                              <i class="fas fa-bed"></i>
-                              <span>beds</span>
-                            </div>
-                          </div>
-                          <div class="info">
-                            <span>1</span>
-                            <div class="icon">
-                              <i class="fas fa-bath"></i>
-                              <span>bath</span>
-                            </div>
-                          </div>
-                          <div class="description">
-                            <p>
-                              Adobe Premreie Pro, Affter Effects and Final Cut
-                              Pro for video editing, motion graphics and
-                              finalizing content for commericials, social media
-                              content, webisodes and company interviews. High
-                              difinition 4K-8K digital content captured with Red
-                              Digital Cinema Cameras.
-                            </p>
-                            <ul>
-                              <li>Lorem ipsum dolor sit amet.</li>
-                              <li>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit.
-                              </li>
-                              <li>Lorem ipsum dolor sit amet consectetur.</li>
-                              <li>Lorem ipsum dolor sit amet.</li>
-                            </ul>
-                          </div>
-                          <div class="location">Warsaw, Poland</div>
-                          <div class="price">42€ / day</div>
-                          <label
-                            for="card2"
-                            class="button return"
-                            aria-hidden="true"
-                          >
-                            <i class="fas fa-arrow-left"></i>
-                          </label>
-                        </div>
+                    </div>
+                    <div class="card-3__side card-3__side--back card-3__side--back-1">
+                      <div>
+                        MongoDB, Node.js, Express.js, React.js, HTML, CSS, SASS
+                        and Bootstrap for developing full-stack web applications
+                        using JavaScript excution environments for both client
+                        and server-side rendering.
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 text-center d-flex ftco-animate ">
-                  <div class="card-service">
-                    <input type="checkbox" id="card3" class="more" />
-                    <div class="content shadow">
-                      <div class="front">
-                        <div class="inner">
-                          <h2>Digital Design</h2>
-                          <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                          <label for="card3" class="button" aria-hidden="true">
-                            Details
-                          </label>
-                        </div>
-                      </div>
-                      <div class="back">
-                        <div class="inner">
-                          <div class="info">
-                            <span>4</span>
-                            <div class="icon">
-                              <i class="fas fa-users"></i>
-                              <span>people</span>
-                            </div>
-                          </div>
-                          <div class="info">
-                            <span>3</span>
-                            <div class="icon">
-                              <i class="fas fa-door-open"></i>
-                              <span>rooms</span>
-                            </div>
-                          </div>
-                          <div class="info">
-                            <span>2</span>
-                            <div class="icon">
-                              <i class="fas fa-bed"></i>
-                              <span>beds</span>
-                            </div>
-                          </div>
-                          <div class="info">
-                            <span>1</span>
-                            <div class="icon">
-                              <i class="fas fa-bath"></i>
-                              <span>bath</span>
-                            </div>
-                          </div>
-                          <div class="description">
-                            <p>
-                              Lorem ipsum, dolor sit amet consectetur
-                              adipisicing elit. Voluptatem unde ea voluptas fuga
-                              odio vel veniam eveniet, explicabo autem earum?
-                            </p>
-                            <ul>
-                              <li>Lorem ipsum dolor sit amet.</li>
-                              <li>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit.
-                              </li>
-                              <li>Lorem ipsum dolor sit amet consectetur.</li>
-                              <li>Lorem ipsum dolor sit amet.</li>
-                            </ul>
-                          </div>
-                          <div class="location">Warsaw, Poland</div>
-                          <div class="price">42€ / day</div>
-                          <label
-                            for="card3"
-                            class="button return"
-                            aria-hidden="true"
-                          >
-                            <i class="fas fa-arrow-left"></i>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="card-3"></div>
                 </div>
 
                 <div class="col-md-6 text-center d-flex ftco-animate">
@@ -436,6 +353,7 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
           </section>
+
           <section className="page-section" id="portfolio">
             <div class="col-md-12 heading-section text-center">
               <h1 class="heading">Projects</h1>
@@ -464,7 +382,7 @@ export default class IndexPage extends React.Component {
                         <div className="row gutters">
                           <div className="col-lg-6 col-md-6">
                             <div className="col">
-                              <div class="card">
+                              <div class="cards">
                                 <div class="arrow-right">
                                   <JobsNowModal />
                                 </div>
@@ -520,7 +438,7 @@ export default class IndexPage extends React.Component {
                           </div>
                           <div className="col-lg-6 col-md-6">
                             <div className="col">
-                              <div class="card">
+                              <div class="cards">
                                 <div class="arrow-right">
                                   <NyxModal />
                                 </div>
@@ -581,7 +499,7 @@ export default class IndexPage extends React.Component {
                         <div className="row gutters">
                           <div className="col-lg-6 col-md-6">
                             <div className="col">
-                              <div class="card">
+                              <div class="cards">
                                 <div class="arrow-right">
                                   <BandsModal />
                                 </div>
@@ -636,7 +554,7 @@ export default class IndexPage extends React.Component {
                           </div>
                           <div className="col-lg-6 col-md-6">
                             <div className="col">
-                              <div class="card">
+                              <div class="cards">
                                 <div class="arrow-right">
                                   <VibesModal />
                                 </div>
@@ -690,7 +608,7 @@ export default class IndexPage extends React.Component {
                           </div>
                           <div className="col-lg-6 col-md-6">
                             <div className="col">
-                              <div class="card">
+                              <div class="cards">
                                 <div class="arrow-right">
                                   <SalonModal />
                                 </div>
@@ -885,506 +803,510 @@ export default class IndexPage extends React.Component {
               </Tab.Container>
             </div>
           </section>
-        </div>
 
-        <section>
-          <section class="page-section-resume" id="resume">
-            <div class="container">
-              <div class="col-md-12 heading-section text-center ">
-                <h1 class="heading">Resume</h1>
+          <section>
+            <section class="page-section-resume" id="resume">
+              <div class="container">
+                <div class="col-md-12 heading-section text-center ">
+                  <h1 class="heading">Resume</h1>
 
-                <p> </p>
-              </div>
-              <div class="row mt-5">
-                <div class="col-sm-3 md-3">
-                  <nav id="navi">
-                    <ul>
-                      <li>
-                        <a href="#page-1">Education</a>
-                      </li>
-                      <li>
-                        <a href="#page-2">Experience</a>
-                      </li>
-                      <li>
-                        <a href="#page-3">Skills</a>
-                      </li>
-                      <li>
-                        <a href="#page-4">Expertise</a>
-                      </li>
-                    </ul>
-                  </nav>
+                  <p> </p>
                 </div>
-
-                <div class="col-md-9">
-                  <div id="page-1" class="page">
-                    <h2 class="heading">Education</h2>
-
-                    <div class="resume-wrap d-flex ">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="flaticon-ideas">
-                          <FontAwesomeIcon icon={faGraduationCap} />
-                        </span>
-                      </div>
-                      <div class="text pl-3">
-                        <span class="date">AUG 2018 - OCT 2018</span>
-                        <h2>Full Stack Web Development Program</h2>
-                        <span class="position">
-                          Wyncode Academy - Miami, FL
-                        </span>
-                        <p>
-                          Certificate of compeletion certified by Florida
-                          Department of Education.{" "}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="resume-wrap d-flex">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="flaticon-ideas">
-                          <FontAwesomeIcon icon={faGraduationCap} />
-                        </span>
-                      </div>
-                      <div class="text pl-3">
-                        <span class="date">2002-2004</span>
-                        <h2>Video Production Internship</h2>
-                        <span class="position">
-                          Stepstone Productions - St. Louis, MO
-                        </span>
-                        <p>
-                          Certificate of compeletion certified by St. Louis
-                          Agency on Training and Employment.{" "}
-                        </p>
-                      </div>
-                    </div>
-                    <div class="resume-wrap d-flex">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="flaticon-ideas">
-                          <FontAwesomeIcon icon={faGraduationCap} />
-                        </span>
-                      </div>
-                      <div class="text pl-3">
-                        <span class="date">2002-2004</span>
-                        <h2>A.S. Mass Communication</h2>
-                        <span class="position">
-                          St. Louis Community College
-                        </span>
-                      </div>
-                    </div>
+                <div class="row mt-5">
+                  <div class="col-sm-3 md-3">
+                    <nav id="navi">
+                      <ul>
+                        <li>
+                          <a href="#page-1">Education</a>
+                        </li>
+                        <li>
+                          <a href="#page-2">Experience</a>
+                        </li>
+                        <li>
+                          <a href="#page-3">Skills</a>
+                        </li>
+                        <li>
+                          <a href="#page-4">Expertise</a>
+                        </li>
+                      </ul>
+                    </nav>
                   </div>
 
-                  <div id="page-2" class="page two">
-                    <h2 class="heading">Experience</h2>
+                  <div class="col-md-9">
+                    <div id="page-1" class="page">
+                      <h2 class="heading">Education</h2>
 
-                    <div class="timeline-arrow"></div>
-
-                    <div class="resume-wrap  d-flex">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="flaticon-ideas">
-                          <FontAwesomeIcon icon={faCode} />
-                        </span>
+                      <div class="resume-wrap d-flex ">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="flaticon-ideas">
+                            <FontAwesomeIcon icon={faGraduationCap} />
+                          </span>
+                        </div>
+                        <div class="text pl-3">
+                          <span class="date">AUG 2018 - OCT 2018</span>
+                          <h2>Full Stack Web Development Program</h2>
+                          <span class="position">
+                            Wyncode Academy - Miami, FL
+                          </span>
+                          <p>
+                            Certificate of compeletion certified by Florida
+                            Department of Education.{" "}
+                          </p>
+                        </div>
                       </div>
-                      <div class="text pl-3">
-                        <span class="date">AUG 2019 - PRESENT</span>
-                        <h2>Web Developer</h2>
-                        <span class="position">
-                          1st Take Youth Film Program - Miami, Florida
-                        </span>
-                        <p>
-                          Web Developer for non-profit organization dedicated to
-                          teaching kids film production.
-                        </p>
-                        <li class="mt-2">
-                          Responsibile for development of new full stack web
-                          application using MongoDB, Express, React and Node to
-                          register new applicants and share program related
-                          information.{" "}
-                        </li>
-                        <li class="mt-2">
-                          Designing and coding custom HTML emails for
-                          clients/in-house newsletters and invitations for
-                          distribution through mailchimp and campaign monitor.
-                        </li>
+
+                      <div class="resume-wrap d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="flaticon-ideas">
+                            <FontAwesomeIcon icon={faGraduationCap} />
+                          </span>
+                        </div>
+                        <div class="text pl-3">
+                          <span class="date">2002-2004</span>
+                          <h2>Video Production Internship</h2>
+                          <span class="position">
+                            Stepstone Productions - St. Louis, MO
+                          </span>
+                          <p>
+                            Certificate of compeletion certified by St. Louis
+                            Agency on Training and Employment.{" "}
+                          </p>
+                        </div>
+                      </div>
+                      <div class="resume-wrap d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="flaticon-ideas">
+                            <FontAwesomeIcon icon={faGraduationCap} />
+                          </span>
+                        </div>
+                        <div class="text pl-3">
+                          <span class="date">2002-2004</span>
+                          <h2>A.S. Mass Communication</h2>
+                          <span class="position">
+                            St. Louis Community College
+                          </span>
+                        </div>
                       </div>
                     </div>
 
-                    <div class="resume-wrap d-flex">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="flaticon-ideas">
-                          <FontAwesomeIcon icon={faFilm} />
-                        </span>
+                    <div id="page-2" class="page two">
+                      <h2 class="heading">Experience</h2>
+
+                      <div class="timeline-arrow"></div>
+
+                      <div class="resume-wrap  d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="flaticon-ideas">
+                            <FontAwesomeIcon icon={faCode} />
+                          </span>
+                        </div>
+                        <div class="text pl-3">
+                          <span class="date">AUG 2019 - PRESENT</span>
+                          <h2>Web Developer</h2>
+                          <span class="position">
+                            1st Take Youth Film Program - Miami, Florida
+                          </span>
+                          <p>
+                            Web Developer for non-profit organization dedicated
+                            to teaching kids film production.
+                          </p>
+                          <li class="mt-2">
+                            Responsibile for development of new full stack web
+                            application using MongoDB, Express, React and Node
+                            to register new applicants and share program related
+                            information.{" "}
+                          </li>
+                          <li class="mt-2">
+                            Designing and coding custom HTML emails for
+                            clients/in-house newsletters and invitations for
+                            distribution through mailchimp and campaign monitor.
+                          </li>
+                        </div>
                       </div>
-                      <div class="text pl-3">
-                        <span class="date">OCT 2017- AUG 2019</span>
-                        <h2>Digital Media Producer</h2>
-                        <span class="position">Florida Film House</span>
-                        <p class="bg-white">
-                          Digital Media Producer for commerical film production
-                          company specializing in creating video content for
-                          national businesses and brands.
-                        </p>
-                        <li class="mt-2">
-                          Produced commericals and video interviews used for
-                          social media advertisments and marketing campaigns for
-                          the Urban Film Festival.{" "}
-                        </li>
-                        <li class="mt-2">
-                          Performed audio and video editing services in order to
-                          develop content from raw input into a polished,
-                          professional, and compelling final product.
-                        </li>
+
+                      <div class="resume-wrap d-flex">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="flaticon-ideas">
+                            <FontAwesomeIcon icon={faFilm} />
+                          </span>
+                        </div>
+                        <div class="text pl-3">
+                          <span class="date">OCT 2017- AUG 2019</span>
+                          <h2>Digital Media Producer</h2>
+                          <span class="position">Florida Film House</span>
+                          <p class="bg-white">
+                            Digital Media Producer for commerical film
+                            production company specializing in creating video
+                            content for national businesses and brands.
+                          </p>
+                          <li class="mt-2">
+                            Produced commericals and video interviews used for
+                            social media advertisments and marketing campaigns
+                            for the Urban Film Festival.{" "}
+                          </li>
+                          <li class="mt-2">
+                            Performed audio and video editing services in order
+                            to develop content from raw input into a polished,
+                            professional, and compelling final product.
+                          </li>
+                        </div>
+                      </div>
+
+                      <div class="resume-wrap d-flex ">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="flaticon-ideas">
+                            <FontAwesomeIcon icon={faFilm} />
+                          </span>
+                        </div>
+                        <div class="text pl-3">
+                          <span class="date">SEPT 2013-2016</span>
+                          <h2>Videographer & Editor</h2>
+                          <span class="position">
+                            Rum Bum Film and HD Studios
+                          </span>
+                          <h6>Miami, Florida</h6>
+                          <p>
+                            Videographer & Editor for live shows, music videos,
+                            independent films, sporting events and documentries
+                            on over 500+ productions.
+                          </p>
+
+                          <li class="mt-2">
+                            After Effects Editor for Fox Sports 3D experience at
+                            the 2016 Daytona 500
+                          </li>
+                          <li class="mt-2">
+                            On-Stage videographer during live stream broadcast
+                            of the 2016 Three Points Music Festival in Miami,
+                            FL.
+                          </li>
+                        </div>
+                      </div>
+
+                      <div class="resume-wrap d-flex ">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="flaticon-ideas">
+                            <FontAwesomeIcon icon={faPalette} />
+                          </span>
+                        </div>
+                        <div class="text pl-3">
+                          <span class="date">2007-2012</span>
+                          <h2>Freelance Multimedia Artist</h2>
+                          <span class="position">Independent Contractor</span>
+                          <h6>Atlanta, GA / Miami, FL</h6>
+
+                          <p>
+                            Freelance Media artist working with business
+                            professionals, small businesses and local brands
+                            including lawyers, real estate agents, event
+                            promoters, restaurants and local radio stations.
+                          </p>
+                          <li class="mt-2">
+                            Communicated effectively with clients to develop
+                            custom print advertisements and visual marketing
+                            material.
+                          </li>
+                          <li class="mt-2">
+                            Projects included logos, flyers, business cards,
+                            brochures, website banners, page layouts and video
+                            commericial and interviews for small amd local
+                            businesses.
+                          </li>
+                          <li class="mt-2">
+                            Maintained management skills coupled with my
+                            customer service skills, for increased retention
+                            rate of clients.
+                          </li>
+                        </div>
+                      </div>
+                      <div class="resume-wrap d-flex ">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="flaticon-ideas">
+                            <FontAwesomeIcon icon={faBriefcase} />
+                          </span>
+                        </div>
+                        <div class="text pl-3">
+                          <span class="date">2004-2006</span>
+                          <h2>Marketing Assistant</h2>
+                          <span class="position">
+                            The Palace Skating Rink and Family Entertainment
+                            Center
+                          </span>
+                          <h6>St. Louis, MO</h6>
+                          <p>
+                            Marketing Assistant for popluar roller skating rink
+                            known for hosting birthday parties, live events and
+                            various family related activities.
+                          </p>
+                          <li class="mt-2">
+                            Assisted in planning, designing and distribution of
+                            marketing materials including flyers, posters and
+                            brochures for all events and programs.
+                          </li>
+                          <li class="mt-2">
+                            Created weekly database of attendees used for
+                            surveys and marketing research.
+                          </li>
+                          <li class="mt-2">
+                            Provided general administrative and organizational
+                            support; such as faxing documents to clients,
+                            copying, filing, responding to emails, answering
+                            directed calls and ordering products and services
+                            related to specific events.
+                          </li>
+                        </div>
+                      </div>
+
+                      <div class="resume-wrap d-flex ">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                          <span class="flaticon-ideas">
+                            <FontAwesomeIcon icon={faBriefcase} />
+                          </span>
+                        </div>
+                        <div class="text pl-3">
+                          <span class="date">2003-2004</span>
+                          <h2>Radio Broadcasting Internship</h2>
+                          <span class="position">
+                            Clear Channel Communications - 100.3 The Beat
+                          </span>
+                          <h6>St. Louis, MO</h6>
+                          <p>
+                            Fall internship with local radio station 100.3 The
+                            Beat. Learned and gained experience in broadcasting,
+                            live production, marketing and promotions.
+                          </p>
+                          <li class="mt-2">
+                            Assited with planning of promotional campagins to
+                            connect with listeners and promote contests
+                            throughout the community.
+                          </li>
+
+                          <li class="mt-2">
+                            Perfomed office and administrative duties including,
+                            answers phones, copying and filing paperwork
+                          </li>
+
+                          <li class="mt-2">
+                            Responsible preparing scripts for on-air talent for
+                            advertisements and providing the radio host with
+                            reading and research material.
+                          </li>
+                        </div>
                       </div>
                     </div>
-
-                    <div class="resume-wrap d-flex ">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="flaticon-ideas">
-                          <FontAwesomeIcon icon={faFilm} />
-                        </span>
-                      </div>
-                      <div class="text pl-3">
-                        <span class="date">SEPT 2013-2016</span>
-                        <h2>Videographer & Editor</h2>
-                        <span class="position">
-                          Rum Bum Film and HD Studios
-                        </span>
-                        <h6>Miami, Florida</h6>
-                        <p>
-                          Videographer & Editor for live shows, music videos,
-                          independent films, sporting events and documentries on
-                          over 500+ productions.
-                        </p>
-
-                        <li class="mt-2">
-                          After Effects Editor for Fox Sports 3D experience at
-                          the 2016 Daytona 500
-                        </li>
-                        <li class="mt-2">
-                          On-Stage videographer during live stream broadcast of
-                          the 2016 Three Points Music Festival in Miami, FL.
-                        </li>
-                      </div>
-                    </div>
-
-                    <div class="resume-wrap d-flex ">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="flaticon-ideas">
-                          <FontAwesomeIcon icon={faPalette} />
-                        </span>
-                      </div>
-                      <div class="text pl-3">
-                        <span class="date">2007-2012</span>
-                        <h2>Freelance Multimedia Artist</h2>
-                        <span class="position">Independent Contractor</span>
-                        <h6>Atlanta, GA / Miami, FL</h6>
-
-                        <p>
-                          Freelance Media artist working with business
-                          professionals, small businesses and local brands
-                          including lawyers, real estate agents, event
-                          promoters, restaurants and local radio stations.
-                        </p>
-                        <li class="mt-2">
-                          Communicated effectively with clients to develop
-                          custom print advertisements and visual marketing
-                          material.
-                        </li>
-                        <li class="mt-2">
-                          Projects included logos, flyers, business cards,
-                          brochures, website banners, page layouts and video
-                          commericial and interviews for small amd local
-                          businesses.
-                        </li>
-                        <li class="mt-2">
-                          Maintained management skills coupled with my customer
-                          service skills, for increased retention rate of
-                          clients.
-                        </li>
-                      </div>
-                    </div>
-                    <div class="resume-wrap d-flex ">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="flaticon-ideas">
-                          <FontAwesomeIcon icon={faBriefcase} />
-                        </span>
-                      </div>
-                      <div class="text pl-3">
-                        <span class="date">2004-2006</span>
-                        <h2>Marketing Assistant</h2>
-                        <span class="position">
-                          The Palace Skating Rink and Family Entertainment
-                          Center
-                        </span>
-                        <h6>St. Louis, MO</h6>
-                        <p>
-                          Marketing Assistant for popluar roller skating rink
-                          known for hosting birthday parties, live events and
-                          various family related activities.
-                        </p>
-                        <li class="mt-2">
-                          Assisted in planning, designing and distribution of
-                          marketing materials including flyers, posters and
-                          brochures for all events and programs.
-                        </li>
-                        <li class="mt-2">
-                          Created weekly database of attendees used for surveys
-                          and marketing research.
-                        </li>
-                        <li class="mt-2">
-                          Provided general administrative and organizational
-                          support; such as faxing documents to clients, copying,
-                          filing, responding to emails, answering directed calls
-                          and ordering products and services related to specific
-                          events.
-                        </li>
-                      </div>
-                    </div>
-
-                    <div class="resume-wrap d-flex ">
-                      <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="flaticon-ideas">
-                          <FontAwesomeIcon icon={faBriefcase} />
-                        </span>
-                      </div>
-                      <div class="text pl-3">
-                        <span class="date">2003-2004</span>
-                        <h2>Radio Broadcasting Internship</h2>
-                        <span class="position">
-                          Clear Channel Communications - 100.3 The Beat
-                        </span>
-                        <h6>St. Louis, MO</h6>
-                        <p>
-                          Fall internship with local radio station 100.3 The
-                          Beat. Learned and gained experience in broadcasting,
-                          live production, marketing and promotions.
-                        </p>
-                        <li class="mt-2">
-                          Assited with planning of promotional campagins to
-                          connect with listeners and promote contests throughout
-                          the community.
-                        </li>
-
-                        <li class="mt-2">
-                          Perfomed office and administrative duties including,
-                          answers phones, copying and filing paperwork
-                        </li>
-
-                        <li class="mt-2">
-                          Responsible preparing scripts for on-air talent for
-                          advertisements and providing the radio host with
-                          reading and research material.
-                        </li>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="page-3" class="page three">
-                    <h2 class="heading">Skills</h2>
-                    <div>
-                      <h6 style={styles}>Coding</h6>
-                      <div class="row ">
-                        {" "}
-                        <div class="col-md-6 ">
+                    <div id="page-3" class="page three">
+                      <h2 class="heading">Skills</h2>
+                      <div>
+                        <h6 style={styles}>Coding</h6>
+                        <div class="row ">
                           {" "}
-                          <div class="progress-wrap">
-                            <h3>HTML/CSS</h3>
-                            <ProgressBar now={80} label={"80%"} />
+                          <div class="col-md-6 ">
+                            {" "}
+                            <div class="progress-wrap">
+                              <h3>HTML/CSS</h3>
+                              <ProgressBar now={80} label={"80%"} />
+                            </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                              <h3>JavaScript</h3>
+                              <ProgressBar now={73} label={"73%"} />
+                            </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                              <h3>Bootstrap</h3>
+                              <ProgressBar now={80} label={"80%"} />
+                            </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                              <h3>React.Js</h3>
+                              <ProgressBar now={70} label={"70%"} />
+                            </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                              <h3>Gatsby.Js</h3>
+                              <ProgressBar now={78} label={"78%"} />
+                            </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                              <h3>Ruby on Rails</h3>
+                              <ProgressBar now={67} label={"67%"} />
+                            </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                              <h3>Node.Js</h3>
+                              <ProgressBar now={70} label={"75%"} />
+                            </div>
                           </div>
                         </div>
-                        <div class="col-md-6 ">
-                          <div class="progress-wrap">
-                            <h3>JavaScript</h3>
-                            <ProgressBar now={73} label={"73%"} />
+                      </div>
+                      <div class="mt-5">
+                        <h6>Creative Skills</h6>
+                        <div class="row">
+                          {" "}
+                          <div class="col-md-6 ">
+                            {" "}
+                            <div class="progress-wrap">
+                              <h3> Video Production</h3>
+                              <ProgressBar now={95} label={"95%"} />
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-md-6 ">
-                          <div class="progress-wrap">
-                            <h3>Bootstrap</h3>
-                            <ProgressBar now={80} label={"80%"} />
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                              <h3> Graphic Design</h3>
+                              <ProgressBar now={90} label={"95%"} />
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-md-6 ">
-                          <div class="progress-wrap">
-                            <h3>React.Js</h3>
-                            <ProgressBar now={70} label={"70%"} />
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                              <h3>Motion Graphics</h3>
+                              <ProgressBar now={78} label={"78%"} />
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-md-6 ">
-                          <div class="progress-wrap">
-                            <h3>Gatsby.Js</h3>
-                            <ProgressBar now={78} label={"78%"} />
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                              <h3>Brochure & Page Layout</h3>
+                              <ProgressBar now={90} label={"90%"} />
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-md-6 ">
-                          <div class="progress-wrap">
-                            <h3>Ruby on Rails</h3>
-                            <ProgressBar now={67} label={"67%"} />
-                          </div>
-                        </div>
-                        <div class="col-md-6 ">
-                          <div class="progress-wrap">
-                            <h3>Node.Js</h3>
-                            <ProgressBar now={70} label={"75%"} />
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                              <h3>Web Design</h3>
+                              <ProgressBar now={88} label={"88%"} />
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="mt-5">
-                      <h6>Creative Skills</h6>
+                    <div id="page-4" class="page four">
+                      <h2 class="heading">Expertise</h2>
                       <div class="row">
-                        {" "}
                         <div class="col-md-6 ">
-                          {" "}
-                          <div class="progress-wrap">
-                            <h3> Video Production</h3>
-                            <ProgressBar now={95} label={"95%"} />
+                          <div class="resume-wrap d-flex ">
+                            <div class="text ">
+                              <p>
+                                <span class="position"> Proven Ability</span> in
+                                full stack web development, UX/UI design for web
+                                applications, video production and graphic
+                                design for marketing campaigns
+                              </p>
+                            </div>
                           </div>
                         </div>
                         <div class="col-md-6 ">
-                          <div class="progress-wrap">
-                            <h3> Graphic Design</h3>
-                            <ProgressBar now={90} label={"95%"} />
+                          <div class="resume-wrap d-flex ">
+                            <div class="text ">
+                              <p>
+                                <span class="position">
+                                  {" "}
+                                  In depth-knowledge
+                                </span>{" "}
+                                in graphic design for creating visual idenity.
+                              </p>
+                            </div>
                           </div>
                         </div>
                         <div class="col-md-6 ">
-                          <div class="progress-wrap">
-                            <h3>Motion Graphics</h3>
-                            <ProgressBar now={78} label={"78%"} />
+                          <div class="resume-wrap d-flex ">
+                            <div class="text ">
+                              <p>
+                                <span class="position">
+                                  {" "}
+                                  Comprehensive understanding and experience{" "}
+                                </span>{" "}
+                                in full stack web development, UX/UI design for
+                                web applications, video production and graphic
+                                design for marketing campaigns
+                              </p>
+                            </div>
                           </div>
                         </div>
                         <div class="col-md-6 ">
-                          <div class="progress-wrap">
-                            <h3>Brochure & Page Layout</h3>
-                            <ProgressBar now={90} label={"90%"} />
+                          <div class="resume-wrap d-flex ">
+                            <div class="text ">
+                              <p>
+                                <span class="position"> Excellent</span> of full
+                                stack web development, UX/UI design for web
+                                applications, video production and graphic
+                                design for marketing campaigns
+                              </p>
+                            </div>
                           </div>
                         </div>
                         <div class="col-md-6 ">
-                          <div class="progress-wrap">
-                            <h3>Web Design</h3>
-                            <ProgressBar now={88} label={"88%"} />
+                          <div class="resume-wrap d-flex ">
+                            <div class="text ">
+                              <p>
+                                <span class="position"> Exceptional</span> of
+                                full stack web development, UX/UI design for web
+                                applications, video production and graphic
+                                design for marketing campaigns
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div id="page-4" class="page four">
-                    <h2 class="heading">Expertise</h2>
-                    <div class="row">
-                      <div class="col-md-6 ">
-                        <div class="resume-wrap d-flex ">
-                          <div class="text ">
-                            <p>
-                              <span class="position"> Proven Ability</span> in
-                              full stack web development, UX/UI design for web
-                              applications, video production and graphic design
-                              for marketing campaigns
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 ">
-                        <div class="resume-wrap d-flex ">
-                          <div class="text ">
-                            <p>
-                              <span class="position"> In depth-knowledge</span>{" "}
-                              in graphic design for creating visual idenity.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 ">
-                        <div class="resume-wrap d-flex ">
-                          <div class="text ">
-                            <p>
-                              <span class="position">
-                                {" "}
-                                Comprehensive understanding and experience{" "}
-                              </span>{" "}
-                              in full stack web development, UX/UI design for
-                              web applications, video production and graphic
-                              design for marketing campaigns
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 ">
-                        <div class="resume-wrap d-flex ">
-                          <div class="text ">
-                            <p>
-                              <span class="position"> Excellent</span> of full
-                              stack web development, UX/UI design for web
-                              applications, video production and graphic design
-                              for marketing campaigns
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 ">
-                        <div class="resume-wrap d-flex ">
-                          <div class="text ">
-                            <p>
-                              <span class="position"> Exceptional</span> of full
-                              stack web development, UX/UI design for web
-                              applications, video production and graphic design
-                              for marketing campaigns
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <section className="page-section bg-dark text-white">
+            <div className="container text-center">
+              <h2 className="mb-4">Free Download at Start Bootstrap!</h2>
+              <a
+                className="btn btn-light btn-xl"
+                href="https://startbootstrap.com/themes/creative/"
+              >
+                Download Now!
+              </a>
+            </div>
+          </section>
+
+          <section className="page-section" id="contact">
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-lg-8 text-center">
+                  <h2 className="mt-0">Let's Get In Touch!</h2>
+                  <hr className="divider my-4" />
+                  <p className="text-muted mb-5">
+                    Ready to start your next project with us? Give us a call or
+                    send us an email and we will get back to you as soon as
+                    possible!
+                  </p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                  <i className="fas fa-phone fa-3x mb-3 text-muted"></i>
+                  <div>+1 (202) 555-0149</div>
+                </div>
+                <div className="col-lg-4 mr-auto text-center">
+                  <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                  <a className="d-block" href="mailto:contact@yourwebsite.com">
+                    contact@yourwebsite.com
+                  </a>
                 </div>
               </div>
             </div>
           </section>
-        </section>
-
-        <section className="page-section bg-dark text-white">
-          <div className="container text-center">
-            <h2 className="mb-4">Free Download at Start Bootstrap!</h2>
-            <a
-              className="btn btn-light btn-xl"
-              href="https://startbootstrap.com/themes/creative/"
-            >
-              Download Now!
-            </a>
-          </div>
-        </section>
-
-        <section className="page-section" id="contact">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-8 text-center">
-                <h2 className="mt-0">Let's Get In Touch!</h2>
-                <hr className="divider my-4" />
-                <p className="text-muted mb-5">
-                  Ready to start your next project with us? Give us a call or
-                  send us an email and we will get back to you as soon as
-                  possible!
-                </p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                <i className="fas fa-phone fa-3x mb-3 text-muted"></i>
-                <div>+1 (202) 555-0149</div>
-              </div>
-              <div className="col-lg-4 mr-auto text-center">
-                <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                <a className="d-block" href="mailto:contact@yourwebsite.com">
-                  contact@yourwebsite.com
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <PortfolioModal
-          show={this.state.modalShow}
-          onHide={() => this.setModal(false, 0)}
-        >
-          <PortfolioCarousel
-            images={this.props.data.images.edges}
-            current={this.state.modalCurrent}
-          />
-        </PortfolioModal>
+          <PortfolioModal
+            show={this.state.modalShow}
+            onHide={() => this.setModal(false, 0)}
+          >
+            <PortfolioCarousel
+              images={this.props.data.images.edges}
+              current={this.state.modalCurrent}
+            />
+          </PortfolioModal>
+        </div>
       </Layout>
     )
   }
