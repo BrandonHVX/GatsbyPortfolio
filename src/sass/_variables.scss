@@ -2526,3 +2526,10 @@ $color-tertiary-dark: #5643fa;
 .card-text {
   font-size: 0.9rem;
 }
+
+@include media-breakpoint-down(md) {
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+}
