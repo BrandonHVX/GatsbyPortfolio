@@ -20,6 +20,7 @@ import filmvideo from "../images/filmvideo.png"
 import code from "../images/code.png"
 import motionplay from "../images/motionplay.png"
 import xd from "../images/xd.svg"
+import brandonpic from "../images/BrandonPic.jpg"
 import pr from "../images/Pr.svg"
 import jobsnowlogo from "../images/JOBSNOW.png"
 import rails from "../images/rails.svg"
@@ -50,6 +51,7 @@ import {
   Container,
   Jumbotron,
   Button,
+  Badge,
   Modal,
   ProgressBar,
 } from "react-bootstrap"
@@ -103,57 +105,207 @@ export default class IndexPage extends React.Component {
         <div>
           <SEO title="Home" />
 
-          <section className="page-section-about " id="about">
+          <section className="" id="about">
             <section
-              class="ftco-about img ftco-section ftco-no-pt ftco-no-pb"
-              id="about-section"
-            >
-              <div class="blog-slider">
-                <div class="blog-slider__wrp swiper-wrapper">
-                  <div class="blog-slider__item swiper-slide">
-                    <div class="blog-slider__img d-flex justify-content-center">
-                      <Image />
-                    </div>
-                    <div class="about-text">
-                      <p>
-                        Creative self-motivated professional with
+              class=""
+              id="about-section">
+              <div class="main-content">
+                <div class="container mt-7">
+
+                  <div class="row">
+                    <div class="col">
+                      <div class="card card-profile shadow">
+                        <div class="row justify-content-center">
+                          <div class="col-lg-3 order-lg-2">
+                            <div class="card-profile-image">
+                              <a href="#">
+                                <img src={brandonpic} class="rounded-circle" />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-header bg-primary text-center border-0 pt-5 pt-md-4 pb-0 pb-md-4 mb-4">
+                          <div class="d-flex justify-content-between mb-4">
+
+                          </div>
+                        </div>
+                        <div class="text-center mt-5">
+                          <h3>
+                            Brandon Gines<span class="font-weight-light"></span>
+                          </h3>
+                          <div class="h5 font-weight-300">
+                            <i class="ni location_pin mr-2"></i>Miami, Florida
+</div>
+                          <div class="h5 mt-4">
+                            <i class="ni business_briefcase-24 mr-2"></i>Solution Manager - Creative Tim Officer
+</div>
+                          <div>
+                            <i class="ni education_hat mr-2"></i>University of Computer Science
+</div>
+                          <hr class="my-4" />
+
+                        </div>
+
+
+
+
+
+
+
+
+
+                        <div class="card-body pt-0 pt-md-4">
+                          <div class="row">
+                            <div class="col-md-6 text-center">
+                              <h4>
+                                About Me
+                              </h4>
+                              <div class="card-profile-stats d-flex justify-content-center mt-md-1">
+
+                                <div class="text-center">
+
+                                  <p>Creative self-motivated professional with
                         cross-functional skills including expertise in digital
                         media, video production, full stack web development,
                         graphic design, marketing, project management and client
-                        engagement.
-                      </p>
-                      <ul class="about-info  px-md-0 px-2">
-                        <li class="d-flex">
-                          <span>Name:</span> <span>Brandon Gines </span>
-                        </li>
+                        engagement.</p>
 
-                        <li class="d-flex">
-                          <span>Location:</span>{" "}
-                          <span>Miami, FL 33138 USA</span>
-                        </li>
-                        <li class="d-flex">
-                          <span>Email:</span>{" "}
-                          <span>
-                            <a href="mailto: brandongines@gmail.com">
-                              brandongines@gmail.com
-                            </a>
-                          </span>
-                        </li>
-                        <li class="d-flex">
-                          <span>Phone: </span>{" "}
-                          <span>
-                            <a href="tel:310-651-1330">310-651-1330</a>
-                          </span>
-                        </li>
-                      </ul>
+                                </div>
 
-                      <a href="#" class="blog-slider__button">
-                        READ MORE
-                      </a>
+
+                              </div>
+                              <h4>
+                                Career Objective
+                              </h4>
+                              <div class="card-profile-stats d-flex justify-content-center mt-md-1">
+
+                                <div class="text-center">
+
+                                  <p>Creative self-motivated professional with
+                        cross-functional skills including expertise in digital
+                        media, video production, full stack web development,
+                        graphic design, marketing, project management and client
+                        engagement.</p>
+
+                                </div>
+
+
+                              </div>
+
+
+
+
+
+
+
+                            </div>
+
+                            <div class="col-md-6 text-center">
+
+                              <h4>
+                                EXPERTISE
+                         </h4>
+
+
+
+
+
+
+
+                              <div class="card-profile-stats  mt-md-1">
+                                <div class="progress-wrap">
+                                  <div class="row">
+                                    <div class="col-md-6">
+
+
+
+                                      <strong>Full Stack Web Development</strong>
+
+
+                                    </div>
+                                    <div class="col-md-5 mt-1">
+
+                                      <div >
+                                        <ProgressBar animated now={80} label={' 80%'} />
+                                      </div>
+
+                                    </div>
+
+                                  </div>
+                                </div>
+
+
+
+
+                                <div class="progress-wrap">
+                                  <div class="row">
+                                    <div class="col-md-6">
+
+
+
+                                      <strong>Film & Video Production</strong>
+
+
+                                    </div>
+                                    <div class="col-md-5 mt-1">
+
+                                      <div >
+                                        <ProgressBar animated now={80} label={' 80%'} />
+                                      </div>
+
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <div class="progress-wrap">
+                                  <div class="row">
+                                    <div class="col-md-6">
+
+
+
+                                      <strong>Graphic Design</strong>
+
+
+                                    </div>
+                                    <div class="col-md-5 mt-1">
+
+                                      <div >
+                                        <ProgressBar animated now={80} label={' 80%'} />
+                                      </div>
+
+                                    </div>
+
+                                  </div>
+                                </div>
+                                <div class="progress-wrap">
+                                  <div class="row">
+                                    <div class="col-md-6">
+
+
+
+                                      <strong>Motion Graphics</strong>
+
+
+                                    </div>
+                                    <div class="col-md-5 mt-1">
+
+                                      <div>
+                                        <ProgressBar animated now={80} label={' 80%'} />
+                                      </div>
+
+                                    </div>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="blog-slider__pagination"></div>
               </div>
             </section>
           </section>
@@ -172,100 +324,31 @@ export default class IndexPage extends React.Component {
                 </div>
               </div>
 
-              <div class="row justify-content">
+              <div class="row">
                 <div class="col-md-6 text-center d-flex ">
-                  <div class="card-3">
-                    <div class="card-3__side card-3__side--front card-3__side--front-1">
-                      <div class="card profile-card-3">
-                        <div class="background-block">
-                          <img
-                            src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
-                            alt="profile-sample1"
-                            class="background"
-                          />
-                        </div>
-                        <div class="profile-thumb-block ">
-                          <img
-                            src={filmvideo}
-                            alt="profile-image"
-                            class="profile"
-                          />
-                        </div>
-                        <div class="card-content">
-                          <h5>Full Stack Web Development</h5>
-                          <div class="icon-block">
-                            <p>
-                              <span class="mr-2">
-                                <img src={mongo} width={40} alt="" />
-                              </span>
-                              <span class="mr-2">
-                                <img src={ex} width={80} alt="" />
-                              </span>
-                              <span class="mr-2">
-                                <img src={reactsvg} width={40} alt="" />
-                              </span>
-                              <span class="mr-2">
-                                <img src={node} width={40} alt="" />
-                              </span>
-                            </p>
+                  <label>
+                    <input type="checkbox" />
+                    <div class="box">
+                      <div class="front">
+
+
+                        <div class="card profile-card-3">
+                          <div class="background-block">
+                            <img
+                              src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                              alt="profile-sample1"
+                              class="background"
+                            />
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-3__side card-3__side--back card-3__side--back-1">
-                      <div class="card profile-card-3">
-                        <div class="card bg-light  h-100">
-                          <div class="card-header">
-                            {" "}
-                            FULL STACK WEB DEVELOPMENT
+                          <div class="profile-thumb-block ">
+                            <img
+                              src={code}
+                              alt="profile-image"
+                              class="profile"
+                            />
                           </div>
-                          <div>
-                            <div class="row mt-4 pl-3 pr-3">
-                              <div class="col-sm-6">
-                                <span class="progress-title">Skill Level</span>
-                                <div class="progress">
-                                  <div
-                                    class="progress-bar-75"
-                                    role="progressbar"
-                                    aria-valuenow="75"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                  >
-                                    <span class="sr-only">75% Complete</span>
-                                  </div>
-
-                                  <span class="progress-completed">75%</span>
-                                </div>
-                              </div>
-                              <div class=" col-sm-6">
-                                <span class="progress-title">Experience</span>
-                                <div class="progress">
-                                  <div
-                                    class="progress-bar-20"
-                                    role="progressbar"
-                                    aria-valuenow="20"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                  >
-                                    <span class="sr-only">20% Complete</span>
-                                  </div>
-
-                                  <span class="progress-completed">
-                                    2 Years
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-
-                            <p class="card-text mt-4 p-2">
-                              Adobe Premreie Pro, Affter Effects and Final Cut
-                              Pro for video editing, motion graphics and
-                              finalizing content for commericials, social media
-                              content, webisodes and company interviews. High
-                              difinition 4K-8K digital content captured with Red
-                              Digital Cinema Cameras.
-                            </p>
-
+                          <div class="card-content">
+                            <h5>FULL STACK WEB DEVELOPMENT</h5>
                             <div class="icon-block mt-3">
                               <p>
                                 <span class="mr-2">
@@ -285,255 +368,176 @@ export default class IndexPage extends React.Component {
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="col-md-6 text-center d-flex ftco-animate">
-                  <div class="card-3">
-                    <div class="card-3__side card-3__side--front card-3__side--front-2">
-                      <div class="card profile-card-3">
-                        <div class="background-block">
-                          <img
-                            src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
-                            alt="profile-sample1"
-                            class="background"
-                          />
-                        </div>
-                        <div class="profile-thumb-block ">
-                          <img
-                            src={filmvideo}
-                            alt="profile-image"
-                            class="profile"
-                          />
-                        </div>
-                        <div class="card-content">
-                          <h5>Film & Video Production</h5>
-                          <div class="icon-block">
-                            <p>
-                              <span class="mr-2">
-                                <img src={pr} width={40} alt="" />
-                              </span>
-                              <span class="mr-2">
-                                <img src={ae} width={40} alt="" />
-                              </span>
-                              <span class="mr-2">
-                                <img src={finalcut} width={48} alt="" />
-                              </span>
+                      <div class="back">
+
+                       
+                          <div class="card profile-card-3">
+                            <div class="card bg-light  h-100">
+                              <div class="card-header">
+                                {" "}
+                                FULL STACK WEB DEVELOPMENT
+                          </div>
+                              <div>
+                                <div class="row mt-4 pl-3 pr-3">
+                                  <div class="col-sm-6">
+                                    <span class="progress-title">Skill Level   <ProgressBar animated now={80} label={'80%'} /></span>
+
+                                  </div>
+                                  <div class=" col-sm-6">
+                                    <div class="progress-title">Experience</div>
+
+                                    <Badge pill variant="primary" > 2 Years  </Badge>
+
+
+
+
+                                  </div>
+                                </div>
+
+                                      <div class="icon-block mt-3">
+                                  <p>
+                                    <span class="mr-2">
+                                      <img src={mongo} width={40} alt="" />
+                                    </span>
+                                    <span class="mr-2">
+                                      <img src={ex} width={80} alt="" />
+                                    </span>
+                                    <span class="mr-2">
+                                      <img src={reactsvg} width={40} alt="" />
+                                    </span>
+                                    <span class="mr-2">
+                                      <img src={node} width={40} alt="" />
+                                    </span>
+                                  </p>
+                                </div>
+
+                                <p class="card-text mt-4 p-2">
+                                  Adobe Premreie Pro, Affter Effects and Final Cut
+                                  Pro for video editing, motion graphics and
+                                  finalizing content for commericials, social media
+                                  content, webisodes and company interviews. High
+                                  difinition 4K-8K digital content captured with Red
+                                  Digital Cinema Cameras.
+
+
+
+                                  
                             </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-3__side card-3__side--back card-3__side--back-2">
-                      <div class="card profile-card-3">
-                        <div class="card bg-light  h-100">
-                          <div class="card-header">
-                            {" "}
-                            FILM & VIDEO PRODUCTION
-                          </div>
-                          <div>
-                            <div class="row mt-1 p-2">
-                              <div class=" col-sm-6">
-                                <span class="progress-title">Skill Level</span>
-                                <div class="progress">
-                                  <div
-                                    class="progress-bar-75"
-                                    role="progressbar"
-                                    aria-valuenow="75"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                  >
-                                    <span class="sr-only">75% Complete</span>
-                                  </div>
 
-                                  <span class="progress-completed">75%</span>
-                                </div>
-                              </div>
-                              <div class=" col-sm-6">
-                                <span class="progress-title">Experience</span>
-                                <div class="progress">
-                                  <div
-                                    class="progress-bar-20"
-                                    role="progressbar"
-                                    aria-valuenow="20"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                  >
-                                    <span class="sr-only">20% Complete</span>
-                                  </div>
-
-                                  <span class="progress-completed">
-                                    2 Years
-                                  </span>
-                                </div>
+                          
                               </div>
                             </div>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-md-6 text-center ">
+                  <label>
+                    <input type="checkbox" />
+                    <div class="box">
+                      <div class="front">
 
-                            <p class="card-text mt-3">
-                              Adobe Premreie Pro, Affter Effects and Final Cut
-                              Pro for video editing, motion graphics and
-                              finalizing content for commericials, social media
-                              content, webisodes and company interviews. High
-                              difinition 4K-8K digital content captured with Red
-                              Digital Cinema Cameras.
-                            </p>
 
-                            <div class="icon-block mt-4">
+                        <div class="card profile-card-3">
+                          <div class="background-block">
+                            <img
+                              src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                              alt="profile-sample1"
+                              class="background"
+                            />
+                          </div>
+                          <div class="profile-thumb-block ">
+                            <img
+                              src={code}
+                              alt="profile-image"
+                              class="profile"
+                            />
+                          </div>
+                          <div class="card-content">
+                            <h5>FILM & VIDEO PRODUCTION</h5>
+                            <div class="icon-block mt-3">
                               <p>
                                 <span class="mr-2">
-                                  <img src={pr} width={40} alt="" />
+                                  <img src={mongo} width={40} alt="" />
                                 </span>
                                 <span class="mr-2">
-                                  <img src={ae} width={40} alt="" />
+                                  <img src={ex} width={80} alt="" />
                                 </span>
                                 <span class="mr-2">
-                                  <img src={finalcut} width={48} alt="" />
+                                  <img src={reactsvg} width={40} alt="" />
+                                </span>
+                                <span class="mr-2">
+                                  <img src={node} width={40} alt="" />
                                 </span>
                               </p>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="col-md-6 text-center d-flex ftco-animate">
-                  <div class="card-3">
-                    <div class="card-3__side card-3__side--front card-3__side--front-1">
-                      <div class="card profile-card-3">
-                        <div class="background-block">
-                          <img
-                            src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
-                            alt="profile-sample1"
-                            class="background"
-                          />
-                        </div>
-                        <div class="profile-thumb-block ">
-                          <img
-                            src={filmvideo}
-                            alt="profile-image"
-                            class="profile"
-                          />
-                        </div>
-                        <div class="card-content">
-                          <h5>Graphic Design</h5>
-                          <div class="icon-block">
-                            <p>
-                              <span class="mr-2">
-                                <img src={ps} width={40} alt="" />
-                              </span>
-                              <span class="mr-2">
-                                <img src={ai} width={40} alt="" />
-                              </span>
-                              <span class="mr-2">
-                                <img src={xd} width={40} alt="" />
-                              </span>
-                            </p>
+                      <div class="back">
+
+                        <div>
+                          <div class="card profile-card-3">
+                            <div class="card bg-light  h-100">
+                              <div class="card-header">
+                                {" "}
+                                FULL STACK WEB DEVELOPMENT
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-3__side card-3__side--back card-3__side--back-1">
-                      <div class="card profile-card-3">
-                        <div class="card bg-light  h-100">
-                          <div class="card-header"> GRAPHIC DESIGN</div>
-                          <div>
-                            <div class="row mt-1 p-2">
-                              <div class=" col-sm-6">
-                                <span class="progress-title">Skill Level</span>
-                                <div class="progress">
-                                  <div
-                                    class="progress-bar-75"
-                                    role="progressbar"
-                                    aria-valuenow="75"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                  >
-                                    <span class="sr-only">75% Complete</span>
+                              <div>
+                                <div class="row mt-4 pl-3 pr-3">
+                                  <div class="col-sm-6">
+                                    <span class="progress-title">Skill Level   <ProgressBar animated now={80} label={'80%'} /></span>
+
                                   </div>
+                                  <div class=" col-sm-6">
+                                    <div class="progress-title">Experience</div>
 
-                                  <span class="progress-completed">75%</span>
-                                </div>
-                              </div>
-                              <div class=" col-sm-6">
-                                <span class="progress-title">Experience</span>
-                                <div class="progress">
-                                  <div
-                                    class="progress-bar-20"
-                                    role="progressbar"
-                                    aria-valuenow="20"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                  >
-                                    <span class="sr-only">20% Complete</span>
+                                    <Badge pill variant="primary" > 2 Years  </Badge>
+
+
+
+
                                   </div>
-
-                                  <span class="progress-completed">
-                                    2 Years
-                                  </span>
                                 </div>
-                              </div>
-                            </div>
 
-                            <p class="card-text mt-3">
-                              Adobe Premreie Pro, Affter Effects and Final Cut
-                              Pro for video editing, motion graphics and
-                              finalizing content for commericials, social media
-                              content, webisodes and company interviews. High
-                              difinition 4K-8K digital content captured with Red
-                              Digital Cinema Cameras.
+                                <p class="card-text mt-4 p-2">
+                                  Adobe Premreie Pro, Affter Effects and Final Cut
+                                  Pro for video editing, motion graphics and
+                                  finalizing content for commericials, social media
+                                  content, webisodes and company interviews. High
+                                  difinition 4K-8K digital content captured with Red
+                                  Digital Cinema Cameras.
                             </p>
 
-                            <div class="icon-block mt-4">
-                              <p>
-                                <span class="mr-2">
-                                  <img src={pr} width={40} alt="" />
-                                </span>
-                                <span class="mr-2">
-                                  <img src={ae} width={40} alt="" />
-                                </span>
-                                <span class="mr-2">
-                                  <img src={finalcut} width={48} alt="" />
-                                </span>
-                              </p>
+                                <div class="icon-block mt-3">
+                                  <p>
+                                    <span class="mr-2">
+                                      <img src={mongo} width={40} alt="" />
+                                    </span>
+                                    <span class="mr-2">
+                                      <img src={ex} width={80} alt="" />
+                                    </span>
+                                    <span class="mr-2">
+                                      <img src={reactsvg} width={40} alt="" />
+                                    </span>
+                                    <span class="mr-2">
+                                      <img src={node} width={40} alt="" />
+                                    </span>
+                                  </p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </label>
                 </div>
 
-                <div class="col-md-6 text-center d-flex ftco-animate">
-                  <div class="services-1 shadow">
-                    <span class="icon">
-                      <i class="flaticon-ux-design"></i>
-                    </span>
-                    <div class="desc">
-                      <h3 class="mb-5">Motion Graphics</h3>
-
-                      <p>
-                        <span class="mr-2">
-                          <img src={ae} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={ps} width={40} alt="" />
-                        </span>
-                        <span class="mr-2">
-                          <img src={ai} width={40} alt="" />
-                        </span>
-                      </p>
-                      <p>
-                        Adobe Affer Effects, Photoshop and Illustrator used to
-                        design, create and animate text, titles, graphics and
-                        vector elements used to enhance commericalized video
-                        content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </section>
