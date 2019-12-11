@@ -316,7 +316,7 @@ export default class IndexPage extends React.Component {
 
                       <div class="back">
                         <div>
-                          <div class="card bg-light  h-100">
+                          <div>
                             <div class="card-header">
                               {" "}
                               FULL STACK WEB DEVELOPMENT
@@ -360,7 +360,7 @@ export default class IndexPage extends React.Component {
                                 </p>
                               </div>
 
-                              <p class="card-text mt-4 p-2">
+                              <p class="card-text">
                                 Adobe Premreie Pro, Affter Effects and Final Cut
                                 Pro for video editing, motion graphics and
                                 finalizing content for commericials, social
