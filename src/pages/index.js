@@ -278,21 +278,21 @@ export default class IndexPage extends React.Component {
                     <div class="box">
                       <div class="front bg-primary">
                         <div class=" profile-card-3  h-100">
-                          {/* <div class="background-block">
+                          <div class="background-block">
                             <img
                               src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
                               alt="profile-sample1"
                               class="background"
                             />
-                          </div> */}
-                          <div class="profile-thumb-block ">
+                          </div>
+                          <div>
                             <img
                               src={code}
                               alt="profile-image"
                               class="profile"
                             />
                           </div>
-                          <div class="card-content">
+                          <div>
                             <h5>FULL STACK WEB DEVELOPMENT</h5>
                             <div class="icon-block mt-3">
                               <p>
