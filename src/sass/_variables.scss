@@ -2059,7 +2059,7 @@ $color-tertiary-dark: #5643fa;
   height: 50%;
   border-radius: 0 0 5px 5px;
   position: relative;
-  z-index: 1;
+  z-index: 999;
 }
 .profile-card-3 .card-content::before {
   content: "";
@@ -2069,7 +2069,7 @@ $color-tertiary-dark: #5643fa;
   left: 8px;
   bottom: 51px;
   position: absolute;
-  z-index: 1;
+  z-index: 999;
   transform: rotate(-8deg);
 }
 .profile-card-3 .profile {
