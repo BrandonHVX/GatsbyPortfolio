@@ -2061,17 +2061,17 @@ $color-tertiary-dark: #5643fa;
   position: relative;
   z-index: 0;
 }
-// .profile-card-3 .card-content::before {
-//   content: "";
-//   background: #efefef;
-//   width: 120%;
-//   height: 100%;
-//   left: 8px;
-//   bottom: 51px;
-//   position: absolute;
-//   z-index: 999;
-//   transform: rotate(-8deg);
-// }
+.profile-card-3 .card-content::after {
+  content: "";
+  background: #efefef;
+  width: 120%;
+  height: 100%;
+  left: 8px;
+  bottom: 51px;
+  position: absolute;
+  z-index: 999;
+  transform: rotate(-8deg);
+}
 .profile-card-3 .profile {
   position: absolute;
   bottom: 50%;
