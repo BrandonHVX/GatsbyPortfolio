@@ -277,7 +277,7 @@ export default class IndexPage extends React.Component {
                     <input type="checkbox" />
                     <div class="box">
                       <div class="front">
-                        <div class="card profile-card-3  h-100">
+                        <div class=" profile-card-3  h-100">
                           <div class="background-block">
                             <img
                               src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
