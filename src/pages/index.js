@@ -276,15 +276,15 @@ export default class IndexPage extends React.Component {
                   <label>
                     <input type="checkbox" />
                     <div class="box">
-                      <div class="front">
+                      <div class="front bg-primary">
                         <div class=" profile-card-3  h-100">
-                          <div class="background-block">
+                          {/* <div class="background-block">
                             <img
                               src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
                               alt="profile-sample1"
                               class="background"
                             />
-                          </div>
+                          </div> */}
                           <div class="profile-thumb-block ">
                             <img
                               src={code}
