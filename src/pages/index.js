@@ -292,7 +292,7 @@ export default class IndexPage extends React.Component {
                               class="profile"
                             />
                           </div>
-                          <div>
+                          <div class="card-content">
                             <h5>FULL STACK WEB DEVELOPMENT</h5>
                             <div class="icon-block mt-3">
                               <p>
