@@ -2069,7 +2069,7 @@ $color-tertiary-dark: #5643fa;
   left: 8px;
   bottom: 51px;
   position: absolute;
-  z-index: 999;
+  z-index: -1;
   transform: rotate(-8deg);
 }
 .profile-card-3 .profile {
@@ -2084,7 +2084,7 @@ $color-tertiary-dark: #5643fa;
   border: 2px solid rgba(255, 255, 255, 1);
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
- 
+  z-index: 0;
 }
 
 
