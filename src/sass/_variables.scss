@@ -2084,7 +2084,7 @@ $color-tertiary-dark: #5643fa;
   border: 2px solid rgba(255, 255, 255, 1);
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
-  z-index: 1;
+  z-index: 0;
 }
 
 
@@ -2996,7 +2996,7 @@ label {
   color: black;
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
-  z-index: 2;
+
 }
 
 // label:hover .box {
