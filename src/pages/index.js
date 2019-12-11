@@ -106,12 +106,9 @@ export default class IndexPage extends React.Component {
           <SEO title="Home" />
 
           <section className="" id="about">
-            <section
-              class=""
-              id="about-section">
+            <section class="" id="about-section">
               <div class="main-content">
                 <div class="container mt-7">
-
                   <div class="row">
                     <div class="col">
                       <div class="card card-profile shadow">
@@ -125,9 +122,7 @@ export default class IndexPage extends React.Component {
                           </div>
                         </div>
                         <div class="card-header bg-primary text-center border-0 pt-5 pt-md-4 pb-0 pb-md-4 mb-4">
-                          <div class="d-flex justify-content-between mb-4">
-
-                          </div>
+                          <div class="d-flex justify-content-between mb-4"></div>
                         </div>
                         <div class="text-center mt-5">
                           <h3>
@@ -135,167 +130,119 @@ export default class IndexPage extends React.Component {
                           </h3>
                           <div class="h5 font-weight-300">
                             <i class="ni location_pin mr-2"></i>Miami, Florida
-</div>
+                          </div>
                           <div class="h5 mt-4">
-                            <i class="ni business_briefcase-24 mr-2"></i>Solution Manager - Creative Tim Officer
-</div>
+                            <i class="ni business_briefcase-24 mr-2"></i>
+                            Solution Manager - Creative Tim Officer
+                          </div>
                           <div>
-                            <i class="ni education_hat mr-2"></i>University of Computer Science
-</div>
+                            <i class="ni education_hat mr-2"></i>University of
+                            Computer Science
+                          </div>
                           <hr class="my-4" />
-
                         </div>
-
-
-
-
-
-
-
-
 
                         <div class="card-body pt-0 pt-md-4">
                           <div class="row">
                             <div class="col-md-6 text-center">
-                              <h4>
-                                About Me
-                              </h4>
+                              <h4>About Me</h4>
                               <div class="card-profile-stats d-flex justify-content-center mt-md-1">
-
                                 <div class="text-center">
-
-                                  <p>Creative self-motivated professional with
-                        cross-functional skills including expertise in digital
-                        media, video production, full stack web development,
-                        graphic design, marketing, project management and client
-                        engagement.</p>
-
+                                  <p>
+                                    Creative self-motivated professional with
+                                    cross-functional skills including expertise
+                                    in digital media, video production, full
+                                    stack web development, graphic design,
+                                    marketing, project management and client
+                                    engagement.
+                                  </p>
                                 </div>
-
-
                               </div>
-                              <h4>
-                                Career Objective
-                              </h4>
+                              <h4>Career Objective</h4>
                               <div class="card-profile-stats d-flex justify-content-center mt-md-1">
-
                                 <div class="text-center">
-
-                                  <p>Creative self-motivated professional with
-                        cross-functional skills including expertise in digital
-                        media, video production, full stack web development,
-                        graphic design, marketing, project management and client
-                        engagement.</p>
-
+                                  <p>
+                                    Creative self-motivated professional with
+                                    cross-functional skills including expertise
+                                    in digital media, video production, full
+                                    stack web development, graphic design,
+                                    marketing, project management and client
+                                    engagement.
+                                  </p>
                                 </div>
-
-
                               </div>
-
-
-
-
-
-
-
                             </div>
 
                             <div class="col-md-6 text-center">
-
-                              <h4>
-                                EXPERTISE
-                         </h4>
-
-
-
-
-
-
+                              <h4>EXPERTISE</h4>
 
                               <div class="card-profile-stats  mt-md-1">
                                 <div class="progress-wrap">
                                   <div class="row">
                                     <div class="col-md-6">
-
-
-
-                                      <strong>Full Stack Web Development</strong>
-
-
+                                      <strong>
+                                        Full Stack Web Development
+                                      </strong>
                                     </div>
                                     <div class="col-md-5 mt-1">
-
-                                      <div >
-                                        <ProgressBar animated now={80} label={' 80%'} />
-                                      </div>
-
-                                    </div>
-
-                                  </div>
-                                </div>
-
-
-
-
-                                <div class="progress-wrap">
-                                  <div class="row">
-                                    <div class="col-md-6">
-
-
-
-                                      <strong>Film & Video Production</strong>
-
-
-                                    </div>
-                                    <div class="col-md-5 mt-1">
-
-                                      <div >
-                                        <ProgressBar animated now={80} label={' 80%'} />
-                                      </div>
-
-                                    </div>
-
-                                  </div>
-                                </div>
-
-                                <div class="progress-wrap">
-                                  <div class="row">
-                                    <div class="col-md-6">
-
-
-
-                                      <strong>Graphic Design</strong>
-
-
-                                    </div>
-                                    <div class="col-md-5 mt-1">
-
-                                      <div >
-                                        <ProgressBar animated now={80} label={' 80%'} />
-                                      </div>
-
-                                    </div>
-
-                                  </div>
-                                </div>
-                                <div class="progress-wrap">
-                                  <div class="row">
-                                    <div class="col-md-6">
-
-
-
-                                      <strong>Motion Graphics</strong>
-
-
-                                    </div>
-                                    <div class="col-md-5 mt-1">
-
                                       <div>
-                                        <ProgressBar animated now={80} label={' 80%'} />
+                                        <ProgressBar
+                                          animated
+                                          now={80}
+                                          label={" 80%"}
+                                        />
                                       </div>
-
                                     </div>
+                                  </div>
+                                </div>
 
+                                <div class="progress-wrap">
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <strong>Film & Video Production</strong>
+                                    </div>
+                                    <div class="col-md-5 mt-1">
+                                      <div>
+                                        <ProgressBar
+                                          animated
+                                          now={80}
+                                          label={" 80%"}
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="progress-wrap">
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <strong>Graphic Design</strong>
+                                    </div>
+                                    <div class="col-md-5 mt-1">
+                                      <div>
+                                        <ProgressBar
+                                          animated
+                                          now={80}
+                                          label={" 80%"}
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="progress-wrap">
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <strong>Motion Graphics</strong>
+                                    </div>
+                                    <div class="col-md-5 mt-1">
+                                      <div>
+                                        <ProgressBar
+                                          animated
+                                          now={80}
+                                          label={" 80%"}
+                                        />
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -330,9 +277,7 @@ export default class IndexPage extends React.Component {
                     <input type="checkbox" />
                     <div class="box">
                       <div class="front">
-
-
-                        <div class="card profile-card-3">
+                        <div class="card profile-card-3  h-100">
                           <div class="background-block">
                             <img
                               src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
@@ -370,66 +315,62 @@ export default class IndexPage extends React.Component {
                       </div>
 
                       <div class="back">
-
-                       
-                          <div class="card profile-card-3">
-                            <div class="card bg-light  h-100">
-                              <div class="card-header">
-                                {" "}
-                                FULL STACK WEB DEVELOPMENT
-                          </div>
-                              <div>
-                                <div class="row mt-4 pl-3 pr-3">
-                                  <div class="col-sm-6">
-                                    <span class="progress-title">Skill Level   <ProgressBar animated now={80} label={'80%'} /></span>
-
-                                  </div>
-                                  <div class=" col-sm-6">
-                                    <div class="progress-title">Experience</div>
-
-                                    <Badge pill variant="primary" > 2 Years  </Badge>
-
-
-
-
-                                  </div>
+                        <div>
+                          <div class="card bg-light  h-100">
+                            <div class="card-header">
+                              {" "}
+                              FULL STACK WEB DEVELOPMENT
+                            </div>
+                            <div>
+                              <div class="row mt-4 pl-3 pr-3">
+                                <div class="col-sm-6">
+                                  <span class="progress-title">
+                                    Skill Level{" "}
+                                    <ProgressBar
+                                      animated
+                                      now={80}
+                                      label={"80%"}
+                                    />
+                                  </span>
                                 </div>
+                                <div class=" col-sm-6">
+                                  <div class="progress-title">Experience</div>
 
-                                      <div class="icon-block mt-3">
-                                  <p>
-                                    <span class="mr-2">
-                                      <img src={mongo} width={40} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={ex} width={80} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={reactsvg} width={40} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={node} width={40} alt="" />
-                                    </span>
-                                  </p>
+                                  <Badge pill variant="primary">
+                                    {" "}
+                                    2 Years{" "}
+                                  </Badge>
                                 </div>
-
-                                <p class="card-text mt-4 p-2">
-                                  Adobe Premreie Pro, Affter Effects and Final Cut
-                                  Pro for video editing, motion graphics and
-                                  finalizing content for commericials, social media
-                                  content, webisodes and company interviews. High
-                                  difinition 4K-8K digital content captured with Red
-                                  Digital Cinema Cameras.
-
-
-
-                                  
-                            </p>
-
-                          
                               </div>
+
+                              <div class="icon-block mt-3">
+                                <p>
+                                  <span class="mr-2">
+                                    <img src={mongo} width={40} alt="" />
+                                  </span>
+                                  <span class="mr-2">
+                                    <img src={ex} width={80} alt="" />
+                                  </span>
+                                  <span class="mr-2">
+                                    <img src={reactsvg} width={40} alt="" />
+                                  </span>
+                                  <span class="mr-2">
+                                    <img src={node} width={40} alt="" />
+                                  </span>
+                                </p>
+                              </div>
+
+                              <p class="card-text mt-4 p-2">
+                                Adobe Premreie Pro, Affter Effects and Final Cut
+                                Pro for video editing, motion graphics and
+                                finalizing content for commericials, social
+                                media content, webisodes and company interviews.
+                                High difinition 4K-8K digital content captured
+                                with Red Digital Cinema Cameras.
+                              </p>
                             </div>
                           </div>
-                        
+                        </div>
                       </div>
                     </div>
                   </label>
@@ -439,8 +380,6 @@ export default class IndexPage extends React.Component {
                     <input type="checkbox" />
                     <div class="box">
                       <div class="front">
-
-
                         <div class="card profile-card-3">
                           <div class="background-block">
                             <img
@@ -479,39 +418,44 @@ export default class IndexPage extends React.Component {
                       </div>
 
                       <div class="back">
-
                         <div>
                           <div class="card profile-card-3">
                             <div class="card bg-light  h-100">
                               <div class="card-header">
                                 {" "}
                                 FULL STACK WEB DEVELOPMENT
-                          </div>
+                              </div>
                               <div>
                                 <div class="row mt-4 pl-3 pr-3">
                                   <div class="col-sm-6">
-                                    <span class="progress-title">Skill Level   <ProgressBar animated now={80} label={'80%'} /></span>
-
+                                    <span class="progress-title">
+                                      Skill Level{" "}
+                                      <ProgressBar
+                                        animated
+                                        now={80}
+                                        label={"80%"}
+                                      />
+                                    </span>
                                   </div>
                                   <div class=" col-sm-6">
                                     <div class="progress-title">Experience</div>
 
-                                    <Badge pill variant="primary" > 2 Years  </Badge>
-
-
-
-
+                                    <Badge pill variant="primary">
+                                      {" "}
+                                      2 Years{" "}
+                                    </Badge>
                                   </div>
                                 </div>
 
                                 <p class="card-text mt-4 p-2">
-                                  Adobe Premreie Pro, Affter Effects and Final Cut
-                                  Pro for video editing, motion graphics and
-                                  finalizing content for commericials, social media
-                                  content, webisodes and company interviews. High
-                                  difinition 4K-8K digital content captured with Red
-                                  Digital Cinema Cameras.
-                            </p>
+                                  Adobe Premreie Pro, Affter Effects and Final
+                                  Cut Pro for video editing, motion graphics and
+                                  finalizing content for commericials, social
+                                  media content, webisodes and company
+                                  interviews. High difinition 4K-8K digital
+                                  content captured with Red Digital Cinema
+                                  Cameras.
+                                </p>
 
                                 <div class="icon-block mt-3">
                                   <p>
@@ -537,7 +481,6 @@ export default class IndexPage extends React.Component {
                     </div>
                   </label>
                 </div>
-
               </div>
             </div>
           </section>
