@@ -272,12 +272,12 @@ export default class IndexPage extends React.Component {
               </div>
 
               <div class="row">
-                <div class="col-md-6 text-center d-flex ">
+                <div class="col-md-6 text-center d-flex mt-5">
                   <label>
                     <input type="checkbox" />
                     <div class="box">
                       <div class="front bg-primary">
-                        <div class=" profile-card-3  h-100">
+                        <div class=" profile-card-3 ">
                           <div class="background-block">
                             <img
                               src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
@@ -366,12 +366,12 @@ export default class IndexPage extends React.Component {
                     </div>
                   </label>
                 </div>
-                <div class="col-md-6 text-center d-flex ">
+                <div class="col-md-6 text-center d-flex mt-5">
                   <label>
                     <input type="checkbox" />
                     <div class="box">
                       <div class="front bg-primary">
-                        <div class=" profile-card-3  h-100">
+                        <div class=" profile-card-3">
                           <div class="background-block">
                             <img
                               src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
@@ -399,17 +399,14 @@ export default class IndexPage extends React.Component {
                                 <span class="mr-2">
                                   <img src={finalcut} width={40} alt="" />
                                 </span>
-                                
                               </p>
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div class="back">
-                        <div class="card-header">
-                          {" "}
-FILM & VIDEO PRODUCTION                        </div>
+                      <div class="back  h-100">
+                        <div class="card-header"> FILM & VIDEO PRODUCTION </div>
 
                         <div class="row mt-4 pl-3 pr-3">
                           <div class="col-sm-6">
@@ -434,12 +431,11 @@ FILM & VIDEO PRODUCTION                        </div>
                               <img src={pr} width={40} alt="" />
                             </span>
                             <span class="mr-2">
-                              <img src={ae} width={80} alt="" />
+                              <img src={ae} width={40} alt="" />
                             </span>
                             <span class="mr-2">
                               <img src={finalcut} width={40} alt="" />
                             </span>
-                          
                           </p>
                         </div>
 

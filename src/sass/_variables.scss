@@ -2974,14 +2974,14 @@ label {
   transform-style: preserve-3d;
   display: block;
   width: 100%;
-
-  height: 368px;
+  height: 400px;
 }
 
 .box {
   position: relative;
   height: 100%;
   width: 100%;
+  padding: 20px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transition: all 600ms;
