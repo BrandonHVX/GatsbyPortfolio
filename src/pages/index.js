@@ -285,15 +285,14 @@ export default class IndexPage extends React.Component {
                               class="background"
                             />
                           </div>
-                       
+
                           <div class="card-content">
-                          
                             <img
                               src={code}
                               alt="profile-image"
                               class="profile"
                             />
-                          
+
                             <h5>FULL STACK WEB DEVELOPMENT</h5>
                             <div class="icon-block mt-3">
                               <p>
@@ -316,7 +315,45 @@ export default class IndexPage extends React.Component {
                       </div>
 
                       <div class="back">
-                        <h1>Back</h1>
+                        <div class="card-header">
+                          {" "}
+                          FULL STACK WEB DEVELOPMENT
+                        </div>
+
+                        <div class="row mt-4 pl-3 pr-3">
+                          <div class="col-sm-6">
+                            <span class="progress-title">
+                              Skill Level{" "}
+                              <ProgressBar animated now={80} label={"80%"} />
+                            </span>
+                          </div>
+                          <div class=" col-sm-6">
+                            <div class="progress-title">Experience</div>
+
+                            <Badge pill variant="primary">
+                              {" "}
+                              2 Years{" "}
+                            </Badge>
+                          </div>
+                        </div>
+
+                        <div class="icon-block mt-3">
+                          <p>
+                            <span class="mr-2">
+                              <img src={mongo} width={40} alt="" />
+                            </span>
+                            <span class="mr-2">
+                              <img src={ex} width={80} alt="" />
+                            </span>
+                            <span class="mr-2">
+                              <img src={reactsvg} width={40} alt="" />
+                            </span>
+                            <span class="mr-2">
+                              <img src={node} width={40} alt="" />
+                            </span>
+                          </p>
+                        </div>
+
                         <p>
                           Adobe Premreie Pro, Affter Effects and Final Cut Pro
                           for video editing, motion graphics and finalizing
@@ -329,12 +366,12 @@ export default class IndexPage extends React.Component {
                     </div>
                   </label>
                 </div>
-                <div class="col-md-6 text-center ">
+                <div class="col-md-6 text-center d-flex ">
                   <label>
                     <input type="checkbox" />
                     <div class="box">
-                      <div class="front">
-                        <div class="card profile-card-3">
+                      <div class="front bg-primary">
+                        <div class=" profile-card-3  h-100">
                           <div class="background-block">
                             <img
                               src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
@@ -342,29 +379,27 @@ export default class IndexPage extends React.Component {
                               class="background"
                             />
                           </div>
-                          <div class="profile-thumb-block ">
+
+                          <div class="card-content">
                             <img
-                              src={code}
+                              src={filmvideo}
                               alt="profile-image"
                               class="profile"
                             />
-                          </div>
-                          <div class="card-content">
+
                             <h5>FILM & VIDEO PRODUCTION</h5>
                             <div class="icon-block mt-3">
                               <p>
                                 <span class="mr-2">
-                                  <img src={mongo} width={40} alt="" />
+                                  <img src={pr} width={40} alt="" />
                                 </span>
                                 <span class="mr-2">
-                                  <img src={ex} width={80} alt="" />
+                                  <img src={ae} width={40} alt="" />
                                 </span>
                                 <span class="mr-2">
-                                  <img src={reactsvg} width={40} alt="" />
+                                  <img src={finalcut} width={40} alt="" />
                                 </span>
-                                <span class="mr-2">
-                                  <img src={node} width={40} alt="" />
-                                </span>
+                                
                               </p>
                             </div>
                           </div>
@@ -372,65 +407,50 @@ export default class IndexPage extends React.Component {
                       </div>
 
                       <div class="back">
-                        <div>
-                          <div class="card profile-card-3">
-                            <div class="card bg-light  h-100">
-                              <div class="card-header">
-                                {" "}
-                                FULL STACK WEB DEVELOPMENT
-                              </div>
-                              <div>
-                                <div class="row mt-4 pl-3 pr-3">
-                                  <div class="col-sm-6">
-                                    <span class="progress-title">
-                                      Skill Level{" "}
-                                      <ProgressBar
-                                        animated
-                                        now={80}
-                                        label={"80%"}
-                                      />
-                                    </span>
-                                  </div>
-                                  <div class=" col-sm-6">
-                                    <div class="progress-title">Experience</div>
+                        <div class="card-header">
+                          {" "}
+FILM & VIDEO PRODUCTION                        </div>
 
-                                    <Badge pill variant="primary">
-                                      {" "}
-                                      2 Years{" "}
-                                    </Badge>
-                                  </div>
-                                </div>
+                        <div class="row mt-4 pl-3 pr-3">
+                          <div class="col-sm-6">
+                            <span class="progress-title">
+                              Skill Level{" "}
+                              <ProgressBar animated now={80} label={"80%"} />
+                            </span>
+                          </div>
+                          <div class=" col-sm-6">
+                            <div class="progress-title">Experience</div>
 
-                                <p class="card-text mt-4 p-2">
-                                  Adobe Premreie Pro, Affter Effects and Final
-                                  Cut Pro for video editing, motion graphics and
-                                  finalizing content for commericials, social
-                                  media content, webisodes and company
-                                  interviews. High difinition 4K-8K digital
-                                  content captured with Red Digital Cinema
-                                  Cameras.
-                                </p>
-
-                                <div class="icon-block mt-3">
-                                  <p>
-                                    <span class="mr-2">
-                                      <img src={mongo} width={40} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={ex} width={80} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={reactsvg} width={40} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={node} width={40} alt="" />
-                                    </span>
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
+                            <Badge pill variant="primary">
+                              {" "}
+                              2 Years{" "}
+                            </Badge>
                           </div>
                         </div>
+
+                        <div class="icon-block mt-3">
+                          <p>
+                            <span class="mr-2">
+                              <img src={pr} width={40} alt="" />
+                            </span>
+                            <span class="mr-2">
+                              <img src={ae} width={80} alt="" />
+                            </span>
+                            <span class="mr-2">
+                              <img src={finalcut} width={40} alt="" />
+                            </span>
+                          
+                          </p>
+                        </div>
+
+                        <p>
+                          Adobe Premreie Pro, Affter Effects and Final Cut Pro
+                          for video editing, motion graphics and finalizing
+                          content for commericials, social media content,
+                          webisodes and company interviews. High difinition
+                          4K-8K digital content captured with Red Digital Cinema
+                          Cameras.
+                        </p>
                       </div>
                     </div>
                   </label>
