@@ -104,12 +104,9 @@ export default class IndexPage extends React.Component {
         <div>
           <SEO title="Home" />
 
-          <section className="mt-5" id="about">
-            <section class="mt-5" id="about-section">
-              <div class="main-content">
-                <div class="container mt-7">
-                  <div class="row">
-                    <div class="col">
+          <section className="page-section-about mt-5" id="about">
+           
+              
                       <div class="about-card bg-white shadow mt-7">
                         <div class="row justify-content-center">
                           <div class="col-lg-3 order-lg-2">
@@ -120,9 +117,7 @@ export default class IndexPage extends React.Component {
                             </div>
                           </div>
                         </div>
-                        <div class="card-header1  text-center mb-5">
-
-                        </div>
+                        <div class="card-header1  text-center mb-5"></div>
                         <div class="text-center mt-5 mb-5">
                           <h3>
                             Brandon Gines<span class="font-weight-light"></span>
@@ -140,34 +135,33 @@ export default class IndexPage extends React.Component {
                           </div>
                           <hr class="my-4" />
 
-                          <Badge pill variant="secondary">About</Badge>
-
+                          <h3>
+                            <Badge pill variant="secondary">
+                              About
+                            </Badge>
+                          </h3>
                           <div class="about-text pt-2">
                             <p>
                               Creative self-motivated professional with
-                              cross-functional skills including expertise
-                              in digital media, video production, full
-                              stack web development, graphic design,
-                              marketing, project management and client
-                              engagement.
-                                  </p>
+                              cross-functional skills including expertise in
+                              digital media, video production, full stack web
+                              development, graphic design, marketing, project
+                              management and client engagement.
+                            </p>
                           </div>
-
-
-
-
-
-
                         </div>
 
-
                         <div class="card-body pt-0 pt-md-4">
-
                           <div class="row">
-                            <div class="col-md-6 text-center">
-                              <Badge pill variant="secondary"> Career Objective</Badge>
+                            <div class="col-md-6 ">
+                              <h3>
+                                <Badge pill variant="secondary">
+                                  {" "}
+                                  Career Objective
+                                </Badge>
+                              </h3>
 
-                              <div class="card-profile-stats d-flex justify-content-center mt-md-1">
+                          
                                 <div class="about-text ">
                                   <p>
                                     Creative self-motivated professional with
@@ -177,12 +171,16 @@ export default class IndexPage extends React.Component {
                                     marketing, project management and client
                                     engagement.
                                   </p>
-                                </div>
+                              
                               </div>
                             </div>
 
                             <div class="col-md-6 text-center">
-                              <Badge pill variant="secondary"> Expertise</Badge>
+                              <h2>
+                                <Badge pill variant="secondary">
+                                  Expertise
+                                </Badge>
+                              </h2>
 
                               <div class="card-profile-stats  mt-md-1">
                                 <div class="progress-wrap">
@@ -257,893 +255,982 @@ export default class IndexPage extends React.Component {
                             </div>
                           </div>
                         </div>
+
+                        <div class="main-content">
+                          <div class="container ">
+                            <div class="row">
+                              <div class="col">
+                                <div class="text-center  pt-5">
+                                  <h2>
+                                    <Badge pill variant="secondary">
+                                      {" "}
+                                      Skills & Software
+                                    </Badge>
+                                  </h2>
+
+                                  <div class="row justify-content-center ">
+                                    <div class="col-lg-3 order-lg-2"></div>
+                                  </div>
+
+                                  <div class="row p-2 ">
+                                    <div class="col-md-6 text-center d-flex mt-5 ">
+                                      <label>
+                                        <input type="checkbox" />
+                                        <div class="box shadow">
+                                          <div class="front">
+                                            <div class=" profile-card-3 h-100">
+                                              <div class="background-block">
+                                                <img
+                                                  src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                                                  alt="profile-sample1"
+                                                  class="background"
+                                                />
+                                              </div>
+
+                                              <div class="card-content">
+                                                <img
+                                                  src={code}
+                                                  alt="profile-image"
+                                                  class="profile"
+                                                />
+
+                                                <h5>
+                                                  FULL STACK WEB DEVELOPMENT
+                                                </h5>
+                                                <div class="icon-block mt-3">
+                                                  <p>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={mongo}
+                                                        width={40}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={ex}
+                                                        width={80}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={reactsvg}
+                                                        width={40}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={node}
+                                                        width={40}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="back">
+                                            <div class="card-header">
+                                              {" "}
+                                              FULL STACK WEB DEVELOPMENT
+                                            </div>
+
+                                            <div class="row mt-4 pl-3 pr-3">
+                                              <div class="col-sm-6">
+                                                <span class="progress-title">
+                                                  Skill Level{" "}
+                                                  <ProgressBar
+                                                    animated
+                                                    now={80}
+                                                    label={"80%"}
+                                                  />
+                                                </span>
+                                              </div>
+                                              <div class=" col-sm-6">
+                                                <div class="progress-title">
+                                                  Experience
+                                                </div>
+
+                                                <strong>2 Years</strong>
+                                              </div>
+                                            </div>
+
+                                            <div class="icon-block mt-3">
+                                              <p>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={mongo}
+                                                    width={40}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={ex}
+                                                    width={80}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={reactsvg}
+                                                    width={40}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={node}
+                                                    width={40}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                              </p>
+                                            </div>
+
+                                            <p>
+                                              Adobe Premreie Pro, Affter Effects
+                                              and Final Cut Pro for video
+                                              editing, motion graphics and
+                                              finalizing content for
+                                              commericials, social media
+                                              content, webisodes and company
+                                              interviews. High difinition 4K-8K
+                                              digital content captured with Red
+                                              Digital Cinema Cameras.
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </label>
+                                    </div>
+                                    <div class="col-md-6 text-center d-flex mt-5">
+                                      <label>
+                                        <input type="checkbox" />
+                                        <div class="box shadow">
+                                          <div class="front">
+                                            <div class=" profile-card-3 h-100">
+                                              <div class="background-block">
+                                                <img
+                                                  src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                                                  alt="profile-sample1"
+                                                  class="background"
+                                                />
+                                              </div>
+
+                                              <div class="card-content">
+                                                <img
+                                                  src={filmvideo}
+                                                  alt="profile-image"
+                                                  class="profile"
+                                                />
+
+                                                <h5>FILM & VIDEO PRODUCTION</h5>
+                                                <div class="icon-block mt-3">
+                                                  <p>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={pr}
+                                                        width={40}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={ae}
+                                                        width={40}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={finalcut}
+                                                        width={40}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="back  h-100">
+                                            <div class="card-header">
+                                              {" "}
+                                              FILM & VIDEO PRODUCTION{" "}
+                                            </div>
+
+                                            <div class="row mt-4 pl-3 pr-3">
+                                              <div class="col-sm-6">
+                                                <span class="progress-title">
+                                                  Skill Level{" "}
+                                                  <ProgressBar
+                                                    animated
+                                                    now={80}
+                                                    label={"80%"}
+                                                  />
+                                                </span>
+                                              </div>
+                                              <div class=" col-sm-6">
+                                                <div class="progress-title">
+                                                  Experience
+                                                </div>
+
+                                                <Badge pill variant="primary">
+                                                  {" "}
+                                                  2 Years{" "}
+                                                </Badge>
+                                              </div>
+                                            </div>
+
+                                            <div class="icon-block mt-3">
+                                              <p>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={pr}
+                                                    width={40}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={ae}
+                                                    width={40}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={finalcut}
+                                                    width={40}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                              </p>
+                                            </div>
+
+                                            <p>
+                                              Adobe Premreie Pro, Affter Effects
+                                              and Final Cut Pro for video
+                                              editing, motion graphics and
+                                              finalizing content for
+                                              commericials, social media
+                                              content, webisodes and company
+                                              interviews. High difinition 4K-8K
+                                              digital content captured with Red
+                                              Digital Cinema Cameras.
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </label>
+                                    </div>
+                                    <div class="col-md-6 text-center d-flex mt-5">
+                                      <label>
+                                        <input type="checkbox" />
+                                        <div class="box shadow">
+                                          <div class="front">
+                                            <div class=" profile-card-3 h-100">
+                                              <div class="background-block">
+                                                <img
+                                                  src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                                                  alt="profile-sample1"
+                                                  class="background"
+                                                />
+                                              </div>
+
+                                              <div class="card-content">
+                                                <img
+                                                  src={filmvideo}
+                                                  alt="profile-image"
+                                                  class="profile"
+                                                />
+
+                                                <h5>FILM & VIDEO PRODUCTION</h5>
+                                                <div class="icon-block mt-3">
+                                                  <p>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={pr}
+                                                        width={40}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={ae}
+                                                        width={40}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={finalcut}
+                                                        width={40}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="back  h-100">
+                                            <div class="card-header">
+                                              {" "}
+                                              FILM & VIDEO PRODUCTION{" "}
+                                            </div>
+
+                                            <div class="row mt-4 pl-3 pr-3">
+                                              <div class="col-sm-6">
+                                                <span class="progress-title">
+                                                  Skill Level{" "}
+                                                  <ProgressBar
+                                                    animated
+                                                    now={80}
+                                                    label={"80%"}
+                                                  />
+                                                </span>
+                                              </div>
+                                              <div class=" col-sm-6">
+                                                <div class="progress-title">
+                                                  Experience
+                                                </div>
+
+                                                <Badge pill variant="primary">
+                                                  {" "}
+                                                  2 Years{" "}
+                                                </Badge>
+                                              </div>
+                                            </div>
+
+                                            <div class="icon-block mt-3">
+                                              <p>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={pr}
+                                                    width={40}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={ae}
+                                                    width={40}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={finalcut}
+                                                    width={40}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                              </p>
+                                            </div>
+
+                                            <p>
+                                              Adobe Premreie Pro, Affter Effects
+                                              and Final Cut Pro for video
+                                              editing, motion graphics and
+                                              finalizing content for
+                                              commericials, social media
+                                              content, webisodes and company
+                                              interviews. High difinition 4K-8K
+                                              digital content captured with Red
+                                              Digital Cinema Cameras.
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </label>
+                                    </div>
+                                    <div class="col-md-6 text-center d-flex mt-5">
+                                      <label>
+                                        <input type="checkbox" />
+                                        <div class="box shadow">
+                                          <div class="front">
+                                            <div class=" profile-card-3 h-100">
+                                              <div class="background-block">
+                                                <img
+                                                  src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                                                  alt="profile-sample1"
+                                                  class="background"
+                                                />
+                                              </div>
+
+                                              <div class="card-content">
+                                                <img
+                                                  src={filmvideo}
+                                                  alt="profile-image"
+                                                  class="profile"
+                                                />
+
+                                                <h5>FILM & VIDEO PRODUCTION</h5>
+                                                <div class="icon-block mt-3">
+                                                  <p>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={pr}
+                                                        width={40}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={ae}
+                                                        width={40}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                    <span class="mr-2">
+                                                      <img
+                                                        src={finalcut}
+                                                        width={40}
+                                                        alt=""
+                                                      />
+                                                    </span>
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="back  h-100">
+                                            <div class="card-header">
+                                              {" "}
+                                              FILM & VIDEO PRODUCTION{" "}
+                                            </div>
+
+                                            <div class="row mt-4 pl-3 pr-3">
+                                              <div class="col-sm-6">
+                                                <span class="progress-title">
+                                                  Skill Level{" "}
+                                                  <ProgressBar
+                                                    animated
+                                                    now={80}
+                                                    label={"80%"}
+                                                  />
+                                                </span>
+                                              </div>
+                                              <div class=" col-sm-6">
+                                                <div class="progress-title">
+                                                  Experience
+                                                </div>
+
+                                                <Badge pill variant="primary">
+                                                  {" "}
+                                                  2 Years{" "}
+                                                </Badge>
+                                              </div>
+                                            </div>
+
+                                            <div class="icon-block mt-3">
+                                              <p>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={pr}
+                                                    width={40}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={ae}
+                                                    width={40}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                                <span class="mr-2">
+                                                  <img
+                                                    src={finalcut}
+                                                    width={40}
+                                                    alt=""
+                                                  />
+                                                </span>
+                                              </p>
+                                            </div>
+
+                                            <p>
+                                              Adobe Premreie Pro, Affter Effects
+                                              and Final Cut Pro for video
+                                              editing, motion graphics and
+                                              finalizing content for
+                                              commericials, social media
+                                              content, webisodes and company
+                                              interviews. High difinition 4K-8K
+                                              digital content captured with Red
+                                              Digital Cinema Cameras.
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+              
+            
           </section>
-
-          <section id="services">
-            <div class="main-content">
-              <div class="container mt-7">
-
-                <div class="row">
-                  <div class="col">
-                    <div class="skills-card text-center  shadow pt-5">
-
-                      <h5><Badge pill variant="secondary"> Skills & Software</Badge></h5>
-
-
-                      <div class="row justify-content-center ">
-
-                        <div class="col-lg-3 order-lg-2">
-
-                        </div>
-                      </div>
-
-
-                      <div class="row p-2 ">
-                        <div class="col-md-6 text-center d-flex mt-5 ">
-                          <label>
-                            <input type="checkbox" />
-                            <div class="box ">
-                              <div class="front">
-                                <div class=" profile-card-3 h-100">
-                                  <div class="background-block">
-                                    <img
-                                      src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
-                                      alt="profile-sample1"
-                                      class="background"
-                                    />
-                                  </div>
-
-                                  <div class="card-content">
-                                    <img
-                                      src={code}
-                                      alt="profile-image"
-                                      class="profile"
-                                    />
-
-                                    <h5>FULL STACK WEB DEVELOPMENT</h5>
-                                    <div class="icon-block mt-3">
-                                      <p>
-                                        <span class="mr-2">
-                                          <img src={mongo} width={40} alt="" />
-                                        </span>
-                                        <span class="mr-2">
-                                          <img src={ex} width={80} alt="" />
-                                        </span>
-                                        <span class="mr-2">
-                                          <img src={reactsvg} width={40} alt="" />
-                                        </span>
-                                        <span class="mr-2">
-                                          <img src={node} width={40} alt="" />
-                                        </span>
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="back">
-                                <div class="card-header">
-                                  {" "}
-                                  FULL STACK WEB DEVELOPMENT
-                        </div>
-
-                                <div class="row mt-4 pl-3 pr-3">
-                                  <div class="col-sm-6">
-                                    <span class="progress-title">
-                                      Skill Level{" "}
-                                      <ProgressBar animated now={80} label={"80%"} />
-                                    </span>
-                                  </div>
-                                  <div class=" col-sm-6">
-                                    <div class="progress-title">Experience</div>
-
-                                    <strong>2 Years</strong>
-
-                                  </div>
-                                </div>
-
-                                <div class="icon-block mt-3">
-                                  <p>
-                                    <span class="mr-2">
-                                      <img src={mongo} width={40} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={ex} width={80} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={reactsvg} width={40} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={node} width={40} alt="" />
-                                    </span>
-                                  </p>
-                                </div>
-
-                                <p>
-                                  Adobe Premreie Pro, Affter Effects and Final Cut Pro
-                                  for video editing, motion graphics and finalizing
-                                  content for commericials, social media content,
-                                  webisodes and company interviews. High difinition
-                                  4K-8K digital content captured with Red Digital Cinema
-                                  Cameras.
-                        </p>
-                              </div>
-                            </div>
-                          </label>
-                        </div>
-                        <div class="col-md-6 text-center d-flex mt-5">
-                          <label>
-                            <input type="checkbox" />
-                            <div class="box">
-                              <div class="front">
-                                <div class=" profile-card-3 h-100">
-                                  <div class="background-block">
-                                    <img
-                                      src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
-                                      alt="profile-sample1"
-                                      class="background"
-                                    />
-                                  </div>
-
-                                  <div class="card-content">
-                                    <img
-                                      src={filmvideo}
-                                      alt="profile-image"
-                                      class="profile"
-                                    />
-
-                                    <h5>FILM & VIDEO PRODUCTION</h5>
-                                    <div class="icon-block mt-3">
-                                      <p>
-                                        <span class="mr-2">
-                                          <img src={pr} width={40} alt="" />
-                                        </span>
-                                        <span class="mr-2">
-                                          <img src={ae} width={40} alt="" />
-                                        </span>
-                                        <span class="mr-2">
-                                          <img src={finalcut} width={40} alt="" />
-                                        </span>
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="back  h-100">
-                                <div class="card-header"> FILM & VIDEO PRODUCTION </div>
-
-                                <div class="row mt-4 pl-3 pr-3">
-                                  <div class="col-sm-6">
-                                    <span class="progress-title">
-                                      Skill Level{" "}
-                                      <ProgressBar animated now={80} label={"80%"} />
-                                    </span>
-                                  </div>
-                                  <div class=" col-sm-6">
-                                    <div class="progress-title">Experience</div>
-
-                                    <Badge pill variant="primary">
-                                      {" "}
-                                      2 Years{" "}
-                                    </Badge>
-                                  </div>
-                                </div>
-
-                                <div class="icon-block mt-3">
-                                  <p>
-                                    <span class="mr-2">
-                                      <img src={pr} width={40} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={ae} width={40} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={finalcut} width={40} alt="" />
-                                    </span>
-                                  </p>
-                                </div>
-
-                                <p>
-                                  Adobe Premreie Pro, Affter Effects and Final Cut Pro
-                                  for video editing, motion graphics and finalizing
-                                  content for commericials, social media content,
-                                  webisodes and company interviews. High difinition
-                                  4K-8K digital content captured with Red Digital Cinema
-                                  Cameras.
-                        </p>
-                              </div>
-                            </div>
-                          </label>
-                        </div>
-                        <div class="col-md-6 text-center d-flex mt-5">
-                          <label>
-                            <input type="checkbox" />
-                            <div class="box">
-                              <div class="front">
-                                <div class=" profile-card-3 h-100">
-                                  <div class="background-block">
-                                    <img
-                                      src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
-                                      alt="profile-sample1"
-                                      class="background"
-                                    />
-                                  </div>
-
-                                  <div class="card-content">
-                                    <img
-                                      src={filmvideo}
-                                      alt="profile-image"
-                                      class="profile"
-                                    />
-
-                                    <h5>FILM & VIDEO PRODUCTION</h5>
-                                    <div class="icon-block mt-3">
-                                      <p>
-                                        <span class="mr-2">
-                                          <img src={pr} width={40} alt="" />
-                                        </span>
-                                        <span class="mr-2">
-                                          <img src={ae} width={40} alt="" />
-                                        </span>
-                                        <span class="mr-2">
-                                          <img src={finalcut} width={40} alt="" />
-                                        </span>
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="back  h-100">
-                                <div class="card-header"> FILM & VIDEO PRODUCTION </div>
-
-                                <div class="row mt-4 pl-3 pr-3">
-                                  <div class="col-sm-6">
-                                    <span class="progress-title">
-                                      Skill Level{" "}
-                                      <ProgressBar animated now={80} label={"80%"} />
-                                    </span>
-                                  </div>
-                                  <div class=" col-sm-6">
-                                    <div class="progress-title">Experience</div>
-
-                                    <Badge pill variant="primary">
-                                      {" "}
-                                      2 Years{" "}
-                                    </Badge>
-                                  </div>
-                                </div>
-
-                                <div class="icon-block mt-3">
-                                  <p>
-                                    <span class="mr-2">
-                                      <img src={pr} width={40} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={ae} width={40} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={finalcut} width={40} alt="" />
-                                    </span>
-                                  </p>
-                                </div>
-
-                                <p>
-                                  Adobe Premreie Pro, Affter Effects and Final Cut Pro
-                                  for video editing, motion graphics and finalizing
-                                  content for commericials, social media content,
-                                  webisodes and company interviews. High difinition
-                                  4K-8K digital content captured with Red Digital Cinema
-                                  Cameras.
-                        </p>
-                              </div>
-                            </div>
-                          </label>
-                        </div>
-                        <div class="col-md-6 text-center d-flex mt-5">
-                          <label>
-                            <input type="checkbox" />
-                            <div class="box">
-                              <div class="front">
-                                <div class=" profile-card-3 h-100">
-                                  <div class="background-block">
-                                    <img
-                                      src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
-                                      alt="profile-sample1"
-                                      class="background"
-                                    />
-                                  </div>
-
-                                  <div class="card-content">
-                                    <img
-                                      src={filmvideo}
-                                      alt="profile-image"
-                                      class="profile"
-                                    />
-
-                                    <h5>FILM & VIDEO PRODUCTION</h5>
-                                    <div class="icon-block mt-3">
-                                      <p>
-                                        <span class="mr-2">
-                                          <img src={pr} width={40} alt="" />
-                                        </span>
-                                        <span class="mr-2">
-                                          <img src={ae} width={40} alt="" />
-                                        </span>
-                                        <span class="mr-2">
-                                          <img src={finalcut} width={40} alt="" />
-                                        </span>
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="back  h-100">
-                                <div class="card-header"> FILM & VIDEO PRODUCTION </div>
-
-                                <div class="row mt-4 pl-3 pr-3">
-                                  <div class="col-sm-6">
-                                    <span class="progress-title">
-                                      Skill Level{" "}
-                                      <ProgressBar animated now={80} label={"80%"} />
-                                    </span>
-                                  </div>
-                                  <div class=" col-sm-6">
-                                    <div class="progress-title">Experience</div>
-
-                                    <Badge pill variant="primary">
-                                      {" "}
-                                      2 Years{" "}
-                                    </Badge>
-                                  </div>
-                                </div>
-
-                                <div class="icon-block mt-3">
-                                  <p>
-                                    <span class="mr-2">
-                                      <img src={pr} width={40} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={ae} width={40} alt="" />
-                                    </span>
-                                    <span class="mr-2">
-                                      <img src={finalcut} width={40} alt="" />
-                                    </span>
-                                  </p>
-                                </div>
-
-                                <p>
-                                  Adobe Premreie Pro, Affter Effects and Final Cut Pro
-                                  for video editing, motion graphics and finalizing
-                                  content for commericials, social media content,
-                                  webisodes and company interviews. High difinition
-                                  4K-8K digital content captured with Red Digital Cinema
-                                  Cameras.
-                        </p>
-                              </div>
-                            </div>
-                          </label>
-                        </div>
-                      </div>
-
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-          </section>
-
 
           <section className="page-section-projects mb-5" id="portfolio">
-            <div>
-              <div class="skills-card bg-white shadow">
-                <div class="row justify-content-center">
-                  <div class="col-lg-3 order-lg-2">
+            <div class="skills-card bg-white shadow">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 order-lg-2"></div>
+              </div>
+              <div class="text-center mt-5 mb-5">
+                <h2>
+                  <Badge pill variant="secondary">
+                    {" "}
+                    Projects
+                  </Badge>
+                </h2>
+              </div>
 
-                  </div>
-                </div>
-                <div class="text-center mt-5 mb-5">
+              <div>
+                <Tab.Container defaultActiveKey="first">
+                  <Nav variant="pills" style={navtabs}>
+                    <Nav.Item>
+                      <Nav.Link eventKey="first">WEB DEVELOPMENT</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="second">VIDEO PR0DUCTION</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="third">GRAPHIC DESIGN</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="fourth">MOTION GRAPHICS</Nav.Link>
+                    </Nav.Item>
+                  </Nav>
 
-                  <Badge pill variant="primary"> Projects</Badge>
+                  <Tab.Content style={{ margin: "40px auto" }}>
+                    <Tab.Pane eventKey="first">
+                      <section id="portfolio">
+                        <div>
+                          <div className="row gutters">
+                            <div className="col-lg-6 col-md-6">
+                              <div className="col">
+                                <div class="cards">
+                                  <div class="arrow-right">
+                                    <JobsNowModal />
+                                  </div>
 
-                </div>
-
-                <div>
-                  <Tab.Container defaultActiveKey="first">
-                    <Nav variant="pills" style={navtabs}>
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">WEB DEVELOPMENT</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">VIDEO PR0DUCTION</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">GRAPHIC DESIGN</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="fourth">MOTION GRAPHICS</Nav.Link>
-                      </Nav.Item>
-                    </Nav>
-
-                    <Tab.Content style={{ margin: "40px auto" }}>
-                      <Tab.Pane eventKey="first">
-                        <section id="portfolio">
-                          <div>
-                            <div className="row gutters">
-                              <div className="col-lg-6 col-md-6">
-                                <div className="col">
-                                  <div class="cards">
-                                    <div class="arrow-right">
-                                      <JobsNowModal />
-                                    </div>
-
-                                    <h4 class="pg-title">JOBS NOW</h4>
-                                    <p class="pg-text">
-                                      Career Networking web application.
+                                  <h4 class="pg-title">JOBS NOW</h4>
+                                  <p class="pg-text">
+                                    Career Networking web application.
                                   </p>
 
-                                    <div class="pic">
-                                      <Img
-                                        fluid={
-                                          this.props.data.images.edges[1].node
-                                            .childImageSharp.fluid
-                                        }
-                                      />
-                                    </div>
-                                    <ul>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                    </ul>
-                                    <div class="social">
-                                      <i class="fab fa-react"></i>
-                                      <i class="fab fa-js"></i>
-                                      <i class="fab fa-node"></i>
-                                      <i class="fab fa-bootstrap"></i>
-                                    </div>
-
-                                    <button></button>
+                                  <div class="pic">
+                                    <Img
+                                      fluid={
+                                        this.props.data.images.edges[1].node
+                                          .childImageSharp.fluid
+                                      }
+                                    />
                                   </div>
+                                
+                                  <div class="social">
+                                    <i class="fab fa-react"></i>
+                                    <i class="fab fa-js"></i>
+                                    <i class="fab fa-node"></i>
+                                    <i class="fab fa-bootstrap"></i>
+                                  </div>
+
+                                  <button></button>
                                 </div>
                               </div>
-                              <div className="col-lg-6 col-md-6">
-                                <div className="col">
-                                  <div class="cards">
-                                    <div class="arrow-right">
-                                      <NyxModal />
-                                    </div>
-                                    <h4 class="pg-title">NYX NEWS</h4>
-                                    <p class="pg-text">
-                                      Career Networking web application.
-                                  </p>
-                                    <div class="pic">
-                                      <Img
-                                        fluid={
-                                          this.props.data.images.edges[2].node
-                                            .childImageSharp.fluid
-                                        }
-                                      />
-                                    </div>
-                                    <ul>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                    </ul>
-                                    <div class="social">
-                                      <i class="fab fa-react"></i>
-                                      <i class="fab fa-js"></i>
-                                      <i class="fab fa-node"></i>
-                                      <i class="fab fa-bootstrap"></i>
-                                    </div>
-                                    <button></button>
+                            </div>
+                            <div className="col-lg-6 col-md-6">
+                              <div className="col">
+                                <div class="cards">
+                                  <div class="arrow-right">
+                                    <NyxModal />
                                   </div>
+                                  <h4 class="pg-title">NYX NEWS</h4>
+                                  <p class="pg-text">
+                                    Career Networking web application.
+                                  </p>
+                                  <div class="pic">
+                                    <Img
+                                      fluid={
+                                        this.props.data.images.edges[2].node
+                                          .childImageSharp.fluid
+                                      }
+                                    />
+                                  </div>
+                          
+                                  <div class="social">
+                                    <i class="fab fa-react"></i>
+                                    <i class="fab fa-js"></i>
+                                    <i class="fab fa-node"></i>
+                                    <i class="fab fa-bootstrap"></i>
+                                  </div>
+                                  <button></button>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </section>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="second">
-                        <section id="portfolio">
-                          <div>
-                            <div className="row gutters">
-                              <div className="col-lg-6 col-md-6">
-                                <div className="col">
-                                  <div class="cards">
-                                    <div class="arrow-right">
-                                      <BandsModal />
-                                    </div>
+                        </div>
+                      </section>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="second">
+                      <section id="portfolio">
+                        <div>
+                          <div className="row gutters">
+                            <div className="col-lg-6 col-md-6">
+                              <div className="col">
+                                <div class="cards">
+                                  <div class="arrow-right">
+                                    <BandsModal />
+                                  </div>
 
-                                    <h5 class="pg-title">Taylor Alexandria</h5>
-                                    <p class="pg-text">
-                                      Company Profile and Interview
+                                  <h5 class="pg-title">Taylor Alexandria</h5>
+                                  <p class="pg-text">
+                                    Company Profile and Interview
                                   </p>
 
-                                    <div class="pic">
-                                      <Img
-                                        fluid={
-                                          this.props.data.images.edges[4].node
-                                            .childImageSharp.fluid
-                                        }
-                                      />
-                                    </div>
-                                    <ul>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                    </ul>
-                                    <div class="social">
-                                      <i class="fas fa-film"></i>{" "}
-                                      <i class="fab fa-adobe"></i>
-                                      <i class="fas fa-desktop"></i>
-                                    </div>
-
-                                    <button></button>
+                                  <div class="pic">
+                                    <Img
+                                      fluid={
+                                        this.props.data.images.edges[4].node
+                                          .childImageSharp.fluid
+                                      }
+                                    />
                                   </div>
+                                  <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                  </ul>
+                                  <div class="social">
+                                    <i class="fas fa-film"></i>{" "}
+                                    <i class="fab fa-adobe"></i>
+                                    <i class="fas fa-desktop"></i>
+                                  </div>
+
+                                  <button></button>
                                 </div>
                               </div>
-                              <div className="col-lg-6 col-md-6">
-                                <div className="col">
-                                  <div class="cards">
-                                    <div class="arrow-right">
-                                      <VibesModal />
-                                    </div>
-                                    <h5 class="pg-title">Vibes and Views</h5>
-                                    <p class="pg-text">
-                                      Reality Television Pilot based on the Miami
-                                      Lifstyle
+                            </div>
+                            <div className="col-lg-6 col-md-6">
+                              <div className="col">
+                                <div class="cards">
+                                  <div class="arrow-right">
+                                    <VibesModal />
+                                  </div>
+                                  <h5 class="pg-title">Vibes and Views</h5>
+                                  <p class="pg-text">
+                                    Reality Television Pilot based on the Miami
+                                    Lifstyle
                                   </p>
-                                    <div class="pic">
-                                      <Img
-                                        fluid={
-                                          this.props.data.images.edges[3].node
-                                            .childImageSharp.fluid
-                                        }
-                                      />
-                                    </div>
-                                    <ul>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                    </ul>
-                                    <div class="social">
-                                      <i class="fab fa-facebook-f"></i>
-                                      <i class="fab fa-twitter"></i>
-                                      <i class="fab fa-instagram"></i>
-                                      <i class="fab fa-github"></i>
-                                    </div>
-                                    <button></button>
+                                  <div class="pic">
+                                    <Img
+                                      fluid={
+                                        this.props.data.images.edges[3].node
+                                          .childImageSharp.fluid
+                                      }
+                                    />
                                   </div>
-                                </div>
-                              </div>
-                              <div className="col-lg-6 col-md-6">
-                                <div className="col">
-                                  <div class="cards">
-                                    <div class="arrow-right">
-                                      <SalonModal />
-                                    </div>
-                                    <h4 class="pg-title">Solatto Salon</h4>
-                                    <p class="pg-text">
-                                      Company Profile and Interview{" "}
-                                    </p>
-                                    <div class="pic">
-                                      <Img
-                                        fluid={
-                                          this.props.data.images.edges[5].node
-                                            .childImageSharp.fluid
-                                        }
-                                      />
-                                    </div>
-                                    <ul>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                      <li></li>
-                                    </ul>
-                                    <div class="social">
-                                      <i class="fab fa-facebook-f"></i>
-                                      <i class="fab fa-twitter"></i>
-                                      <i class="fab fa-instagram"></i>
-                                      <i class="fab fa-github"></i>
-                                    </div>
-                                    <button></button>
+                                  <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                  </ul>
+                                  <div class="social">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-github"></i>
                                   </div>
+                                  <button></button>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </section>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <section id="portfolio">
-                          <div className="container-fluid p-0">
-                            <div className="row gutters justify-content-md-center">
-                              <div className="col-lg-6 col-sm-6">
-                                <a
-                                  className="portfolio-box"
-                                  href="images/portfolio/fullsize/4.jpg"
-                                  onClick={this.handlePortfolioClick.bind(
-                                    this,
-                                    6
-                                  )}
-                                >
-                                  <Img
-                                    fluid={
-                                      this.props.data.images.edges[6].node
-                                        .childImageSharp.fluid
-                                    }
-                                  />
-                                  <div className="portfolio-box-caption">
-                                    <div className="project-category text-white-50">
-                                      Category
+                            <div className="col-lg-6 col-md-6">
+                              <div className="col">
+                                <div class="cards">
+                                  <div class="arrow-right">
+                                    <SalonModal />
                                   </div>
-                                    <div className="project-name"></div>
+                                  <h4 class="pg-title">Solatto Salon</h4>
+                                  <p class="pg-text">
+                                    Company Profile and Interview{" "}
+                                  </p>
+                                  <div class="pic">
+                                    <Img
+                                      fluid={
+                                        this.props.data.images.edges[5].node
+                                          .childImageSharp.fluid
+                                      }
+                                    />
                                   </div>
-                                </a>
-                              </div>
-                              <div className="col-lg-6 col-sm-6">
-                                <a
-                                  className="portfolio-box"
-                                  href="img/portfolio/fullsize/5.jpg"
-                                  onClick={this.handlePortfolioClick.bind(
-                                    this,
-                                    0
-                                  )}
-                                >
-                                  <Img
-                                    fluid={
-                                      this.props.data.images.edges[0].node
-                                        .childImageSharp.fluid
-                                    }
-                                  />
-                                  <div className="portfolio-box-caption">
-                                    <div className="project-category text-white-50">
-                                      Category
+                                  <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                  </ul>
+                                  <div class="social">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-github"></i>
                                   </div>
-                                    <div className="project-name">
-                                      Project Name
-                                  </div>
-                                  </div>
-                                </a>
-                              </div>
-                              <div className="col-lg-6 col-sm-6">
-                                <a
-                                  className="portfolio-box"
-                                  href="img/portfolio/fullsize/6.jpg"
-                                  onClick={this.handlePortfolioClick.bind(
-                                    this,
-                                    6
-                                  )}
-                                >
-                                  <Img
-                                    fluid={
-                                      this.props.data.images.edges[6].node
-                                        .childImageSharp.fluid
-                                    }
-                                  />
-                                  <div className="portfolio-box-caption p-3">
-                                    <div className="project-category text-white-50">
-                                      Category
-                                  </div>
-                                    <div className="project-name">
-                                      Project Name
-                                  </div>
-                                  </div>
-                                </a>
+                                  <button></button>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </section>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="fourth">
-                        <section id="portfolio">
-                          <div className="container-fluid p-0">
-                            <div className="row gutters">
-                              <div className="col-lg-6 col-sm-6">
-                                <a
-                                  className="portfolio-box"
-                                  href="images/portfolio/fullsize/4.jpg"
-                                  onClick={this.handlePortfolioClick.bind(
-                                    this,
-                                    9
-                                  )}
-                                >
-                                  <Img
-                                    fluid={
-                                      this.props.data.images.edges[9].node
-                                        .childImageSharp.fluid
-                                    }
-                                  />
-                                  <div className="portfolio-box-caption">
-                                    <div className="project-category text-white-50">
-                                      Category
+                        </div>
+                      </section>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="third">
+                      <section id="portfolio">
+                        <div className="container-fluid p-0">
+                          <div className="row gutters justify-content-md-center">
+                            <div className="col-lg-6 col-sm-6">
+                              <a
+                                className="portfolio-box"
+                                href="images/portfolio/fullsize/4.jpg"
+                                onClick={this.handlePortfolioClick.bind(
+                                  this,
+                                  6
+                                )}
+                              >
+                                <Img
+                                  fluid={
+                                    this.props.data.images.edges[6].node
+                                      .childImageSharp.fluid
+                                  }
+                                />
+                                <div className="portfolio-box-caption">
+                                  <div className="project-category text-white-50">
+                                    Category
                                   </div>
-                                    <div className="project-name"></div>
+                                  <div className="project-name"></div>
+                                </div>
+                              </a>
+                            </div>
+                            <div className="col-lg-6 col-sm-6">
+                              <a
+                                className="portfolio-box"
+                                href="img/portfolio/fullsize/5.jpg"
+                                onClick={this.handlePortfolioClick.bind(
+                                  this,
+                                  0
+                                )}
+                              >
+                                <Img
+                                  fluid={
+                                    this.props.data.images.edges[0].node
+                                      .childImageSharp.fluid
+                                  }
+                                />
+                                <div className="portfolio-box-caption">
+                                  <div className="project-category text-white-50">
+                                    Category
                                   </div>
-                                </a>
-                              </div>
-                              <div className="col-lg-6 col-sm-6">
-                                <a
-                                  className="portfolio-box"
-                                  href="img/portfolio/fullsize/5.jpg"
-                                  onClick={this.handlePortfolioClick.bind(
-                                    this,
-                                    7
-                                  )}
-                                >
-                                  <Img
-                                    fluid={
-                                      this.props.data.images.edges[7].node
-                                        .childImageSharp.fluid
-                                    }
-                                  />
-                                  <div className="portfolio-box-caption">
-                                    <div className="project-category text-white-50">
-                                      Category
+                                  <div className="project-name">
+                                    Project Name
                                   </div>
-                                    <div className="project-name">
-                                      Project Name
+                                </div>
+                              </a>
+                            </div>
+                            <div className="col-lg-6 col-sm-6">
+                              <a
+                                className="portfolio-box"
+                                href="img/portfolio/fullsize/6.jpg"
+                                onClick={this.handlePortfolioClick.bind(
+                                  this,
+                                  6
+                                )}
+                              >
+                                <Img
+                                  fluid={
+                                    this.props.data.images.edges[6].node
+                                      .childImageSharp.fluid
+                                  }
+                                />
+                                <div className="portfolio-box-caption p-3">
+                                  <div className="project-category text-white-50">
+                                    Category
                                   </div>
+                                  <div className="project-name">
+                                    Project Name
                                   </div>
-                                </a>
-                              </div>
-                              <div className="col-lg-6 col-sm-6 mt-4">
-                                <a
-                                  className="portfolio-box"
-                                  href="img/portfolio/fullsize/6.jpg"
-                                  onClick={this.handlePortfolioClick.bind(
-                                    this,
-                                    8
-                                  )}
-                                >
-                                  <Img
-                                    fluid={
-                                      this.props.data.images.edges[8].node
-                                        .childImageSharp.fluid
-                                    }
-                                  />
-                                  <div className="portfolio-box-caption p-3">
-                                    <div className="project-category text-white-50">
-                                      Category
-                                  </div>
-                                    <div className="project-name">
-                                      Project Name
-                                  </div>
-                                  </div>
-                                </a>
-                              </div>
+                                </div>
+                              </a>
                             </div>
                           </div>
-                        </section>
-                      </Tab.Pane>
-                    </Tab.Content>
-                  </Tab.Container>
-                </div>
-
-              </div></div>
+                        </div>
+                      </section>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="fourth">
+                      <section id="portfolio">
+                        <div className="container-fluid p-0">
+                          <div className="row gutters">
+                            <div className="col-lg-6 col-sm-6">
+                              <a
+                                className="portfolio-box"
+                                href="images/portfolio/fullsize/4.jpg"
+                                onClick={this.handlePortfolioClick.bind(
+                                  this,
+                                  9
+                                )}
+                              >
+                                <Img
+                                  fluid={
+                                    this.props.data.images.edges[9].node
+                                      .childImageSharp.fluid
+                                  }
+                                />
+                                <div className="portfolio-box-caption">
+                                  <div className="project-category text-white-50">
+                                    Category
+                                  </div>
+                                  <div className="project-name"></div>
+                                </div>
+                              </a>
+                            </div>
+                            <div className="col-lg-6 col-sm-6">
+                              <a
+                                className="portfolio-box"
+                                href="img/portfolio/fullsize/5.jpg"
+                                onClick={this.handlePortfolioClick.bind(
+                                  this,
+                                  7
+                                )}
+                              >
+                                <Img
+                                  fluid={
+                                    this.props.data.images.edges[7].node
+                                      .childImageSharp.fluid
+                                  }
+                                />
+                                <div className="portfolio-box-caption">
+                                  <div className="project-category text-white-50">
+                                    Category
+                                  </div>
+                                  <div className="project-name">
+                                    Project Name
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div className="col-lg-6 col-sm-6 mt-4">
+                              <a
+                                className="portfolio-box"
+                                href="img/portfolio/fullsize/6.jpg"
+                                onClick={this.handlePortfolioClick.bind(
+                                  this,
+                                  8
+                                )}
+                              >
+                                <Img
+                                  fluid={
+                                    this.props.data.images.edges[8].node
+                                      .childImageSharp.fluid
+                                  }
+                                />
+                                <div className="portfolio-box-caption p-3">
+                                  <div className="project-category text-white-50">
+                                    Category
+                                  </div>
+                                  <div className="project-name">
+                                    Project Name
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </Tab.Pane>
+                  </Tab.Content>
+                </Tab.Container>
+              </div>
+            </div>
           </section>
 
           <section>
             <section class="page-section-resume" id="resume">
               <div class="container">
-                <div class="col-md-12 heading-section text-center ">
-                  <h1 class="heading">Resume</h1>
-
-                  <p> </p>
-                </div>
+              <div class="text-center mt-5 mb-5">
+                <h2>
+                  <Badge pill variant="secondary">
+                    {" "}
+                  RESUME
+                  </Badge>
+                </h2>
+              </div>
                 <div class="row mt-5">
                   <div class="col-sm-3 md-3">
                     <nav id="navi">

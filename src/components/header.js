@@ -37,7 +37,7 @@ export default class Header extends React.Component {
               href="#page-top"
               onClick={Scroller.handleAnchorScroll}
             >
-              Start Bootstrap
+              B
             </a>
             <Navbar.Toggle aria-controls="navbarResponsive" />
             <Navbar.Collapse id="navbarResponsive">
@@ -105,7 +105,7 @@ export default class Header extends React.Component {
             </Navbar.Collapse>
           </div>
         </Navbar>
-        <header className="masthead">
+        <header className="masthead shadow">
           <div className="container h-100">
             {" "}
             <div className="row h-100 align-items-center justify-content-center text-center">

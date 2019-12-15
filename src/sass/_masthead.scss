@@ -10,10 +10,10 @@ header.masthead {
   background: linear-gradient(
       to bottom,
       #{fade-out(#0192b3, 0.2)} 0%,
-      #{fade-out(rgba(0, 8, 116, 0.79), 0.2)} 100%
+      #{fade-out(rgb(0, 8, 116), 0.3)} 100%
     ),
     url("../images/slide-4.jpg");
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
 
   background-attachment: scroll;

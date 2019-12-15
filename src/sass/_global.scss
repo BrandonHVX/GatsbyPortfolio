@@ -6,10 +6,10 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: #0192b37a;
+  background-color: rgb(23, 123, 204);
 
   background-image: url("../images/pattern-bg.png");
-  background-blend-mode: overlay;
+  background-blend-mode: multiply;
 }
 
 // Typography
@@ -87,6 +87,10 @@ hr.light {
 .page-section-projects {
   border-bottom-left-radius: 800px;
 
+  padding: 30px;
+}
+
+.page-section-about {
   padding: 30px;
 }
 

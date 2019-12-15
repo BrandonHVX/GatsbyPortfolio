@@ -1,7 +1,8 @@
 // Base styling for the navbar
 #mainNav {
-  box-shadow: $box-shadow;
-  background-color: $white;
+  // box-shadow: $box-shadow;
+  background-color: transparent;
+  text-align: center;
 
   transition: background-color 0.2s ease;
   .navbar-brand {
@@ -11,6 +12,7 @@
   }
   .navbar-nav {
     .nav-item {
+      background-color: rgba(0, 0, 0, 0.863);
       &.active {
         .nav-link {
           color: $primary !important;
@@ -97,46 +99,21 @@
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: navy;
- 
 }
 
 .nav-pills .nav-link {
   border-radius: 30px;
   border: 1px solid navy;
-  font-size: 0.5em;
+  color: navy;
+  font-size: 0.8em;
   margin: 5px;
 
-&:hover {
-  color: rgb(255, 255, 255);
-  background: navy;
+  &:hover {
+    color: rgb(255, 255, 255);
+    background: navy;
+  }
 }
 
-
+.navbar-expand-lg {
+  background-color: rgba(0, 0, 0, 0.404);
 }
-
-
-
-
-
-@media (max-width: 767.98px) {
-
-  
-nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: navy;
-}
-
-.nav-pills .nav-link {
-  border-radius: 30px;
-  border: 1px solid navy;
-  font-size: 0.1em;
-  margin: 5px;
-}
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-}
-
-}
-
-
