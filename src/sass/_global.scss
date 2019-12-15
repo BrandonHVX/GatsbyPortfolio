@@ -6,7 +6,10 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-color: $primary;
+  background-color: #0192b37a;
+
+  background-image: url("../images/pattern-bg.png");
+  background-blend-mode: overlay;
 }
 
 // Typography
@@ -81,14 +84,11 @@ hr.light {
   border-top-right-radius: 550px;
 }
 
-
-
 .page-section-projects {
-border-bottom-left-radius: 800px;
- 
+  border-bottom-left-radius: 800px;
+
   padding: 30px;
 }
-
 
 // Modal
 .modal-backdrop {

@@ -1,8 +1,8 @@
 // Styling for the masthead
 header.masthead {
-  padding-top: 10rem;
+  padding-top: 7rem;
   height: 100vh;
-  border-bottom-left-radius: 550px;
+  border-bottom-left-radius: 350px;
 
   padding-bottom: calc(10rem - #{$navbar-height});
   // replace the masthead.jpg image in the /img directory to change the image
@@ -15,7 +15,7 @@ header.masthead {
     url("../images/slide-4.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  
+
   background-attachment: scroll;
   background-size: cover;
   h1 {
