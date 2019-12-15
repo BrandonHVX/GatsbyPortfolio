@@ -6,10 +6,16 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: rgb(23, 123, 204);
 
-  background-image: url("../images/pattern-bg.png");
-  background-blend-mode: multiply;
+  background: linear-gradient(to bottom, #{fade-out(#0192b3, 0.2)} 0%),
+    url("../images/pattern-bg.png");
+  background-position: bottom;
+
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.site-container {
 }
 
 // Typography
