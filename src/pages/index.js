@@ -271,9 +271,9 @@ export default class IndexPage extends React.Component {
 
                 <div class="row">
                   <div class="col">
-                    <div class="skills-card text-center bg-white shadow pt-5">
+                    <div class="skills-card text-center  shadow pt-5">
 
-                      <h2><Badge pill variant="secondary"> Skills & Software</Badge></h2>
+                      <h5><Badge pill variant="secondary"> Skills & Software</Badge></h5>
 
 
                       <div class="row justify-content-center ">
@@ -343,8 +343,8 @@ export default class IndexPage extends React.Component {
                                   <div class=" col-sm-6">
                                     <div class="progress-title">Experience</div>
 
-                                      <strong>2 Years</strong>
-                                  
+                                    <strong>2 Years</strong>
+
                                   </div>
                                 </div>
 
@@ -649,7 +649,7 @@ export default class IndexPage extends React.Component {
 
 
           <section className="page-section-projects mb-5" id="portfolio">
-            <div class="container">
+            <div>
               <div class="skills-card bg-white shadow">
                 <div class="row justify-content-center">
                   <div class="col-lg-3 order-lg-2">

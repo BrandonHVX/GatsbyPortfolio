@@ -116,3 +116,27 @@
 
 
 
+
+
+@media (max-width: 767.98px) {
+
+  
+nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: navy;
+}
+
+.nav-pills .nav-link {
+  border-radius: 30px;
+  border: 1px solid navy;
+  font-size: 0.1em;
+  margin: 5px;
+}
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+}
+
+
