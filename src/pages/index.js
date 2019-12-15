@@ -105,680 +105,667 @@ export default class IndexPage extends React.Component {
           <SEO title="Home" />
 
           <section className="page-section-about mt-5" id="about">
-           
-              
-                      <div class="about-card bg-white shadow mt-7">
-                        <div class="row justify-content-center">
-                          <div class="col-lg-3 order-lg-2">
-                            <div class="card-profile-image">
-                              <a href="#">
-                                <img src={brandonpic} class="rounded-circle" />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card-header1  text-center mb-5"></div>
-                        <div class="text-center mt-5 mb-5">
-                          <h3>
-                            Brandon Gines<span class="font-weight-light"></span>
-                          </h3>
-                          <div class="h5 font-weight-300">
-                            <i class="ni location_pin mr-2"></i>Miami, Florida
-                          </div>
-                          <div class="h5 mt-4">
-                            <i class="ni business_briefcase-24 mr-2"></i>
-                            Solution Manager - Creative Tim Officer
-                          </div>
-                          <div>
-                            <i class="ni education_hat mr-2"></i>University of
-                            Computer Science
-                          </div>
-                          <hr class="my-4" />
 
-                          <h3>
-                            <Badge pill variant="secondary">
-                              About
-                            </Badge>
-                          </h3>
-                          <div class="about-text pt-2">
-                            <p>
-                              Creative self-motivated professional with
-                              cross-functional skills including expertise in
-                              digital media, video production, full stack web
-                              development, graphic design, marketing, project
-                              management and client engagement.
+
+            <div class="about-card bg-white shadow mt-7">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 order-lg-2">
+                  <div class="card-profile-image">
+                    <a href="#">
+                      <img src={brandonpic} class="rounded-circle" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-header1  text-center mb-5"></div>
+              <div class="text-center mt-5 mb-5">
+                <h3>
+                  Brandon Gines<span class="font-weight-light"></span>
+                </h3>
+                <div class="h5 font-weight-300">
+                  <i class="ni location_pin mr-2"></i>Miami, Florida
+                          </div>
+                <div class="h5 mt-4">
+                  <i class="ni business_briefcase-24 mr-2"></i>
+                  Solution Manager - Creative Tim Officer
+                          </div>
+                <div>
+                  <i class="ni education_hat mr-2"></i>University of
+                  Computer Science
+                          </div>
+                <hr class="my-4" />
+
+
+                <div class="sec-title">
+                  <span class="badge badge-pill badge-primary"><span class="badge"> <i class="fas fa-user"></i></span>ABOUT </span></div>
+
+                <div class="about-text p-3">
+                  <p>
+                    Creative self-motivated professional with
+                    cross-functional skills including expertise in
+                    digital media, video production, full stack web
+                    development, graphic design, marketing, project
+                    management and client engagement.
                             </p>
-                          </div>
-                        </div>
+                </div>
+              </div>
 
-                        <div class="card-body pt-0 pt-md-4">
-                          <div class="row">
-                            <div class="col-md-6 ">
-                              <h3>
-                                <Badge pill variant="secondary">
-                                  {" "}
-                                  Career Objective
-                                </Badge>
-                              </h3>
+              <div class="card-body pt-0 pt-md-4">
+                <div class="row">
+                  <div class="col-md-6 ">
+                    <div class="sec-title text-center">
+                      <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-user"></i></span>Career Objective</span></div>
 
-                          
-                                <div class="about-text ">
-                                  <p>
-                                    Creative self-motivated professional with
-                                    cross-functional skills including expertise
-                                    in digital media, video production, full
-                                    stack web development, graphic design,
-                                    marketing, project management and client
-                                    engagement.
+                    <div class="about-text pt-3">
+                      <p>
+                        Creative self-motivated professional with
+                        cross-functional skills including expertise
+                        in digital media, video production, full
+                        stack web development, graphic design,
+                        marketing, project management and client
+                        engagement.
                                   </p>
-                              
-                              </div>
-                            </div>
 
-                            <div class="col-md-6 text-center">
-                              <h2>
-                                <Badge pill variant="secondary">
-                                  Expertise
-                                </Badge>
-                              </h2>
+                    </div>
+                  </div>
 
-                              <div class="card-profile-stats  mt-md-1">
-                                <div class="progress-wrap">
-                                  <div class="row">
-                                    <div class="col-md-6">
-                                      <strong>
-                                        Full Stack Web Development
+                  <div class="col-md-6 text-center">
+                  <div class="sec-title text-center">
+                      <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-user"></i></span>Expertise</span></div>
+
+                    <div class="card-profile-stats  mt-md-1">
+                      <div class="progress-wrap">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <strong>
+                              Full Stack Web Development
                                       </strong>
-                                    </div>
-                                    <div class="col-md-5 mt-1">
-                                      <div>
-                                        <ProgressBar
-                                          animated
-                                          now={80}
-                                          label={" 80%"}
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="progress-wrap">
-                                  <div class="row">
-                                    <div class="col-md-6">
-                                      <strong>Film & Video Production</strong>
-                                    </div>
-                                    <div class="col-md-5 mt-1">
-                                      <div>
-                                        <ProgressBar
-                                          animated
-                                          now={80}
-                                          label={" 80%"}
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="progress-wrap">
-                                  <div class="row">
-                                    <div class="col-md-6">
-                                      <strong>Graphic Design</strong>
-                                    </div>
-                                    <div class="col-md-5 mt-1">
-                                      <div>
-                                        <ProgressBar
-                                          animated
-                                          now={80}
-                                          label={" 80%"}
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="progress-wrap">
-                                  <div class="row">
-                                    <div class="col-md-6">
-                                      <strong>Motion Graphics</strong>
-                                    </div>
-                                    <div class="col-md-5 mt-1">
-                                      <div>
-                                        <ProgressBar
-                                          animated
-                                          now={80}
-                                          label={" 80%"}
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
                           </div>
-                        </div>
-
-                        <div class="main-content">
-                          <div class="container ">
-                            <div class="row">
-                              <div class="col">
-                                <div class="text-center  pt-5">
-                                  <h2>
-                                    <Badge pill variant="secondary">
-                                      {" "}
-                                      Skills & Software
-                                    </Badge>
-                                  </h2>
-
-                                  <div class="row justify-content-center ">
-                                    <div class="col-lg-3 order-lg-2"></div>
-                                  </div>
-
-                                  <div class="row p-2 ">
-                                    <div class="col-md-6 text-center d-flex mt-5 ">
-                                      <label>
-                                        <input type="checkbox" />
-                                        <div class="box shadow">
-                                          <div class="front">
-                                            <div class=" profile-card-3 h-100">
-                                              <div class="background-block">
-                                                <img
-                                                  src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
-                                                  alt="profile-sample1"
-                                                  class="background"
-                                                />
-                                              </div>
-
-                                              <div class="card-content">
-                                                <img
-                                                  src={code}
-                                                  alt="profile-image"
-                                                  class="profile"
-                                                />
-
-                                                <h5>
-                                                  FULL STACK WEB DEVELOPMENT
-                                                </h5>
-                                                <div class="icon-block mt-3">
-                                                  <p>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={mongo}
-                                                        width={40}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={ex}
-                                                        width={80}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={reactsvg}
-                                                        width={40}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={node}
-                                                        width={40}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                  </p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-
-                                          <div class="back">
-                                            <div class="card-header">
-                                              {" "}
-                                              FULL STACK WEB DEVELOPMENT
-                                            </div>
-
-                                            <div class="row mt-4 pl-3 pr-3">
-                                              <div class="col-sm-6">
-                                                <span class="progress-title">
-                                                  Skill Level{" "}
-                                                  <ProgressBar
-                                                    animated
-                                                    now={80}
-                                                    label={"80%"}
-                                                  />
-                                                </span>
-                                              </div>
-                                              <div class=" col-sm-6">
-                                                <div class="progress-title">
-                                                  Experience
-                                                </div>
-
-                                                <strong>2 Years</strong>
-                                              </div>
-                                            </div>
-
-                                            <div class="icon-block mt-3">
-                                              <p>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={mongo}
-                                                    width={40}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={ex}
-                                                    width={80}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={reactsvg}
-                                                    width={40}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={node}
-                                                    width={40}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                              </p>
-                                            </div>
-
-                                            <p>
-                                              Adobe Premreie Pro, Affter Effects
-                                              and Final Cut Pro for video
-                                              editing, motion graphics and
-                                              finalizing content for
-                                              commericials, social media
-                                              content, webisodes and company
-                                              interviews. High difinition 4K-8K
-                                              digital content captured with Red
-                                              Digital Cinema Cameras.
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </label>
-                                    </div>
-                                    <div class="col-md-6 text-center d-flex mt-5">
-                                      <label>
-                                        <input type="checkbox" />
-                                        <div class="box shadow">
-                                          <div class="front">
-                                            <div class=" profile-card-3 h-100">
-                                              <div class="background-block">
-                                                <img
-                                                  src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
-                                                  alt="profile-sample1"
-                                                  class="background"
-                                                />
-                                              </div>
-
-                                              <div class="card-content">
-                                                <img
-                                                  src={filmvideo}
-                                                  alt="profile-image"
-                                                  class="profile"
-                                                />
-
-                                                <h5>FILM & VIDEO PRODUCTION</h5>
-                                                <div class="icon-block mt-3">
-                                                  <p>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={pr}
-                                                        width={40}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={ae}
-                                                        width={40}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={finalcut}
-                                                        width={40}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                  </p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-
-                                          <div class="back  h-100">
-                                            <div class="card-header">
-                                              {" "}
-                                              FILM & VIDEO PRODUCTION{" "}
-                                            </div>
-
-                                            <div class="row mt-4 pl-3 pr-3">
-                                              <div class="col-sm-6">
-                                                <span class="progress-title">
-                                                  Skill Level{" "}
-                                                  <ProgressBar
-                                                    animated
-                                                    now={80}
-                                                    label={"80%"}
-                                                  />
-                                                </span>
-                                              </div>
-                                              <div class=" col-sm-6">
-                                                <div class="progress-title">
-                                                  Experience
-                                                </div>
-
-                                                <Badge pill variant="primary">
-                                                  {" "}
-                                                  2 Years{" "}
-                                                </Badge>
-                                              </div>
-                                            </div>
-
-                                            <div class="icon-block mt-3">
-                                              <p>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={pr}
-                                                    width={40}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={ae}
-                                                    width={40}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={finalcut}
-                                                    width={40}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                              </p>
-                                            </div>
-
-                                            <p>
-                                              Adobe Premreie Pro, Affter Effects
-                                              and Final Cut Pro for video
-                                              editing, motion graphics and
-                                              finalizing content for
-                                              commericials, social media
-                                              content, webisodes and company
-                                              interviews. High difinition 4K-8K
-                                              digital content captured with Red
-                                              Digital Cinema Cameras.
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </label>
-                                    </div>
-                                    <div class="col-md-6 text-center d-flex mt-5">
-                                      <label>
-                                        <input type="checkbox" />
-                                        <div class="box shadow">
-                                          <div class="front">
-                                            <div class=" profile-card-3 h-100">
-                                              <div class="background-block">
-                                                <img
-                                                  src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
-                                                  alt="profile-sample1"
-                                                  class="background"
-                                                />
-                                              </div>
-
-                                              <div class="card-content">
-                                                <img
-                                                  src={filmvideo}
-                                                  alt="profile-image"
-                                                  class="profile"
-                                                />
-
-                                                <h5>FILM & VIDEO PRODUCTION</h5>
-                                                <div class="icon-block mt-3">
-                                                  <p>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={pr}
-                                                        width={40}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={ae}
-                                                        width={40}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={finalcut}
-                                                        width={40}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                  </p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-
-                                          <div class="back  h-100">
-                                            <div class="card-header">
-                                              {" "}
-                                              FILM & VIDEO PRODUCTION{" "}
-                                            </div>
-
-                                            <div class="row mt-4 pl-3 pr-3">
-                                              <div class="col-sm-6">
-                                                <span class="progress-title">
-                                                  Skill Level{" "}
-                                                  <ProgressBar
-                                                    animated
-                                                    now={80}
-                                                    label={"80%"}
-                                                  />
-                                                </span>
-                                              </div>
-                                              <div class=" col-sm-6">
-                                                <div class="progress-title">
-                                                  Experience
-                                                </div>
-
-                                                <Badge pill variant="primary">
-                                                  {" "}
-                                                  2 Years{" "}
-                                                </Badge>
-                                              </div>
-                                            </div>
-
-                                            <div class="icon-block mt-3">
-                                              <p>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={pr}
-                                                    width={40}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={ae}
-                                                    width={40}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={finalcut}
-                                                    width={40}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                              </p>
-                                            </div>
-
-                                            <p>
-                                              Adobe Premreie Pro, Affter Effects
-                                              and Final Cut Pro for video
-                                              editing, motion graphics and
-                                              finalizing content for
-                                              commericials, social media
-                                              content, webisodes and company
-                                              interviews. High difinition 4K-8K
-                                              digital content captured with Red
-                                              Digital Cinema Cameras.
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </label>
-                                    </div>
-                                    <div class="col-md-6 text-center d-flex mt-5">
-                                      <label>
-                                        <input type="checkbox" />
-                                        <div class="box shadow">
-                                          <div class="front">
-                                            <div class=" profile-card-3 h-100">
-                                              <div class="background-block">
-                                                <img
-                                                  src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
-                                                  alt="profile-sample1"
-                                                  class="background"
-                                                />
-                                              </div>
-
-                                              <div class="card-content">
-                                                <img
-                                                  src={filmvideo}
-                                                  alt="profile-image"
-                                                  class="profile"
-                                                />
-
-                                                <h5>FILM & VIDEO PRODUCTION</h5>
-                                                <div class="icon-block mt-3">
-                                                  <p>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={pr}
-                                                        width={40}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={ae}
-                                                        width={40}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                    <span class="mr-2">
-                                                      <img
-                                                        src={finalcut}
-                                                        width={40}
-                                                        alt=""
-                                                      />
-                                                    </span>
-                                                  </p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-
-                                          <div class="back  h-100">
-                                            <div class="card-header">
-                                              {" "}
-                                              FILM & VIDEO PRODUCTION{" "}
-                                            </div>
-
-                                            <div class="row mt-4 pl-3 pr-3">
-                                              <div class="col-sm-6">
-                                                <span class="progress-title">
-                                                  Skill Level{" "}
-                                                  <ProgressBar
-                                                    animated
-                                                    now={80}
-                                                    label={"80%"}
-                                                  />
-                                                </span>
-                                              </div>
-                                              <div class=" col-sm-6">
-                                                <div class="progress-title">
-                                                  Experience
-                                                </div>
-
-                                                <Badge pill variant="primary">
-                                                  {" "}
-                                                  2 Years{" "}
-                                                </Badge>
-                                              </div>
-                                            </div>
-
-                                            <div class="icon-block mt-3">
-                                              <p>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={pr}
-                                                    width={40}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={ae}
-                                                    width={40}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                                <span class="mr-2">
-                                                  <img
-                                                    src={finalcut}
-                                                    width={40}
-                                                    alt=""
-                                                  />
-                                                </span>
-                                              </p>
-                                            </div>
-
-                                            <p>
-                                              Adobe Premreie Pro, Affter Effects
-                                              and Final Cut Pro for video
-                                              editing, motion graphics and
-                                              finalizing content for
-                                              commericials, social media
-                                              content, webisodes and company
-                                              interviews. High difinition 4K-8K
-                                              digital content captured with Red
-                                              Digital Cinema Cameras.
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </label>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                          <div class="col-md-5 mt-1">
+                            <div>
+                              <ProgressBar
+                                animated
+                                now={80}
+                                label={" 80%"}
+                              />
                             </div>
                           </div>
                         </div>
                       </div>
-              
-            
+
+                      <div class="progress-wrap">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <strong>Film & Video Production</strong>
+                          </div>
+                          <div class="col-md-5 mt-1">
+                            <div>
+                              <ProgressBar
+                                animated
+                                now={80}
+                                label={" 80%"}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="progress-wrap">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <strong>Graphic Design</strong>
+                          </div>
+                          <div class="col-md-5 mt-1">
+                            <div>
+                              <ProgressBar
+                                animated
+                                now={80}
+                                label={" 80%"}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-wrap">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <strong>Motion Graphics</strong>
+                          </div>
+                          <div class="col-md-5 mt-1">
+                            <div>
+                              <ProgressBar
+                                animated
+                                now={80}
+                                label={" 80%"}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-content">
+                <div class="container ">
+                  <div class="row">
+                    <div class="col">
+                      <div class="text-center  pt-5">
+                      <div class="sec-title text-center">
+                      <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-user"></i></span>Skills & Software</span></div>
+
+                        <div class="row justify-content-center ">
+                          <div class="col-lg-3 order-lg-2"></div>
+                        </div>
+
+                        <div class="row p-2 ">
+                          <div class="col-md-6 text-center d-flex mt-5 ">
+                            <label>
+                              <input type="checkbox" />
+                              <div class="box shadow">
+                                <div class="front">
+                                  <div class=" profile-card-3 h-100">
+                                    <div class="background-block">
+                                      <img
+                                        src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                                        alt="profile-sample1"
+                                        class="background"
+                                      />
+                                    </div>
+
+                                    <div class="card-content">
+                                      <img
+                                        src={code}
+                                        alt="profile-image"
+                                        class="profile"
+                                      />
+
+                                      <h5>
+                                        FULL STACK WEB DEVELOPMENT
+                                                </h5>
+                                      <div class="icon-block mt-3">
+                                        <p>
+                                          <span class="mr-2">
+                                            <img
+                                              src={mongo}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={ex}
+                                              width={80}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={reactsvg}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={node}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="back">
+                                  <div class="card-header">
+                                    {" "}
+                                    FULL STACK WEB DEVELOPMENT
+                                            </div>
+
+                                  <div class="row mt-4 pl-3 pr-3">
+                                    <div class="col-sm-6">
+                                      <span class="progress-title">
+                                        Skill Level{" "}
+                                        <ProgressBar
+                                          animated
+                                          now={80}
+                                          label={"80%"}
+                                        />
+                                      </span>
+                                    </div>
+                                    <div class=" col-sm-6">
+                                      <div class="progress-title">
+                                        Experience
+                                                </div>
+
+                                      <strong>2 Years</strong>
+                                    </div>
+                                  </div>
+
+                                  <div class="icon-block mt-3">
+                                    <p>
+                                      <span class="mr-2">
+                                        <img
+                                          src={mongo}
+                                          width={40}
+                                          alt=""
+                                        />
+                                      </span>
+                                      <span class="mr-2">
+                                        <img
+                                          src={ex}
+                                          width={80}
+                                          alt=""
+                                        />
+                                      </span>
+                                      <span class="mr-2">
+                                        <img
+                                          src={reactsvg}
+                                          width={40}
+                                          alt=""
+                                        />
+                                      </span>
+                                      <span class="mr-2">
+                                        <img
+                                          src={node}
+                                          width={40}
+                                          alt=""
+                                        />
+                                      </span>
+                                    </p>
+                                  </div>
+
+                                  <p>
+                                    Adobe Premreie Pro, Affter Effects
+                                    and Final Cut Pro for video
+                                    editing, motion graphics and
+                                    finalizing content for
+                                    commericials, social media
+                                    content, webisodes and company
+                                    interviews. High difinition 4K-8K
+                                    digital content captured with Red
+                                    Digital Cinema Cameras.
+                                            </p>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="col-md-6 text-center d-flex mt-5">
+                            <label>
+                              <input type="checkbox" />
+                              <div class="box shadow">
+                                <div class="front">
+                                  <div class=" profile-card-3 h-100">
+                                    <div class="background-block">
+                                      <img
+                                        src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                                        alt="profile-sample1"
+                                        class="background"
+                                      />
+                                    </div>
+
+                                    <div class="card-content">
+                                      <img
+                                        src={filmvideo}
+                                        alt="profile-image"
+                                        class="profile"
+                                      />
+
+                                      <h5>FILM & VIDEO PRODUCTION</h5>
+                                      <div class="icon-block mt-3">
+                                        <p>
+                                          <span class="mr-2">
+                                            <img
+                                              src={pr}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={ae}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={finalcut}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="back  h-100">
+                                  <div class="card-header">
+                                    {" "}
+                                    FILM & VIDEO PRODUCTION{" "}
+                                  </div>
+
+                                  <div class="row mt-4 pl-3 pr-3">
+                                    <div class="col-sm-6">
+                                      <span class="progress-title">
+                                        Skill Level{" "}
+                                        <ProgressBar
+                                          animated
+                                          now={80}
+                                          label={"80%"}
+                                        />
+                                      </span>
+                                    </div>
+                                    <div class=" col-sm-6">
+                                      <div class="progress-title">
+                                        Experience
+                                                </div>
+
+                                      <Badge pill variant="primary">
+                                        {" "}
+                                        2 Years{" "}
+                                      </Badge>
+                                    </div>
+                                  </div>
+
+                                  <div class="icon-block mt-3">
+                                    <p>
+                                      <span class="mr-2">
+                                        <img
+                                          src={pr}
+                                          width={40}
+                                          alt=""
+                                        />
+                                      </span>
+                                      <span class="mr-2">
+                                        <img
+                                          src={ae}
+                                          width={40}
+                                          alt=""
+                                        />
+                                      </span>
+                                      <span class="mr-2">
+                                        <img
+                                          src={finalcut}
+                                          width={40}
+                                          alt=""
+                                        />
+                                      </span>
+                                    </p>
+                                  </div>
+
+                                  <p>
+                                    Adobe Premreie Pro, Affter Effects
+                                    and Final Cut Pro for video
+                                    editing, motion graphics and
+                                    finalizing content for
+                                    commericials, social media
+                                    content, webisodes and company
+                                    interviews. High difinition 4K-8K
+                                    digital content captured with Red
+                                    Digital Cinema Cameras.
+                                            </p>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="col-md-6 text-center d-flex mt-5">
+                            <label>
+                              <input type="checkbox" />
+                              <div class="box shadow">
+                                <div class="front">
+                                  <div class=" profile-card-3 h-100">
+                                    <div class="background-block">
+                                      <img
+                                        src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                                        alt="profile-sample1"
+                                        class="background"
+                                      />
+                                    </div>
+
+                                    <div class="card-content">
+                                      <img
+                                        src={filmvideo}
+                                        alt="profile-image"
+                                        class="profile"
+                                      />
+
+                                      <h5>FILM & VIDEO PRODUCTION</h5>
+                                      <div class="icon-block mt-3">
+                                        <p>
+                                          <span class="mr-2">
+                                            <img
+                                              src={pr}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={ae}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={finalcut}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="back  h-100">
+                                  <div class="card-header">
+                                    {" "}
+                                    FILM & VIDEO PRODUCTION{" "}
+                                  </div>
+
+                                  <div class="row mt-4 pl-3 pr-3">
+                                    <div class="col-sm-6">
+                                      <span class="progress-title">
+                                        Skill Level{" "}
+                                        <ProgressBar
+                                          animated
+                                          now={80}
+                                          label={"80%"}
+                                        />
+                                      </span>
+                                    </div>
+                                    <div class=" col-sm-6">
+                                      <div class="progress-title">
+                                        Experience
+                                                </div>
+
+                                      <Badge pill variant="primary">
+                                        {" "}
+                                        2 Years{" "}
+                                      </Badge>
+                                    </div>
+                                  </div>
+
+                                  <div class="icon-block mt-3">
+                                    <p>
+                                      <span class="mr-2">
+                                        <img
+                                          src={pr}
+                                          width={40}
+                                          alt=""
+                                        />
+                                      </span>
+                                      <span class="mr-2">
+                                        <img
+                                          src={ae}
+                                          width={40}
+                                          alt=""
+                                        />
+                                      </span>
+                                      <span class="mr-2">
+                                        <img
+                                          src={finalcut}
+                                          width={40}
+                                          alt=""
+                                        />
+                                      </span>
+                                    </p>
+                                  </div>
+
+                                  <p>
+                                    Adobe Premreie Pro, Affter Effects
+                                    and Final Cut Pro for video
+                                    editing, motion graphics and
+                                    finalizing content for
+                                    commericials, social media
+                                    content, webisodes and company
+                                    interviews. High difinition 4K-8K
+                                    digital content captured with Red
+                                    Digital Cinema Cameras.
+                                            </p>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="col-md-6 text-center d-flex mt-5">
+                            <label>
+                              <input type="checkbox" />
+                              <div class="box shadow">
+                                <div class="front">
+                                  <div class=" profile-card-3 h-100">
+                                    <div class="background-block">
+                                      <img
+                                        src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                                        alt="profile-sample1"
+                                        class="background"
+                                      />
+                                    </div>
+
+                                    <div class="card-content">
+                                      <img
+                                        src={filmvideo}
+                                        alt="profile-image"
+                                        class="profile"
+                                      />
+
+                                      <h5>FILM & VIDEO PRODUCTION</h5>
+                                      <div class="icon-block mt-3">
+                                        <p>
+                                          <span class="mr-2">
+                                            <img
+                                              src={pr}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={ae}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={finalcut}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="back  h-100">
+                                  <div class="card-header">
+                                    {" "}
+                                    FILM & VIDEO PRODUCTION{" "}
+                                  </div>
+
+                                  <div class="row mt-4 pl-3 pr-3">
+                                    <div class="col-sm-6">
+                                      <span class="progress-title">
+                                        Skill Level{" "}
+                                        <ProgressBar
+                                          animated
+                                          now={80}
+                                          label={"80%"}
+                                        />
+                                      </span>
+                                    </div>
+                                    <div class=" col-sm-6">
+                                      <div class="progress-title">
+                                        Experience
+                                                </div>
+
+                                      <Badge pill variant="primary">
+                                        {" "}
+                                        2 Years{" "}
+                                      </Badge>
+                                    </div>
+                                  </div>
+
+                                  <div class="icon-block mt-3">
+                                    <p>
+                                      <span class="mr-2">
+                                        <img
+                                          src={pr}
+                                          width={40}
+                                          alt=""
+                                        />
+                                      </span>
+                                      <span class="mr-2">
+                                        <img
+                                          src={ae}
+                                          width={40}
+                                          alt=""
+                                        />
+                                      </span>
+                                      <span class="mr-2">
+                                        <img
+                                          src={finalcut}
+                                          width={40}
+                                          alt=""
+                                        />
+                                      </span>
+                                    </p>
+                                  </div>
+
+                                  <p>
+                                    Adobe Premreie Pro, Affter Effects
+                                    and Final Cut Pro for video
+                                    editing, motion graphics and
+                                    finalizing content for
+                                    commericials, social media
+                                    content, webisodes and company
+                                    interviews. High difinition 4K-8K
+                                    digital content captured with Red
+                                    Digital Cinema Cameras.
+                                            </p>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </section>
 
           <section className="page-section-projects mb-5" id="portfolio">
@@ -837,7 +824,7 @@ export default class IndexPage extends React.Component {
                                       }
                                     />
                                   </div>
-                                
+
                                   <div class="social">
                                     <i class="fab fa-react"></i>
                                     <i class="fab fa-js"></i>
@@ -867,7 +854,7 @@ export default class IndexPage extends React.Component {
                                       }
                                     />
                                   </div>
-                          
+
                                   <div class="social">
                                     <i class="fab fa-react"></i>
                                     <i class="fab fa-js"></i>
@@ -1223,14 +1210,14 @@ export default class IndexPage extends React.Component {
           <section>
             <section class="page-section-resume" id="resume">
               <div class="container">
-              <div class="text-center mt-5 mb-5">
-                <h2>
-                  <Badge pill variant="secondary">
-                    {" "}
-                  RESUME
+                <div class="text-center mt-5 mb-5">
+                  <h2>
+                    <Badge pill variant="secondary">
+                      {" "}
+                      RESUME
                   </Badge>
-                </h2>
-              </div>
+                  </h2>
+                </div>
                 <div class="row mt-5">
                   <div class="col-sm-3 md-3">
                     <nav id="navi">
