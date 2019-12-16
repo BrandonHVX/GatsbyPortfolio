@@ -118,7 +118,7 @@ export default class IndexPage extends React.Component {
                 </div>
               </div>
               <div class="card-header1  text-center mb-5"></div>
-              <div class="text-center mt-5 mb-5">
+              <div class="text-center mt-5 mb-1">
                 <h3>
                   Brandon Gines<span class="font-weight-light"></span>
                 </h3>
@@ -139,7 +139,7 @@ export default class IndexPage extends React.Component {
                 <div class="sec-title">
                   <span class="badge badge-pill badge-primary"><span class="badge"> <i class="fas fa-user"></i></span>About Me </span></div>
 
-                <div class="about-text p-3">
+                <div class="about-text text-left p-1">
                   <p>
                     Creative self-motivated professional with
                     cross-functional skills including expertise in
@@ -150,7 +150,7 @@ export default class IndexPage extends React.Component {
                 </div>
               </div>
 
-              <div class="card-body pt-0 pt-md-4">
+              <div class="card-body  ">
                 <div class="row">
                   <div class="col-md-6 ">
                     <div class="sec-title text-center">
