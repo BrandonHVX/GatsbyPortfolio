@@ -2363,3 +2363,66 @@ input {
 // }
 
 /////////////////////////////////////////////////////////////////////////@at-root
+
+.m-nav {
+  button {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
+
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  &:hover button {
+    transform: scale(20.5);
+    background-color: rgba(0, 0, 128, 0.932);
+  }
+}
+
+////////////////////////////////////////////////////////////
+
+#room {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+#room.dark {
+  background-color: transparent;
+  color: white;
+}
+
+#room.light {
+  background-color: yellow;
+  color: black;
+}
+
+#lightbulb {
+  transition: all 0.3s;
+}
+
+#lightbulb.off {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#lightbulb.on {
+  visibility: visible;
+  opacity: 1;
+}
+
+#lightswitch {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}

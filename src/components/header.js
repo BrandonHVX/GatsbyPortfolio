@@ -6,6 +6,7 @@ import { Parallax, Background } from "react-parallax"
 import bgheader from "../images/slide-4.jpg"
 import Lottie from "react-lottie"
 import animationData from "../images/newname.json"
+import Mobile from "./mobile"
 
 const defaultOptions = {
   loop: true,
@@ -25,8 +26,12 @@ export default class Header extends React.Component {
   render() {
     return (
       <>
+        {" "}
+        <div class="mobile">
+          <Mobile />
+        </div>
         <Navbar
-          className="navbar navbar-expand-lg navbar-light fixed-top py-3"
+          className="navbar navbar-expand-lg navbar-light fixed-top"
           id="mainNav"
           expand="lg"
           collapseOnSelect={true}
@@ -40,6 +45,7 @@ export default class Header extends React.Component {
               B
             </a>
             <Navbar.Toggle aria-controls="navbarResponsive" />
+
             <Navbar.Collapse id="navbarResponsive">
               <Nav className="navbar-nav ml-auto my-2 my-lg-0">
                 <Scrollspy

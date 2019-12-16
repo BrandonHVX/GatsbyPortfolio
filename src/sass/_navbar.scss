@@ -2,7 +2,6 @@
 #mainNav {
   // box-shadow: $box-shadow;
   background-color: transparent;
-  text-align: center;
 
   transition: background-color 0.2s ease;
   .navbar-brand {
@@ -12,7 +11,8 @@
   }
   .navbar-nav {
     .nav-item {
-      background-color: rgba(0, 0, 0, 0.863);
+      background-size: 100vh;
+      background-color: transparent;
       &.active {
         .nav-link {
           color: $primary !important;
@@ -33,10 +33,9 @@
     }
   }
 
-  // @include media-breakpoint-down(md) {
-  //   // Base styling for the navbar - screen sizes greater than the large breakpoint
-  //   display: none;
-  // }
+  @include media-breakpoint-down(md) {
+    // Base styling for the navbar - screen sizes greater than the large breakpoint
+  }
 
   @include media-breakpoint-up(lg) {
     // Base styling for the navbar - screen sizes greater than the large breakpoint
@@ -49,7 +48,6 @@
         color: $white;
       }
     }
-
     .navbar-nav {
       .nav-item {
         .nav-link {
@@ -71,10 +69,40 @@
 }
 
 @include media-breakpoint-up(lg) {
+  // Base styling for the navbar - screen sizes greater than the large breakpoint
+  box-shadow: none;
+
+  background-color: transparent;
+  .navbar-brand {
+    color: fade-out($white, 0.3);
+    &:hover {
+      color: $white;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: fade-out($white, 0.3);
+
+        padding: 0 1rem;
+        &:hover {
+          color: $white;
+        }
+      }
+      &:last-child {
+        .nav-link {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
   // Navbar styling applied when the page is scrolled
   .site-container.navbar-scrolled #mainNav {
     box-shadow: $box-shadow;
-    background-color: rgba(0, 0, 0, 0.42);
+    background-color: rgb(255, 255, 255);
     .navbar-brand {
       color: $gray-900;
       &:hover {
