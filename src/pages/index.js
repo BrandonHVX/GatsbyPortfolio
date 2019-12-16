@@ -137,7 +137,7 @@ export default class IndexPage extends React.Component {
 
 
                 <div class="sec-title">
-                  <span class="badge badge-pill badge-primary"><span class="badge"> <i class="fas fa-user"></i></span>ABOUT </span></div>
+                  <span class="badge badge-pill badge-primary"><span class="badge"> <i class="fas fa-user"></i></span>About Me </span></div>
 
                 <div class="about-text p-3">
                   <p>
@@ -154,7 +154,7 @@ export default class IndexPage extends React.Component {
                 <div class="row">
                   <div class="col-md-6 ">
                     <div class="sec-title text-center">
-                      <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-user"></i></span>Career Objective</span></div>
+                      <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-briefcase"></i></span>Career Objective</span></div>
 
                     <div class="about-text pt-3">
                       <p>
@@ -171,7 +171,7 @@ export default class IndexPage extends React.Component {
 
                   <div class="col-md-6 text-center">
                   <div class="sec-title text-center">
-                      <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-user"></i></span>Expertise</span></div>
+                      <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-tasks"></i></span>Expertise</span></div>
 
                     <div class="card-profile-stats  mt-md-1">
                       <div class="progress-wrap">
@@ -253,7 +253,7 @@ export default class IndexPage extends React.Component {
                     <div class="col">
                       <div class="text-center  pt-5">
                       <div class="sec-title text-center">
-                      <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-user"></i></span>Skills & Software</span></div>
+                      <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-laptop"></i></span>Skills & Software</span></div>
 
                         <div class="row justify-content-center ">
                           <div class="col-lg-3 order-lg-2"></div>
@@ -773,14 +773,8 @@ export default class IndexPage extends React.Component {
               <div class="row justify-content-center">
                 <div class="col-lg-3 order-lg-2"></div>
               </div>
-              <div class="text-center mt-5 mb-5">
-                <h2>
-                  <Badge pill variant="secondary">
-                    {" "}
-                    Projects
-                  </Badge>
-                </h2>
-              </div>
+              <div class="sec-title text-center">
+                      <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-laptop"></i></span>Projects</span></div>
 
               <div>
                 <Tab.Container defaultActiveKey="first">
@@ -893,31 +887,7 @@ export default class IndexPage extends React.Component {
                                       }
                                     />
                                   </div>
-                                  <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                  </ul>
+                             
                                   <div class="social">
                                     <i class="fas fa-film"></i>{" "}
                                     <i class="fab fa-adobe"></i>
@@ -936,8 +906,7 @@ export default class IndexPage extends React.Component {
                                   </div>
                                   <h5 class="pg-title">Vibes and Views</h5>
                                   <p class="pg-text">
-                                    Reality Television Pilot based on the Miami
-                                    Lifstyle
+                                    Reality Television Pilot
                                   </p>
                                   <div class="pic">
                                     <Img
@@ -947,31 +916,7 @@ export default class IndexPage extends React.Component {
                                       }
                                     />
                                   </div>
-                                  <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                  </ul>
+                                  
                                   <div class="social">
                                     <i class="fab fa-facebook-f"></i>
                                     <i class="fab fa-twitter"></i>
@@ -1000,31 +945,7 @@ export default class IndexPage extends React.Component {
                                       }
                                     />
                                   </div>
-                                  <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                  </ul>
+                              
                                   <div class="social">
                                     <i class="fab fa-facebook-f"></i>
                                     <i class="fab fa-twitter"></i>
