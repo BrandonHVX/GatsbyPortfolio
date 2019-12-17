@@ -41,10 +41,10 @@ const LightSwitch = () => {
   }
 
   return (
-    <button id="lightswitch" onClick={flickTheSwitch}>
+    <a id="lightswitch" onClick={flickTheSwitch}>
       {lightOn}
       <div></div>
-    </button>
+    </a>
   )
 }
 
