@@ -35,7 +35,6 @@
 
   @include media-breakpoint-down(md) {
     // Base styling for the navbar - screen sizes greater than the large breakpoint
-    
   }
 
   @include media-breakpoint-up(lg) {
@@ -145,4 +144,26 @@
 
 .navbar-expand-lg {
   background-color: rgba(0, 0, 0, 0.404);
+}
+
+@media (max-width: 993px) {
+  .navbar-collapse {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 700;
+    font-size: 2rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 100%;
+    text-align: center;
+    padding-top: 80px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    z-index: -1;
+    background-color: $primary;
+    transition: all 0.1s ease-in;
+  }
 }

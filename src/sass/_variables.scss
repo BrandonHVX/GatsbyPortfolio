@@ -1013,7 +1013,7 @@ $accent-color: #355cc9;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+ 
   backface-visibility: hidden;
   transform-style: preserve-3d;
   border-radius: 6px;
@@ -1070,6 +1070,7 @@ $accent-color: #355cc9;
 .back {
   transform: rotateY(180deg);
   background-color: #fff;
+ 
   border: 2px solid rgb(240, 240, 240);
   .inner {
     grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
@@ -1220,7 +1221,7 @@ $color-tertiary-dark: #5643fa;
 .card-3 {
   width: 100%;
   position: relative;
-  height: 340px;
+  height: 100%;
   margin: 1em;
   perspective: 150em;
   background-color: transparent;
@@ -1242,6 +1243,8 @@ $color-tertiary-dark: #5643fa;
 
     &--back {
       color: black;
+      height: 100%;
+
       transform: rotateY(180deg);
 
       &-1 {
@@ -1375,7 +1378,7 @@ $color-tertiary-dark: #5643fa;
   overflow: hidden;
   width: 100%;
 
-  height: 368px;
+  height: 100%;
   border: none;
 }
 
@@ -1399,6 +1402,7 @@ $color-tertiary-dark: #5643fa;
 }
 .profile-card-3 .card-content {
   width: 100%;
+  height: 100%;
   padding: 15px 25px;
   color: #232323;
   float: left;
@@ -2388,101 +2392,95 @@ input {
 
 ////////////////////////////////////////////////////////////
 
+// Base styling for the navbar - screen sizes greater than the large breakpoint
 
+#room {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  transition: all 0.3s;
+}
 
-  // Base styling for the navbar - screen sizes greater than the large breakpoint
-  
-  #room {
-    width: 100vw;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    transition: all 0.3s;
-  }
-  
-  #room.dark {
-    background-color: transparent;
-    height: 100vh;
-    color: white;
-  }
-  
-  #room.light {
-    background-color: yellow;
-    color: black;
-    height: 100vh;
+#room.dark {
+  background-color: transparent;
+  height: 100vh;
+  color: white;
+}
+
+#room.light {
+  background-color: yellow;
+  color: black;
+  height: 100vh;
   border-bottom-right-radius: 500rem;
-    transition: ease all 0.3s;
-  }
-  
-  #lightbulb {
-    transition: all 0.3s;
-  }
-  
-  #lightbulb.off {
-    visibility: hidden;
-    opacity: 0;
-    transition: ease-out all 0.3s;
-  }
-  
-  #lightbulb.on {
-    visibility: visible;
-    opacity: 1;
-    transition: ease-in all 0.3s;
-  }
-  
-  #lightswitch {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 40px;
-    margin: 10px;
-    z-index: 9999;
-  }
-  
-  
-  .mobile {
-    position: fixed;
-    z-index: 9999;
-    height: 100vh;
-  
-  
-  }
 
-  #lightswitch:after, 
-  #lightswitch:before, 
+  // -ms-transform: translateY(13px) rotate(45deg);
+  // -o-transform: translateY(13px) rotate(45deg);
+  // transform: translateY(13px) rotate(45deg);
+  transition: ease all 0.3s;
+  #lightswitch:after,
+  #lightswitch:before,
   #lightswitch div {
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
     border-radius: 3px;
-    content: '';
+    content: "";
     display: block;
     height: 5px;
     margin: 7px 0;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
+}
 
+#lightbulb {
+  transition: all 0.3s;
+}
 
+#lightbulb.off {
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-out all 0.3s;
+}
 
+#lightbulb.on {
+  visibility: visible;
+  opacity: 1;
+  transition: ease-in all 0.3s;
+}
 
-@media (min-width: 993px) {
+#lightswitch {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40px;
+  margin: 10px;
+  z-index: 9999;
+}
+
+.mobile {
+  position: fixed;
+  z-index: 9999;
+  height: 100vh;
+}
+
+#lightswitch:after,
+#lightswitch:before,
+#lightswitch div {
+  background-color: #fff;
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 993px) {
   #lightswitch {
     position: fixed;
     top: 0;
-    display: none; 
+    display: none;
     right: 0;
     margin: 10px;
     z-index: 9999;
   }
-
-
-
-
-
-
-
-
-
-
 }
-
-
-

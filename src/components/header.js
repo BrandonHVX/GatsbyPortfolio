@@ -27,9 +27,9 @@ export default class Header extends React.Component {
     return (
       <>
         {" "}
-        <div class="mobile">
+        {/* <div class="mobile">
           <Mobile />
-        </div>
+        </div> */}
         <Navbar
           className="navbar navbar-expand-lg navbar-light fixed-top"
           id="mainNav"
