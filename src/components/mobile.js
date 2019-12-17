@@ -42,7 +42,8 @@ const LightSwitch = () => {
 
   return (
     <button id="lightswitch" onClick={flickTheSwitch}>
-      {lightOn ? "ON" : "OFF"}
+      {lightOn}
+      <div></div>
     </button>
   )
 }

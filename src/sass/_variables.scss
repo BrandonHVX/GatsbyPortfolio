@@ -2388,41 +2388,101 @@ input {
 
 ////////////////////////////////////////////////////////////
 
-#room {
-  width: 100vw;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  transition: all 0.3s;
+
+
+  // Base styling for the navbar - screen sizes greater than the large breakpoint
+  
+  #room {
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  
+  #room.dark {
+    background-color: transparent;
+    height: 100vh;
+    color: white;
+  }
+  
+  #room.light {
+    background-color: yellow;
+    color: black;
+    height: 100vh;
+  border-bottom-right-radius: 500rem;
+    transition: ease all 0.3s;
+  }
+  
+  #lightbulb {
+    transition: all 0.3s;
+  }
+  
+  #lightbulb.off {
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-out all 0.3s;
+  }
+  
+  #lightbulb.on {
+    visibility: visible;
+    opacity: 1;
+    transition: ease-in all 0.3s;
+  }
+  
+  #lightswitch {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    margin: 10px;
+    z-index: 9999;
+  }
+  
+  
+  .mobile {
+    position: fixed;
+    z-index: 9999;
+    height: 100vh;
+  
+  
+  }
+
+  #lightswitch:after, 
+  #lightswitch:before, 
+  #lightswitch div {
+    background-color: #fff;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+  }
+
+
+
+
+@media (min-width: 993px) {
+  #lightswitch {
+    position: fixed;
+    top: 0;
+    display: none; 
+    right: 0;
+    margin: 10px;
+    z-index: 9999;
+  }
+
+
+
+
+
+
+
+
+
+
 }
 
-#room.dark {
-  background-color: transparent;
-  color: white;
-}
 
-#room.light {
-  background-color: yellow;
-  color: black;
-}
 
-#lightbulb {
-  transition: all 0.3s;
-}
-
-#lightbulb.off {
-  visibility: hidden;
-  opacity: 0;
-}
-
-#lightbulb.on {
-  visibility: visible;
-  opacity: 1;
-}
-
-#lightswitch {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 9999;
-}
