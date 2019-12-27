@@ -50,13 +50,7 @@ export default class Header extends React.Component {
               <Nav className="navbar-nav ml-auto my-2 my-lg-0">
                 <Scrollspy
                   className="navbar-nav"
-                  items={[
-                    "about",
-                    "services",
-                    "portfolio",
-                    "resume",
-                    "contact",
-                  ]}
+                  items={["about", "portfolio", "resume", "contact"]}
                   currentClassName="active"
                   rootEl={"#mainNav"}
                   offset={-75}
@@ -70,15 +64,7 @@ export default class Header extends React.Component {
                       About
                     </Nav.Link>
                   </li>
-                  <li className="nav-item">
-                    <Nav.Link
-                      className={"js-scroll-trigger"}
-                      href="#services"
-                      onClick={Scroller.handleAnchorScroll}
-                    >
-                      Services
-                    </Nav.Link>
-                  </li>
+
                   <li className="nav-item">
                     <Nav.Link
                       className={"js-scroll-trigger"}
