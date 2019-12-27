@@ -13,6 +13,7 @@
     .nav-item {
       background-size: 100vh;
       background-color: transparent;
+      font-size: 20px;
       &.active {
         .nav-link {
           color: $primary !important;
@@ -152,18 +153,93 @@
     text-transform: uppercase;
     font-family: verdana;
     font-weight: 700;
-    font-size: 2rem;
+
     top: 0;
     right: 0;
     left: 0;
     min-height: 100%;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 40px;
+    padding-left: 10px;
     flex-basis: 100%;
+    border-bottom-right-radius: 300px;
     flex-grow: 1;
     align-items: center;
     z-index: -1;
     background-color: $primary;
     transition: all 0.1s ease-in;
+  }
+
+  // Base styling for the navbar
+  #mainNav {
+    // box-shadow: $box-shadow;
+    background-color: transparent;
+
+    transition: background-color 0.2s ease;
+    .navbar-brand {
+      font-family: $font-family-sans-serif;
+      font-weight: $font-weight-bold;
+      color: $gray-900;
+    }
+    .navbar-nav {
+      .nav-item {
+        background-size: 100vh;
+        background-color: transparent;
+
+        &.active {
+          .nav-link {
+            color: $primary !important;
+          }
+        }
+
+        .nav-link {
+          color: white;
+          font-family: $font-family-sans-serif;
+          font-weight: $font-weight-bold;
+          font-size: 1.5rem;
+          text-align: left;
+          margin: 2px;
+          padding: 0.5rem 0;
+          &:hover,
+          &:active {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      // Base styling for the navbar - screen sizes greater than the large breakpoint
+    }
+
+    @include media-breakpoint-up(lg) {
+      // Base styling for the navbar - screen sizes greater than the large breakpoint
+      box-shadow: none;
+
+      background-color: transparent;
+      .navbar-brand {
+        color: fade-out($white, 0.3);
+        &:hover {
+          color: $white;
+        }
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: fade-out($white, 0.3);
+
+            padding: 0 1rem;
+            &:hover {
+              color: $white;
+            }
+          }
+          &:last-child {
+            .nav-link {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
   }
 }
