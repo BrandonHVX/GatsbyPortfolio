@@ -94,7 +94,7 @@ function Jobs(props) {
         <div>
           <JobsImage />
 
-          <body>
+          <div class="project-page">
             <div class="page-holder">
               <section class="hero">
                 <div class="container">
@@ -215,7 +215,7 @@ function Jobs(props) {
                 </div>
               </section>
             </div>
-          </body>
+          </div>
         </div>
       </Modal.Body>
       <Modal.Footer style={{ color: "white", backgroundColor: "#00000072" }}>

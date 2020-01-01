@@ -123,24 +123,23 @@ export default class IndexPage extends React.Component {
                 <h3>
                   Brandon Gines<span class="font-weight-light"></span>
                 </h3>
-                <div class="h5 font-weight-300">
+                <div class="h6 font-weight-300">
                   <i class="ni location_pin mr-2"></i>Miami, Florida
                           </div>
-                <div class="h5 mt-4">
-                  <i class="ni business_briefcase-24 mr-2"></i>
-                  Solution Manager - Creative Tim Officer
+                <div class="h6 mt-2">
+           brandongines@gmail.com
                           </div>
                 <div>
-                  <i class="ni education_hat mr-2"></i>University of
-                  Computer Science
+                  <i class="ni education_hat mr-2"></i>
+                Wyncode Academy
                           </div>
                 <hr class="my-4" />
 
 
-                <div class="sec-title">
+                <div class="sec-title text-center">
                   <span class="badge badge-pill badge-primary"><span class="badge"> <i class="fas fa-user"></i></span>About Me </span></div>
 
-                <div class="about-text text-left p-1">
+                <div class="about-text text-center p-4">
                   <p>
                     Creative self-motivated professional with
                     cross-functional skills including expertise in
@@ -151,101 +150,23 @@ export default class IndexPage extends React.Component {
                 </div>
               </div>
 
-              <div class="card-body  ">
-                <div class="row">
-                  <div class="col-md-6 ">
+              <div class="card-body">
+                
+              
                     <div class="sec-title text-center">
                       <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-briefcase"></i></span>Career Objective</span></div>
 
-                    <div class="about-text pt-3">
-                      <p>
-                        Creative self-motivated professional with
-                        cross-functional skills including expertise
-                        in digital media, video production, full
-                        stack web development, graphic design,
-                        marketing, project management and client
-                        engagement.
-                                  </p>
-
-                    </div>
-                  </div>
-
-                  <div class="col-md-6 text-center">
-                  <div class="sec-title text-center">
-                      <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-tasks"></i></span>Expertise</span></div>
-
-                    <div class="card-profile-stats  mt-md-1">
-                      <div class="progress-wrap">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <strong>
-                              Full Stack Web Development
-                                      </strong>
-                          </div>
-                          <div class="col-md-5 mt-1">
-                            <div>
-                              <ProgressBar
-                                animated
-                                now={80}
-                                label={" 80%"}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="progress-wrap">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <strong>Film & Video Production</strong>
-                          </div>
-                          <div class="col-md-5 mt-1">
-                            <div>
-                              <ProgressBar
-                                animated
-                                now={80}
-                                label={" 80%"}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="progress-wrap">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <strong>Graphic Design</strong>
-                          </div>
-                          <div class="col-md-5 mt-1">
-                            <div>
-                              <ProgressBar
-                                animated
-                                now={80}
-                                label={" 80%"}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="progress-wrap">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <strong>Motion Graphics</strong>
-                          </div>
-                          <div class="col-md-5 mt-1">
-                            <div>
-                              <ProgressBar
-                                animated
-                                now={80}
-                                label={" 80%"}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                      <div class="about-text text-center p-1">
+                  <p>
+                    Creative self-motivated professional with
+                    cross-functional skills including expertise in
+                    digital media, video production, full stack web
+                    development, graphic design, marketing, project
+                    management and client engagement.
+                            </p>
                 </div>
+                
+
               </div>
 
               <div class="main-content">
@@ -322,75 +243,75 @@ export default class IndexPage extends React.Component {
                                 </div>
 
                                 <div class="back">
-                                <div class="card-header">
-                                    {" "}
-                                     FULL STACK WEB DEVELOPMENT {" "}
+                                  <div class="card-header">
+                               FULL STACK WEB DEVELOPMENT
                                   </div>
 
-                                    
                                   <div class="row mt-4 pl-3 pr-3">
-                                    <div class="col-sm-6">
+                                    <div class="col">
                                       <span class="progress-title">
                                         Skill Level{" "}
                                         <ProgressBar
                                           animated
-                                          now={80}
-                                          label={"80%"}
+                                          now={75}
+                                          label={"75%"}
                                         />
                                       </span>
                                     </div>
-                                    <div class=" col-sm-6">
-                                      <div class="progress-title">
-                                        Experience
-                                                </div>
-
-                                      <strong>2 Years</strong>
+                                    <div class="col">
+                                    <span class="progress-title">
+                                       Experience
+                                        <ProgressBar
+                                        
+                                          now={100}
+                                          label={"2 years"}
+                                        />
+                                      </span>
                                     </div>
                                   </div>
-
                                   <div class="icon-block mt-3">
-                                    <p>
-                                      <span class="mr-2">
-                                        <img
-                                          src={mongo}
-                                          width={40}
-                                          alt=""
-                                        />
-                                      </span>
-                                      <span class="mr-2">
-                                        <img
-                                          src={ex}
-                                          width={80}
-                                          alt=""
-                                        />
-                                      </span>
-                                      <span class="mr-2">
-                                        <img
-                                          src={reactsvg}
-                                          width={40}
-                                          alt=""
-                                        />
-                                      </span>
-                                      <span class="mr-2">
-                                        <img
-                                          src={node}
-                                          width={40}
-                                          alt=""
-                                        />
-                                      </span>
-                                    </p>
+                                        <p>
+                                          <span class="mr-2">
+                                            <img
+                                              src={mongo}
+                                              width={35}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-3">
+                                            <img
+                                              src={ex}
+                                              width={65}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={node}
+                                              width={34}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={reactsvg}
+                                              width={34}
+                                              alt=""
+                                            />
+                                          </span>
+                                        </p>
+                                      </div>
+                                  <div class="icon-block mt-3 p-1">
+                                
+                                  MongoDB, Node.js, Express.js, React.js, HTML, CSS, SASS
+                      and Bootstrap for developing full-stack web applications
+                      using JavaScript excution environments for both client and
+                      server-side rendering.
                                   </div>
-
+                      
+                                
                                   
-                                    Adobe Premreie Pro, Affter Effects
-                                    and Final Cut Pro for video
-                                    editing, motion graphics and
-                                    finalizing content for
-                                    commericials, social media
-                                    content, webisodes and company
-                                    interviews.
-                                            
-                              
+                                   
                                 </div>
                               </div>
                             </label>
@@ -447,139 +368,8 @@ export default class IndexPage extends React.Component {
                                 </div>
 
                                 <div class="back">
-                               
-                                <div class="card-header">
-                                    {" "}
-                                    FILM & VIDEO PRODUCTION{" "}
-                                  </div>
-                                    
-                               <div class="row mt-4 pl-3 pr-3">
-                                 <div class="col-sm-6">
-                                   <span class="progress-title">
-                                     Skill Level{" "}
-                                     <ProgressBar
-                                       animated
-                                       now={80}
-                                       label={"80%"}
-                                     />
-                                   </span>
-                                 </div>
-                                 <div class=" col-sm-6">
-                                   <div class="progress-title">
-                                     Experience
-                                             </div>
-
-                                   <strong>2 Years</strong>
-                                 </div>
-                               </div>
-
-                               <div class="icon-block mt-3">
-                                 <p>
-                                   <span class="mr-2">
-                                     <img
-                                       src={mongo}
-                                       width={40}
-                                       alt=""
-                                     />
-                                   </span>
-                                   <span class="mr-2">
-                                     <img
-                                       src={ex}
-                                       width={80}
-                                       alt=""
-                                     />
-                                   </span>
-                                   <span class="mr-2">
-                                     <img
-                                       src={reactsvg}
-                                       width={40}
-                                       alt=""
-                                     />
-                                   </span>
-                                   <span class="mr-2">
-                                     <img
-                                       src={node}
-                                       width={40}
-                                       alt=""
-                                     />
-                                   </span>
-                                 </p>
-                               </div>
-
-                               
-                               Adobe Premreie Pro, Affter Effects
-                                    and Final Cut Pro for video
-                                    editing, motion graphics and
-                                    finalizing content for
-                                    commericials, social media
-                                    content, webisodes and company
-                                    interviews. High difinition 4K-8K
-                                    digital content captured with Red
-                                    Digital Cinema Cameras.
-
-
-
-                                         
-                           
-                             </div>
-                              </div>
-                            </label>
-                          </div>
-                          <div class="col-md-6 text-center d-flex mt-5">
-                            <label>
-                              <input type="checkbox" />
-                              <div class="box shadow h-100">
-                                <div class="front">
-                                  <div class=" profile-card-3">
-                                    <div class="background-block">
-                                      <img
-                                        src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
-                                        alt="profile-sample1"
-                                        class="background"
-                                      />
-                                    </div>
-
-                                    <div class="card-content">
-                                      <img
-                                        src={filmvideo}
-                                        alt="profile-image"
-                                        class="profile"
-                                      />
-
-                                      <h5>MOTION GRAPHICS</h5>
-                                      <div class="icon-block mt-3">
-                                        
-                                          <span class="mr-2">
-                                            <img
-                                              src={pr}
-                                              width={40}
-                                              alt=""
-                                            />
-                                          </span>
-                                          <span class="mr-2">
-                                            <img
-                                              src={ae}
-                                              width={40}
-                                              alt=""
-                                            />
-                                          </span>
-                                          <span class="mr-2">
-                                            <img
-                                              src={finalcut}
-                                              width={40}
-                                              alt=""
-                                            />
-                                          </span>
-                                      
-                                        
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="back">
                                   <div class="card-header">
-                                  MOTION GRAPHICS
+                                 FILM & VIDEO PRODUCTION
                                   </div>
 
                                   <div class="row mt-4 pl-3 pr-3">
@@ -588,20 +378,19 @@ export default class IndexPage extends React.Component {
                                         Skill Level{" "}
                                         <ProgressBar
                                           animated
-                                          now={80}
-                                          label={"80%"}
+                                          now={94}
+                                          label={"94%"}
                                         />
                                       </span>
                                     </div>
                                     <div class="col">
                                     <span class="progress-title">
-                                        Skill Level
-                                        <Badge pill variant="primary">
+                                       Experience
+                                        <ProgressBar
                                         
-                                        2 Years
-                                      </Badge>
-
-
+                                          now={100}
+                                          label={"10+ years"}
+                                        />
                                       </span>
                                     </div>
                                   </div>
@@ -658,6 +447,125 @@ export default class IndexPage extends React.Component {
                           <div class="col-md-6 text-center d-flex mt-5">
                             <label>
                               <input type="checkbox" />
+                              <div class="box shadow h-100">
+                                <div class="front">
+                                  <div class=" profile-card-3">
+                                    <div class="background-block">
+                                      <img
+                                        src=" https://blog.addpipe.com/content/images/size/w700h329/2019/02/html-and-javascript-code-shown-in-editor-on-screen.jpg"
+                                        alt="profile-sample1"
+                                        class="background"
+                                      />
+                                    </div>
+
+                                    <div class="card-content">
+                                      <img
+                                        src={filmvideo}
+                                        alt="profile-image"
+                                        class="profile"
+                                      />
+
+                                      <h5>MOTION GRAPHICS</h5>
+                                      <div class="icon-block mt-3">
+                                        
+                                          <span class="mr-2">
+                                            <img
+                                              src={ae}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={ps}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={ai}
+                                              width={40}
+                                              alt=""
+                                            />
+                                          </span>
+                                      
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="back">
+                                  <div class="card-header">
+                                  MOTION GRAPHICS
+                                  </div>
+
+                                  <div class="row mt-4 pl-3 pr-3">
+                                    <div class="col">
+                                      <span class="progress-title">
+                                        Skill Level{" "}
+                                        <ProgressBar
+                                          animated
+                                          now={80}
+                                          label={"80%"}
+                                        />
+                                      </span>
+                                    </div>
+                                    <div class="col">
+                                    <span class="progress-title">
+                                       Experience
+                                        <ProgressBar
+                                        
+                                          now={100}
+                                          label={"4 years"}
+                                        />
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="icon-block mt-3">
+                                        <p>
+                                          <span class="mr-2">
+                                            <img
+                                              src={ae}
+                                              width={30}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={ps}
+                                              width={30}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={ai}
+                                              width={30}
+                                              alt=""
+                                            />
+                                          </span>
+                                    
+                                        </p>
+                                      </div>
+                                  <div class="icon-block mt-3">
+                                  Adobe Affer Effects, Photoshop and Illustrator used to
+                      design, create and animate text, titles, graphics and
+                      vector elements used to enhance commericalized video
+                      content.
+                                  </div>
+                      
+                                
+                                  
+                                   
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                          <div class="col-md-6 text-center d-flex mt-5">
+                            <label>
+                              <input type="checkbox" />
                               <div class="box shadow pb-5">
                                 <div class="front">
                                   <div class=" profile-card-3">
@@ -681,21 +589,21 @@ export default class IndexPage extends React.Component {
                                         <p>
                                           <span class="mr-2">
                                             <img
-                                              src={pr}
+                                              src={ps}
                                               width={40}
                                               alt=""
                                             />
                                           </span>
                                           <span class="mr-2">
                                             <img
-                                              src={ae}
+                                              src={ai}
                                               width={40}
                                               alt=""
                                             />
                                           </span>
                                           <span class="mr-2">
                                             <img
-                                              src={finalcut}
+                                              src={xd}
                                               width={40}
                                               alt=""
                                             />
@@ -706,76 +614,75 @@ export default class IndexPage extends React.Component {
                                   </div>
                                 </div>
 
+                            
                                 <div class="back">
                                   <div class="card-header">
-                                   GRAPHIC DESIGN
+                                  GRAPHIC DESIGN
                                   </div>
 
+
+
+
+
+
                                   <div class="row mt-4 pl-3 pr-3">
-                                    <div class="col-sm-6">
+                                    <div class="col">
                                       <span class="progress-title">
                                         Skill Level{" "}
                                         <ProgressBar
                                           animated
-                                          now={80}
-                                          label={"80%"}
+                                          now={95}
+                                          label={"95%"}
                                         />
                                       </span>
                                     </div>
-                                    <div class=" col-sm-6">
-                                      <div class="progress-title">
-                                        Experience
-                                                </div>
-
-                                      <Badge pill variant="primary">
-                                        {" "}
-                                        2 Years{" "}
-                                      </Badge>
+                                    <div class="col">
+                                    <span class="progress-title">
+                                       Experience
+                                        <ProgressBar
+                                        
+                                          now={100}
+                                          label={"10 years"}
+                                        />
+                                      </span>
                                     </div>
                                   </div>
-
                                   <div class="icon-block mt-3">
-                                    <p>
-                                      <span class="mr-2">
-                                        <img
-                                          src={pr}
-                                          width={40}
-                                          alt=""
-                                        />
-                                      </span>
-                                      <span class="mr-2">
-                                        <img
-                                          src={ae}
-                                          width={40}
-                                          alt=""
-                                        />
-                                      </span>
-                                      <span class="mr-2">
-                                        <img
-                                          src={finalcut}
-                                          width={40}
-                                          alt=""
-                                        />
-                                      </span>
-
-                                    </p>
-
-                                  </div>  
+                                        <p>
+                                          <span class="mr-2">
+                                            <img
+                                              src={ps}
+                                              width={30}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={ai}
+                                              width={30}
+                                              alt=""
+                                            />
+                                          </span>
+                                          <span class="mr-2">
+                                            <img
+                                              src={xd}
+                                              width={30}
+                                              alt=""
+                                            />
+                                          </span>
+                                      
+                                        </p>
+                                      </div>
+                                  <div class="icon-block mt-3">
+                                  Adobe Photoshop, Illustrator and XD used to design
+                      stunning graphics, vector logos, print, web and moblie
+                      media layouts for social media advertisements marketing
+                      campagins and interactive websites.
+                                  </div>
+                      
+                                
                                   
-
-                                    
-                                  Adobe Premreie Pro, Affter Effects
-                                    and Final Cut Pro for video
-                                    editing, motion graphics and
-                                    finalizing content for
-                                    commericials, social media
-                                    content, webisodes and company
-                                    interviews. High difinition 4K-8K
-                                    digital content captured with Red
-                                    Digital Cinema Cameras.
-
-                                  
-                                  
+                                   
                                 </div>
                               </div>
                             </label>
@@ -1446,108 +1353,290 @@ export default class IndexPage extends React.Component {
                     </div>
                     <div id="page-3" class="page three">
                       <h2 class="heading">Skills</h2>
-                      <div>
-                        <h6 style={styles}>Coding</h6>
-                        <div class="row ">
-                          {" "}
-                          <div class="col-md-6 ">
-                            {" "}
-                            <div class="progress-wrap">
-                              <h3>HTML/CSS</h3>
-                              <ProgressBar now={80} label={"80%"} />
-                            </div>
-                          </div>
-                          <div class="col-md-6 ">
-                            <div class="progress-wrap">
-                              <h3>JavaScript</h3>
-                              <ProgressBar now={73} label={"73%"} />
-                            </div>
-                          </div>
-                          <div class="col-md-6 ">
-                            <div class="progress-wrap">
-                              <h3>Bootstrap</h3>
-                              <ProgressBar now={80} label={"80%"} />
-                            </div>
-                          </div>
-                          <div class="col-md-6 ">
-                            <div class="progress-wrap">
-                              <h3>React.Js</h3>
-                              <ProgressBar now={70} label={"70%"} />
-                            </div>
-                          </div>
-                          <div class="col-md-6 ">
-                            <div class="progress-wrap">
-                              <h3>Gatsby.Js</h3>
-                              <ProgressBar now={78} label={"78%"} />
-                            </div>
-                          </div>
-                          <div class="col-md-6 ">
-                            <div class="progress-wrap">
-                              <h3>Ruby on Rails</h3>
-                              <ProgressBar now={67} label={"67%"} />
-                            </div>
-                          </div>
-                          <div class="col-md-6 ">
-                            <div class="progress-wrap">
-                              <h3>Node.Js</h3>
-                              <ProgressBar now={70} label={"75%"} />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                       <div class="mt-5">
-                        <h6>Creative Skills</h6>
-                        <div class="row">
+                      <h6 class="heading-mini text-center">FULL STACK WEB DEVELOPMENT</h6>
+                        <div class="row mt-3">
                           {" "}
                           <div class="col-md-6 ">
                             {" "}
                             <div class="progress-wrap">
-                              <h3> Video Production</h3>
-                              <ProgressBar now={95} label={"95%"} />
+
+<div class="row">
+<div class="col">
+<h6>HTML/CSS</h6>
+</div>
+<div class="col">
+<ProgressBar now={80} label={"80%"} />
+</div>
+</div> </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                            
+<div class="row">
+<div class="col">
+<h6>JAVASCRIPT</h6>
+</div>
+<div class="col">
+<ProgressBar now={80} label={"80%"} />
+</div>
+</div>
                             </div>
                           </div>
                           <div class="col-md-6 ">
                             <div class="progress-wrap">
-                              <h3> Graphic Design</h3>
-                              <ProgressBar now={90} label={"95%"} />
+                            
+<div class="row">
+<div class="col">
+<h6>REACT.JS</h6>
+</div>
+<div class="col">
+<ProgressBar now={80} label={"80%"} />
+</div>
+</div>
                             </div>
                           </div>
                           <div class="col-md-6 ">
-                            <div class="progress-wrap">
-                              <h3>Motion Graphics</h3>
-                              <ProgressBar now={78} label={"78%"} />
+                            
+                          <div class="progress-wrap">
+                            
+                            <div class="row">
+                            <div class="col">
+                            <h6>NODE.JS</h6>
                             </div>
+                            <div class="col">
+                            <ProgressBar now={80} label={"80%"} />
+                            </div>
+                            </div>
+                                                        </div>
                           </div>
                           <div class="col-md-6 ">
-                            <div class="progress-wrap">
-                              <h3>Brochure & Page Layout</h3>
-                              <ProgressBar now={90} label={"90%"} />
+                          <div class="progress-wrap">
+                            
+                            <div class="row">
+                            <div class="col">
+                            <h6>SQL</h6>
                             </div>
+                            <div class="col">
+                            <ProgressBar now={80} label={"80%"} />
+                            </div>
+                            </div>
+                                                        </div>
                           </div>
                           <div class="col-md-6 ">
-                            <div class="progress-wrap">
-                              <h3>Web Design</h3>
-                              <ProgressBar now={88} label={"88%"} />
+                          <div class="progress-wrap">
+                            
+                            <div class="row">
+                            <div class="col">
+                            <h6>RUBY ON RAILS</h6>
                             </div>
+                            <div class="col">
+                            <ProgressBar now={80} label={"80%"} />
+                            </div>
+                            </div>
+                                                        </div>
                           </div>
+                     
                         </div>
                       </div>
+             
+
+
+                      <div class="mt-5">
+                      <h6 class="heading-mini text-center">VIDEO PRODUCTION</h6>
+                        <div class="row mt-3">
+                          {" "}
+                          <div class="col-md-6 ">
+                            {" "}
+                            <div class="progress-wrap">
+
+<div class="row">
+<div class="col">
+<h6>HTML/CSS</h6>
+</div>
+<div class="col">
+<ProgressBar now={80} label={"80%"} />
+</div>
+</div> </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                            
+<div class="row">
+<div class="col">
+<h6>JAVASCRIPT</h6>
+</div>
+<div class="col">
+<ProgressBar now={80} label={"80%"} />
+</div>
+</div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                            
+<div class="row">
+<div class="col">
+<h6>REACT.JS</h6>
+</div>
+<div class="col">
+<ProgressBar now={80} label={"80%"} />
+</div>
+</div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            
+                          <div class="progress-wrap">
+                            
+                            <div class="row">
+                            <div class="col">
+                            <h6>NODE.JS</h6>
+                            </div>
+                            <div class="col">
+                            <ProgressBar now={80} label={"80%"} />
+                            </div>
+                            </div>
+                                                        </div>
+                          </div>
+                          <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            
+                            <div class="row">
+                            <div class="col">
+                            <h6>SQL</h6>
+                            </div>
+                            <div class="col">
+                            <ProgressBar now={80} label={"80%"} />
+                            </div>
+                            </div>
+                                                        </div>
+                          </div>
+                          <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            
+                            <div class="row">
+                            <div class="col">
+                            <h6>RUBY ON RAILS</h6>
+                            </div>
+                            <div class="col">
+                            <ProgressBar now={80} label={"80%"} />
+                            </div>
+                            </div>
+                                                        </div>
+                          </div>
+                     
+                        </div>
+                      </div>
+             
+
+                      <div class="mt-5">
+                      <h6 class="heading-mini text-center">GRAPHIC DESIGN</h6>
+                        <div class="row mt-3 ">
+                          {" "}
+                          <div class="col-md-6 ">
+                            {" "}
+                            <div class="progress-wrap">
+
+<div class="row">
+<div class="col">
+<h6>HTML/CSS</h6>
+</div>
+<div class="col">
+<ProgressBar now={80} label={"80%"} />
+</div>
+</div> </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                            
+<div class="row">
+<div class="col">
+<h6>JAVASCRIPT</h6>
+</div>
+<div class="col">
+<ProgressBar now={80} label={"80%"} />
+</div>
+</div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            <div class="progress-wrap">
+                            
+<div class="row">
+<div class="col">
+<h6>REACT.JS</h6>
+</div>
+<div class="col">
+<ProgressBar now={80} label={"80%"} />
+</div>
+</div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 ">
+                            
+                          <div class="progress-wrap">
+                            
+                            <div class="row">
+                            <div class="col">
+                            <h6>NODE.JS</h6>
+                            </div>
+                            <div class="col">
+                            <ProgressBar now={80} label={"80%"} />
+                            </div>
+                            </div>
+                                                        </div>
+                          </div>
+                          <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            
+                            <div class="row">
+                            <div class="col">
+                            <h6>SQL</h6>
+                            </div>
+                            <div class="col">
+                            <ProgressBar now={80} label={"80%"} />
+                            </div>
+                            </div>
+                                                        </div>
+                          </div>
+                          <div class="col-md-6 ">
+                          <div class="progress-wrap">
+                            
+                            <div class="row">
+                            <div class="col">
+                            <h6>RUBY ON RAILS</h6>
+                            </div>
+                            <div class="col">
+                            <ProgressBar now={80} label={"80%"} />
+                            </div>
+                            </div>
+                                                        </div>
+                          </div>
+                     
+                        </div>
+                      </div>
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </div>
                     <div id="page-4" class="page four">
                       <h2 class="heading">Expertise</h2>
                       <div class="row">
-                        <div class="col-md-6 ">
-                          <div class="resume-wrap d-flex ">
-                            <div class="text ">
-                              <p>
-                                <span class="position"> Proven Ability</span> in
-                                full stack web development, UX/UI design for web
-                                applications, video production and graphic
-                                design for marketing campaigns
-                              </p>
-                            </div>
-                          </div>
-                        </div>
+            
                         <div class="col-md-6 ">
                           <div class="resume-wrap d-flex ">
                             <div class="text ">
@@ -1566,8 +1655,15 @@ export default class IndexPage extends React.Component {
                             <div class="text ">
                               <p>
                                 <span class="position">
-                                  {" "}
-                                  Comprehensive understanding and experience{" "}
+                                                       
+<div class="row">
+<div class="col">
+<h6>REACT.JS</h6>
+</div>
+<div class="col">
+<ProgressBar now={80} label={"80%"} />
+</div>
+</div>
                                 </span>{" "}
                                 in full stack web development, UX/UI design for
                                 web applications, video production and graphic

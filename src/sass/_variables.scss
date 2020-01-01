@@ -82,6 +82,10 @@ $headings-font-family: $font-family-sans-serif !default;
 // Custom variables
 $navbar-height: 72px;
 
+.project-page {
+  background-color: #fff;
+}
+
 .ftco-about {
   // background: linear-gradient(90deg, #e8e8e8 50%, #0192b3 50%);
 }
@@ -222,7 +226,8 @@ $navbar-height: 72px;
   margin-bottom: 0;
 }
 
-.page.two {
+.page-holder {
+  color: black;
 }
 
 .heading {
@@ -231,6 +236,14 @@ $navbar-height: 72px;
   font-size: 3em;
   font-weight: 700;
   color: #000000;
+}
+
+.heading-mini {
+  text-transform: uppercase;
+  font-family: verdana;
+
+  font-weight: 200;
+  color: #3e64ff;
 }
 
 .heading-section {
@@ -1190,18 +1203,6 @@ $accent-color: #355cc9;
       box-shadow: none;
     }
   }
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-}
-::-webkit-scrollbar-thumb {
-  background: lighten($accent-color, 20%);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: $accent-color;
 }
 
 $color-primary-light: #7ed56f;
