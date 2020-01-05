@@ -8,6 +8,12 @@
     font-family: $font-family-sans-serif;
     font-weight: $font-weight-bold;
     color: $gray-900;
+  font-size: 1.5rem;
+        
+    background: $primary;
+    width: 50px;
+    text-align: center;
+    border-radius: 60%;
   }
   .navbar-nav {
     .nav-item {
@@ -44,7 +50,12 @@
 
     background-color: transparent;
     .navbar-brand {
-      color: fade-out($white, 0.3);
+      color: $gray-900;
+        
+    background: $primary;
+    width: 40px;
+    text-align: center;
+    border-radius: 60%;
       &:hover {
         color: $white;
       }
@@ -71,11 +82,17 @@
 
 @include media-breakpoint-up(lg) {
   // Base styling for the navbar - screen sizes greater than the large breakpoint
+
+
+
+
+
   box-shadow: none;
 
   background-color: transparent;
   .navbar-brand {
     color: fade-out($white, 0.3);
+
     &:hover {
       color: $white;
     }
@@ -104,8 +121,14 @@
   .site-container.navbar-scrolled #mainNav {
     box-shadow: $box-shadow;
     background-color: rgb(255, 255, 255);
+    text-align: right;
+
     .navbar-brand {
       color: $gray-900;
+      background: $primary;
+      width: 40px;
+      text-align: center;
+      border-radius: 60%;
       &:hover {
         color: $primary;
       }
@@ -134,7 +157,7 @@
   border-radius: 30px;
   border: 1px solid navy;
   color: navy;
-  font-size: 0.8em;
+  font-size: 0.5em;
   margin: 5px;
 
   &:hover {
@@ -148,6 +171,15 @@
 }
 
 @media (max-width: 993px) {
+  .navbar-toggler {
+
+    font-size: 0.9rem;
+color: #000;
+    background-color: $primary;
+    border: 1px solid transparent;
+    height: 45px;
+    border-radius: 50%;
+}
   .navbar-collapse {
     position: absolute;
     text-transform: uppercase;
@@ -159,14 +191,14 @@
     left: 0;
     min-height: 100%;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 80px;
     padding-left: 10px;
     flex-basis: 100%;
     border-bottom-right-radius: 300px;
     flex-grow: 1;
     align-items: center;
     z-index: -1;
-    background-color: $primary;
+    background-color:#041c6cec;
     transition: all 0.1s ease-in;
   }
 
@@ -202,7 +234,7 @@
           padding: 0.5rem 0;
           &:hover,
           &:active {
-            color: $primary;
+            color: white;
           }
         }
       }
@@ -210,6 +242,9 @@
 
     @include media-breakpoint-down(md) {
       // Base styling for the navbar - screen sizes greater than the large breakpoint
+
+  
+
     }
 
     @include media-breakpoint-up(lg) {
@@ -218,7 +253,7 @@
 
       background-color: transparent;
       .navbar-brand {
-        color: fade-out($white, 0.3);
+        color: $gray-900;
         &:hover {
           color: $white;
         }
