@@ -10,6 +10,7 @@ import ex from "../../images/ex.png"
 import nyt from "../../images/nyt.svg"
 import redcam from "../../images/redcam-png.png"
 import mongo from "../../images/mongo.png"
+
 import {
   Card,
   Nav,
@@ -93,7 +94,7 @@ function Nyx(props) {
         <div>
           <NyxImage />
 
-          <body>
+          <div class="project-page">
             <div class="page-holder">
               <section class="hero">
                 <div class="container">
@@ -207,7 +208,7 @@ function Nyx(props) {
                           class="device"
                         >
                           <div class="screen">
-                            <img alt="..." class="img-fluid" />
+
                           </div>
                         </div>
                       </div>
@@ -216,7 +217,7 @@ function Nyx(props) {
                 </div>
               </section>
             </div>
-          </body>
+          </div>
         </div>
       </Modal.Body>
       <Modal.Footer style={{ color: "white", backgroundColor: "#00000072" }}>
@@ -233,10 +234,7 @@ function NyxModal() {
     <div>
       <a
         onClick={() => setModalShowNyx(true)}
-        style={{
-          letterSpacing: "1px",
-          textTransform: "uppercase",
-        }}
+        class="play-button"
       >
         {" "}
         View Project

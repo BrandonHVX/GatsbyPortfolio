@@ -55,7 +55,7 @@ function Bands(props) {
       >
         <Modal.Title id="contained-modal-title-vcenter">
           <h2 className="text-uppercase text-white font-weight-bold">
-            Vibes and Views
+            Taylor Alexandria
           </h2>
         </Modal.Title>
       </Modal.Header>
@@ -70,30 +70,41 @@ function Bands(props) {
 
       <Modal.Footer
         style={{
-          color: "white",
-          backgroundColor: "#000000b7",
+          color: "black",
+          backgroundColor: "#fff",
           fontSize: "0.9rem",
         }}
       >
-        <div class="row gutters mb-3">
-          <div class="col-sm-6 mb-3 text-main">
-            <h4 class="heading-title">Description</h4>
-            Company profile and Interview with Miami based Fashion
-            Designer/Stylist Taylor Alexandria.
+        <div class="container">
+
+          <div class="row">
+            <div class="col-sm-6 md-4 text-center">
+
+              <span class="badge badge-pill  badge-primary">Description</span>
+              <p class='mt-2'>Interview with Miami based Fashion Designer Taylor Alexandria as she discucess her history, style and future plans for Bands by Taylor Alexandria.</p>
+
+            </div>
+            <div class="col-sm-6 md-6 text-center">
+              <div class="col-padding">
+                <span class="badge badge-pill  badge-primary">Production Credits</span>
+                <p class="credits mt-2">
+
+                  <li><strong>Producers:</strong>Ronnie Eith & Brandon Gines</li>
+                  <li><strong>Director:</strong> Brandon Gines</li>
+                  <li><strong>Editor:</strong> Brandon Gines</li>
+                  <li><strong>Camera Operater:</strong> Ido Eyo</li>
+                  <li><strong>Lighting/Grip:</strong> Kufray Eyo </li>
+                  <li><strong>Audio Engineer:</strong> Steven Torres </li>
+                  <li><strong>Production Asst.:</strong> Remy Jean</li>
+                  <li><strong>Production Company:</strong> Florida Film House</li>
+
+                </p>
+              </div>
+            </div>
+
+
           </div>
 
-          <div class="col-sm-6">
-            <h4 class="heading-title">Production Credits</h4>
-            <ul class="credits">
-              <li>Producers: Ronnie Eith & Brandon Gines</li>
-              <li>Director: Brandon Gines</li>
-              <li>Editor/MotionFX: Brandon Gines</li>
-              <li>Camera A Operator: Brandon Gines</li>
-              <li>Camera B Operator: Ido Eyo</li>
-              <li>Production Assistant: Kufray Eyo & Remy Jean</li>
-              <li>Production Company: Florida Film House</li>
-            </ul>
-          </div>
         </div>
       </Modal.Footer>
     </Modal>
@@ -107,10 +118,8 @@ function BandsModal() {
     <div>
       <a
         onClick={() => setModalShowNyx(true)}
-        style={{
-          letterSpacing: "1px",
-          textTransform: "uppercase",
-        }}
+
+        class='play-button'
       >
         {" "}
         Play Video

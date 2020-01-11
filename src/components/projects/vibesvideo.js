@@ -70,29 +70,40 @@ function Vibes(props) {
 
       <Modal.Footer
         style={{
-          color: "white",
-          backgroundColor: "#000000b7",
+          color: "black",
+          backgroundColor: "#fff",
           fontSize: "0.9rem",
         }}
       >
-        <div class="row gutters mb-3">
-          <div class="col-sm-6 mb-3 text-main">
-            <h4 class="heading-title">Description</h4>
-            Reality Televison show pilot based on the signature Miami lifestyle.
-            Now showing on local South Florida station The Beach Channel titled
-            "Definitely In Miami".
+        <div class="container">
+
+          <div class="row">
+            <div class="col-sm-6 md-4 text-center">
+
+              <span class="badge badge-pill  badge-primary">Description</span>
+              <p class='mt-2'> Reality Televison show pilot based on the signature Miami lifestyle.
+                        Now showing on local South Florida station The Beach Channel titled
+            "Definitely In Miami".  </p>
+
+            </div>
+            <div class="col-sm-6 md-6 text-center">
+              <div class="col-padding">
+                <span class="badge badge-pill  badge-primary">Production Credits</span>
+                <p class="credits mt-2">
+
+                  <li>Producers: Ronnie Eith & Brandon Gines</li>
+                  <li>Director: Brandon Gines</li>
+                  <li>Editor/MotionFX: Brandon Gines</li>
+                  <li>Camera Operator: Brandon Gines</li>
+                  <li>Production Assistant: Remy Jean</li>
+
+                </p>
+              </div>
+            </div>
+
+
           </div>
 
-          <div class="col-sm-6">
-            <h4 class="heading-title">Production Credits</h4>
-            <ul class="credits">
-              <li>Producers: Ronnie Eith & Brandon Gines</li>
-              <li>Director: Brandon Gines</li>
-              <li>Editor/MotionFX: Brandon Gines</li>
-              <li>Camera Operator: Brandon Gines</li>
-              <li>Production Assistant: Remy Jean</li>
-            </ul>
-          </div>
         </div>
       </Modal.Footer>
     </Modal>
@@ -106,10 +117,8 @@ function VibesModal() {
     <div>
       <a
         onClick={() => setModalShowNyx(true)}
-        style={{
-          letterSpacing: "1px",
-          textTransform: "uppercase",
-        }}
+
+        class='play-button'
       >
         {" "}
         Play Video

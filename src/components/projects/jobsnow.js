@@ -9,6 +9,7 @@ import reactsvg from "../../images/react.svg"
 import ex from "../../images/ex.png"
 import redcam from "../../images/redcam-png.png"
 import mongo from "../../images/mongo.png"
+import mui from "../../images/mui.png"
 
 import {
   Card,
@@ -100,9 +101,7 @@ function Jobs(props) {
                 <div class="container">
                   <div id="page-3" class="page three">
                     <p class="lead mt-5 font-weight-light">
-                      NYX NEWS is the new way to get your daily top stories. Our
-                      platform is designed to display your favorite sections of
-                      the New York Times upon request.
+                      Jobs Now is designed for career professionals in search for your next dream job. Sign up, create a profile, post jobs, like and comment on job postings.
                     </p>
                   </div>
                 </div>
@@ -114,79 +113,66 @@ function Jobs(props) {
                     <h2 class="heading" style={{ textAlign: "center" }}>
                       Technology
                     </h2>
+                    <section class="services pt-100 pb-50 mt-4" id="services">
+                      <div class="container">
 
-                    <div class="row  text-center">
-                      <div class="col-lg-4">
-                        <div class="features-item mb-5 mb-lg-0">
-                          <div></div>
-                          <h3 class="h5 mt-2">New York Times API</h3>
-                          <p>
-                            Ability for client and server-side commuincation
-                            with the back-end server of the New York Times
-                            website.
-                          </p>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-8">
+                            <div class="single-service">
+                              <i class="fa fa-gears"><img src={mongo} width={40} ></img></i>
+                              <h4>MongoDB </h4>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-8">
+
+                            <div class="single-service">
+                              <i class="fa fa-gears"><img src={ex} width={50} ></img></i>
+                              <h4>Express</h4>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-8">
+
+                            <div class="single-service">
+                              <i class="fa fa-gears"><img src={reactsvg} width={50} ></img></i>
+                              <h4>React.Js</h4>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-8">
+
+                            <div class="single-service">
+                              <i class="fa fa-gears"><img src={node} width={50} ></img></i>
+                              <h4>Node.js</h4>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-8">
+
+                            <div class="single-service">
+                              <i class="fa fa-gears"><img src={bootstrap} width={50} ></img></i>
+                              <h4>Bootstrap</h4>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-8">
+
+                            <div class="single-service">
+                              <i class="fa fa-gears"><img src={mui} width={40} ></img></i>
+                              <h4>Material UI</h4>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry </p>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-lg-4">
-                        <div class="features-item mb-5 mb-lg-0">
-                          <div>
-                            <img src={ex} alt="" width={125} />
-                          </div>
-                          <h3 class="h5 mt-2">Express.Js</h3>
-                          <p>
-                            Javascript framework running on Node used for our
-                            back-end server routes and communication with the
-                            New York Times Developers API.
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="features-item mb-5 mb-lg-0">
-                          <div>
-                            <img src={ex} alt="" width={125} />
-                          </div>
-                          <h3 class="h5">Axios</h3>
-                          <p>
-                            Receive smart notifications exactly at the right
-                            moments when you need them.
-                          </p>
-                          <a href="#" class="features-link">
-                            Learn more
-                            <i class="icon ion-ios-arrow-forward ml-2"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-lg-4 mb-5">
-                        <div class="features-item mb-5 mb-lg-0">
-                          <div>
-                            <img src={reactsvg} alt="" width={80} />
-                          </div>
-                          <h3 class="h5">React.Js</h3>
-                          <p>
-                            Javascript libaray used to develop our user
-                            interface and experience for front-end development.
-                          </p>
-                        </div>
-                      </div>{" "}
-                      <div class="col-lg-4">
-                        <div class="features-item mb-5 mb-lg-0">
-                          <div>
-                            <img src={bootstrap} alt="" width={80} />
-                          </div>
-                          <h3 class="h5">Bootstrap</h3>
-                          <p>
-                            Based HTML and CSS use for our moblie responsive
-                            layout, colors, buttons, forms, text and navigation
-                            components.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                    </section>
+
                   </div>
                 </div>
               </section>
 
-              <section class="gallery" style={{ backgroundColor: "gold" }}>
+              <section class="gallery" style={{ backgroundColor: "blue" }}>
                 <div class="container text-center">
                   <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -200,14 +186,12 @@ function Jobs(props) {
                     <div class="col-lg-6 d-lg-block">
                       <div class="device-wrapper mx-auto">
                         <div
-                          data-device="iPhone7-2"
+                          data-device="iPhone7-3"
                           data-orientation="portrait"
                           data-color="black"
                           class="device"
                         >
-                          <div class="screen">
-                            <img alt="..." class="img-fluid" />
-                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -219,7 +203,7 @@ function Jobs(props) {
         </div>
       </Modal.Body>
       <Modal.Footer style={{ color: "white", backgroundColor: "#00000072" }}>
-        <Button onClick={props.onHide}>View Site</Button>
+        <Button onClick={props.onHide}>Git Hub</Button><Button onClick={props.onHide}>View Site</Button>
       </Modal.Footer>
     </Modal>
   )
@@ -232,10 +216,7 @@ function JobsModal() {
     <div>
       <a
         onClick={() => setModalShow(true)}
-        style={{
-          letterSpacing: "1px",
-          textTransform: "uppercase",
-        }}
+        class="play-button"
       >
         {" "}
         View Project

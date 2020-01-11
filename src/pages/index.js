@@ -8,6 +8,9 @@ import SalonModal from "../components/projects/salon"
 import VibesModal from "../components/projects/vibesvideo"
 import BandsModal from "../components/projects/bands"
 import NyxModal from "../components/projects/nyx"
+import MphModal from "../components/projects/mph"
+import ViewsModal from "../components/projects/views"
+import UffModal from "../components/projects/uff"
 import SEO from "../components/seo"
 import Scroller from "../components/scroller"
 import PortfolioModal from "../components/portfolio/modal"
@@ -467,7 +470,7 @@ export default class IndexPage extends React.Component {
 
                                     <div class="card-content">
                                       <img
-                                        src={filmvideo}
+                                        src={motionplay}
                                         alt="profile-image"
                                         class="profile"
                                       />
@@ -586,7 +589,7 @@ export default class IndexPage extends React.Component {
 
                                     <div class="card-content">
                                       <img
-                                        src={filmvideo}
+                                        src={gd}
                                         alt="profile-image"
                                         class="profile"
                                       />
@@ -980,80 +983,94 @@ export default class IndexPage extends React.Component {
                     </Tab.Pane>
                     <Tab.Pane eventKey="fourth">
                       <section id="portfolio">
-                        <div className="container-fluid p-0">
+                        <div>
                           <div className="row gutters">
-                            <div className="col-lg-6 col-sm-6">
-                              <a
-                                className="portfolio-box"
-                                href="images/portfolio/fullsize/4.jpg"
-                                onClick={this.handlePortfolioClick.bind(
-                                  this,
-                                  9
-                                )}
-                              >
-                                <Img
-                                  fluid={
-                                    this.props.data.images.edges[9].node
-                                      .childImageSharp.fluid
-                                  }
-                                />
-                                <div className="portfolio-box-caption">
-                                  <div className="project-category text-white-50">
-                                    Category
+                            <div className="col-lg-6 col-md-6">
+                              <div className="col">
+                                <div class="cards">
+                                  <div class="arrow-right">
+                                    <UffModal />
                                   </div>
-                                  <div className="project-name"></div>
+
+                                  <h5 class="pg-title">Urban Film Festival</h5>
+                                  <p class="pg-text">
+                                    Motion Graphic Animation
+                                  </p>
+
+                                  <div class="pic">
+                                    <Img
+                                      fluid={
+                                        this.props.data.images.edges[8].node
+                                          .childImageSharp.fluid
+                                      }
+                                    />
+                                  </div>
+
+                                  <div class="social">
+                                    <i class="fas fa-film"></i>{" "}
+                                    <i class="fab fa-adobe"></i>
+                                    <i class="fas fa-desktop"></i>
+                                  </div>
+
+                                  <button></button>
                                 </div>
-                              </a>
+                              </div>
                             </div>
-                            <div className="col-lg-6 col-sm-6">
-                              <a
-                                className="portfolio-box"
-                                href="img/portfolio/fullsize/5.jpg"
-                                onClick={this.handlePortfolioClick.bind(
-                                  this,
-                                  7
-                                )}
-                              >
-                                <Img
-                                  fluid={
-                                    this.props.data.images.edges[7].node
-                                      .childImageSharp.fluid
-                                  }
-                                />
-                                <div className="portfolio-box-caption">
-                                  <div className="project-category text-white-50">
-                                    Category
+                            <div className="col-lg-6 col-md-6">
+                              <div className="col">
+                                <div class="cards">
+                                  <div class="arrow-right">
+                                    <ViewsModal />
                                   </div>
-                                  <div className="project-name">
-                                    Project Name
+                                  <h5 class="pg-title">Vibes and Views</h5>
+                                  <p class="pg-text">
+                                    Motion Graphic Animation
+                                  </p>
+                                  <div class="pic">
+                                    <Img
+                                      fluid={
+                                        this.props.data.images.edges[7].node
+                                          .childImageSharp.fluid
+                                      }
+                                    />
                                   </div>
+
+                                  <div class="social">
+                                    <i class="fas fa-film"></i>{" "}
+                                    <i class="fab fa-adobe"></i>
+                                    <i class="fas fa-desktop"></i>
+                                  </div>
+                                  <button></button>
                                 </div>
-                              </a>
+                              </div>
                             </div>
-                            <div className="col-lg-6 col-sm-6 mt-4">
-                              <a
-                                className="portfolio-box"
-                                href="img/portfolio/fullsize/6.jpg"
-                                onClick={this.handlePortfolioClick.bind(
-                                  this,
-                                  8
-                                )}
-                              >
-                                <Img
-                                  fluid={
-                                    this.props.data.images.edges[8].node
-                                      .childImageSharp.fluid
-                                  }
-                                />
-                                <div className="portfolio-box-caption p-3">
-                                  <div className="project-category text-white-50">
-                                    Category
+                            <div className="col-lg-6 col-md-6">
+                              <div className="col">
+                                <div class="cards">
+                                  <div class="arrow-right">
+                                    <MphModal />
                                   </div>
-                                  <div className="project-name">
-                                    Project Name
+                                  <h4 class="pg-title">MPH CLUB</h4>
+                                  <p class="pg-text">
+                                    Motion Graphic Animation
+                                  </p>
+                                  <div class="pic">
+                                    <Img
+                                      fluid={
+                                        this.props.data.images.edges[9].node
+                                          .childImageSharp.fluid
+                                      }
+                                    />
                                   </div>
+
+                                  <div class="social">
+                                    <i class="fas fa-film"></i>{" "}
+                                    <i class="fab fa-adobe"></i>
+                                    <i class="fas fa-desktop"></i>
+                                  </div>
+                                  <button></button>
                                 </div>
-                              </a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1068,7 +1085,7 @@ export default class IndexPage extends React.Component {
           <section>
             <section class="page-section-resume" id="resume">
               <div class="container">
-                <div class="sec-title text-center">
+                <div class="sec-title text-center ">
                   <span class="badge badge-pill  badge-primary"><span class="badge"> <i class="fas fa-laptop"></i></span>Resume</span></div>
                 <div class="row mt-5">
                   <div class="col-sm-3 md-3">

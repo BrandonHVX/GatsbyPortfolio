@@ -70,34 +70,43 @@ function Salon(props) {
 
       <Modal.Footer
         style={{
-          color: "white",
-          backgroundColor: "#000000b7",
+          color: "black",
+          backgroundColor: "#fff",
           fontSize: "0.9rem",
         }}
       >
-        <div class="row gutters mb-3">
-          <div class="col-sm-6 mb-3 text-main">
-            <h4 class="heading-title">Description</h4>
-            Company Profile and Interview with Head Stylist and Management of
-            the Salotto Salon inside of the luxurious One Hotel in Miami Beach,
-            FL
+        <div class="container">
+
+          <div class="row">
+            <div class="col-sm-6 md-4 text-center">
+
+              <span class="badge badge-pill  badge-primary">Description</span>
+              <p class='mt-2'>Interview and visual experience of the Salotto Salon inside of the luxurious One Hotel in Miami Beach,FL.  </p>
+
+            </div>
+            <div class="col-sm-6 md-6 text-center">
+              <div class="col-padding">
+                <span class="badge badge-pill  badge-primary">Production Credits</span>
+                <p class="credits mt-2">
+
+                  <li>Producers: Ronnie Eith & Brandon Gines</li>
+                  <li>Director: Brandon Gines</li>
+                  <li>Editor: Brandon Gines</li>
+                  <li>Camera Operater: Ido Eyo</li>
+                  <li>Lighting/Grip: Kufray Eyo </li>
+                  <li>Production Assistant: Remy Jean</li>
+                  <li>Production Company: Florida Film House</li>
+
+                </p>
+              </div>
+            </div>
+
+
           </div>
 
-          <div class="col-sm-6">
-            <h4 class="heading-title">Production Credits</h4>
-            <ul class="credits">
-              <li>Producers: Ronnie Eith & Brandon Gines</li>
-              <li>Director: Brandon Gines</li>
-              <li>Editor: Brandon Gines</li>
-              <li>Camera Operater: Ido Eyo</li>
-              <li>Lighting/Grip: Kufray Eyo </li>
-              <li>Production Assistant: Remy Jean</li>
-              <li>Production Company: Florida Film House</li>
-            </ul>
-          </div>
         </div>
       </Modal.Footer>
-    </Modal>
+    </Modal >
   )
 }
 
@@ -108,10 +117,8 @@ function SalonModal() {
     <div>
       <a
         onClick={() => setModalShowNyx(true)}
-        style={{
-          letterSpacing: "1px",
-          textTransform: "uppercase",
-        }}
+
+        class='play-button'
       >
         {" "}
         Play Video
