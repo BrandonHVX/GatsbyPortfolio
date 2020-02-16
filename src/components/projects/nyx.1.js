@@ -7,11 +7,9 @@ import node from "../../images/node.svg"
 import vue from "../../images/vuejs.svg"
 import reactsvg from "../../images/react.svg"
 import ex from "../../images/ex.png"
-import nyt from "../../images/nyt.png"
+import nyt from "../../images/nyt.svg"
 import redcam from "../../images/redcam-png.png"
 import mongo from "../../images/mongo.png"
-import mui from "../../images/mui.png"
-import nyxlogo from "../../images/nyxlogo.png"
 
 import {
   Card,
@@ -116,62 +114,90 @@ function Nyx(props) {
                     <h2 class="heading" style={{ textAlign: "center" }}>
                       Technology
                     </h2>
-                    <section class="services pt-100 pb-50 mt-4" id="services">
-                      <div class="container">
 
-                        <div class="row">
-                          <div class="col-lg-6 col-md-8">
-                            <div class="single-service">
-                              <i class="fa fa-gears"><img src={nyt} width={50} ></img></i>
-                              <h4>New York Times API </h4>
-                              <p>Ability for client and server-side commuincation
+                    <div class="row  text-center">
+                      <div class="col-lg-4">
+                        <div class="features-item mb-5 mb-lg-0">
+                          <div>
+                            <img src={nyt} alt="" width={185} />
+                          </div>
+                          <h3 class="h5 mt-2">New York Times API</h3>
+                          <p>
+                            Ability for client and server-side commuincation
                             with the back-end server of the New York Times
-                            website.</p>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-8">
-
-                            <div class="single-service">
-                              <i class="fa fa-gears"><img src={ex} width={50} ></img></i>
-                              <h4>Express</h4>
-                              <p>      Javascript framework running on Node used for our
-                            back-end server routes and communication with the API. </p>
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-8">
-
-                            <div class="single-service">
-                              <i class="fa fa-gears"><img src={reactsvg} width={50} ></img></i>
-                              <h4>React.Js</h4>
-                              <p>Javascript libaray used to develop our user
-                            interface and experience for front-end development. </p>
-                            </div>
-                          </div>
-
-                          <div class="col-lg-6 col-md-8">
-
-                            <div class="single-service">
-                              <i class="fa fa-gears"><img src={bootstrap} width={50} ></img></i>
-                              <h4>Bootstrap</h4>
-                              <p> Based HTML and CSS use for our moblie responsive
-                            layout, colors, buttons, forms, text and navigation
-                            components.</p>
-                            </div>
-                          </div>
-
+                            website.
+                          </p>
                         </div>
                       </div>
-                    </section>
-
+                      <div class="col-lg-4">
+                        <div class="features-item mb-5 mb-lg-0">
+                          <div>
+                            <img src={ex} alt="" width={125} />
+                          </div>
+                          <h3 class="h5 mt-2">Express.Js</h3>
+                          <p>
+                            Javascript framework running on Node used for our
+                            back-end server routes and communication with the
+                            New York Times Developers API.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="features-item mb-5 mb-lg-0">
+                          <div>
+                            <img src={ex} alt="" width={125} />
+                          </div>
+                          <h3 class="h5">Axios</h3>
+                          <p>
+                            Receive smart notifications exactly at the right
+                            moments when you need them.
+                          </p>
+                          <a href="#" class="features-link">
+                            Learn more
+                            <i class="icon ion-ios-arrow-forward ml-2"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-5">
+                        <div class="features-item mb-5 mb-lg-0">
+                          <div>
+                            <img src={reactsvg} alt="" width={80} />
+                          </div>
+                          <h3 class="h5">React.Js</h3>
+                          <p>
+                            Javascript libaray used to develop our user
+                            interface and experience for front-end development.
+                          </p>
+                        </div>
+                      </div>{" "}
+                      <div class="col-lg-4">
+                        <div class="features-item mb-5 mb-lg-0">
+                          <div>
+                            <img src={bootstrap} alt="" width={80} />
+                          </div>
+                          <h3 class="h5">Bootstrap</h3>
+                          <p>
+                            Based HTML and CSS use for our moblie responsive
+                            layout, colors, buttons, forms, text and navigation
+                            components.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </section>
 
-              <section class="gallery" style={{ backgroundColor: "black" }}>
+              <section class="gallery" style={{ backgroundColor: "gold" }}>
                 <div class="container text-center">
                   <div class="row align-items-center">
                     <div class="col-lg-6">
-                      <img src={nyxlogo} width={300} />
+                      <h2 class="hero-heading">Moblie Responsive</h2>
+                      <p class="lead mt-5 font-weight-light">
+                        With ShowTrackr you can track your favorite TV shows
+                        automatically, so you never loose track of your TV shows
+                        ever again. 🍿
+                      </p>
                     </div>
                     <div class="col-lg-6 d-lg-block">
                       <div class="device-wrapper mx-auto">

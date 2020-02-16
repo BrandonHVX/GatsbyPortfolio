@@ -83,7 +83,7 @@ function Vibes(props) {
               <span class="badge badge-pill  badge-primary">Description</span>
               <p class='mt-2'> Reality Televison show pilot based on the signature Miami lifestyle.
                         Now showing on local South Florida station The Beach Channel titled
-            "Definitely In Miami".  </p>
+            "Definitely Miami".  </p>
 
             </div>
             <div class="col-sm-6 md-6 text-center">
