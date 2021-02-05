@@ -23,7 +23,7 @@ import filmvideo from "../images/filmvideo.png"
 import code from "../images/code.png"
 import motionplay from "../images/motionplay.png"
 import xd from "../images/xd.svg"
-// import brandonpic from "../images/brandon.jpg"
+import brandonpic from "../images/brandon1-circle.png"
 import pr from "../images/Pr.svg"
 import jobsnowlogo from "../images/JOBSNOW.png"
 import rails from "../images/rails.svg"
@@ -114,7 +114,7 @@ export default class IndexPage extends React.Component {
                 <div class="col-lg-3 order-lg-2">
                   <div class="card-profile-image">
                     <a href="#">
-                      {/* <img src={brandonpic} class="rounded-circle" /> */}
+                      <img src={brandonpic} class="rounded-circle" />
                     </a>
                   </div>
                 </div>

@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: `/gatsby-creative`,
   siteMetadata: {
     title: `Brandon Gines Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Professional Portfolio for Brandon Gines`,
     author: `@gatsbyjs`,
   },
   plugins: [
