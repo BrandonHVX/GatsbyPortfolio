@@ -64,21 +64,17 @@ $secondary: navy !default;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    list-style: none;
-    font-size: 0.7rem
+  list-style: none;
+  font-size: 0.7rem;
 }
 
 .play-button {
-
   font-size: 0.8rem;
   border: 1px solid white;
   padding: 10px;
   letter-spacing: 1px;
   border-radius: 50px;
   text-transform: uppercase;
-
-
-
 }
 // Font overrides
 $font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
@@ -190,6 +186,17 @@ $navbar-height: 72px;
 .resume-wrap .position {
   font-size: 18px;
   font-weight: 700;
+  color: #000000;
+}
+
+.resume-wrap p {
+  font-size: 18px;
+  font-weight: 200;
+  color: #000000;
+}
+.resume-wrap li {
+  font-size: 18px;
+  font-weight: 200;
   color: #000000;
 }
 
@@ -780,7 +787,7 @@ h2 {
     position: absolute;
     right: 15px;
     bottom: 20px;
-   
+
     font-size: 0.5rem;
     border-radius: 20px;
     padding: 10px;
@@ -793,7 +800,7 @@ h2 {
     font-family: verdana;
     font-weight: 700;
     color: #000000;
-    font-size: 2.0em;
+    font-size: 2em;
     display: none;
     color: transparent;
     display: flex;
@@ -814,7 +821,7 @@ h2 {
   .pg-text {
     position: absolute;
 
-    font-size:1em;
+    font-size: 1em;
     display: none;
     color: transparent;
     display: flex;
@@ -913,10 +920,9 @@ h2 {
       transition: all 0.2s ease;
     }
 
-
     .pg-text {
       position: absolute;
-  
+
       font-size: 0.8em;
       display: none;
       color: transparent;
@@ -926,7 +932,7 @@ h2 {
       justify-content: space-around;
       -webkit-box-align: center;
       -ms-flex-align: center;
-  
+
       width: 80%;
       border-radius: 80px;
       top: 45%;
@@ -935,9 +941,6 @@ h2 {
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
     }
-
-
-
   }
 
   .social i {
@@ -1987,7 +1990,7 @@ hr {
 
 .about-text p {
   font-size: 1.2em;
-padding: 20px;
+  padding: 20px;
 
   text-align: center;
 }
@@ -2564,145 +2567,142 @@ input {
 }
 ///////////video info modal ///////////@at-root
 
-@media ( min-width: 768px ) {
+@media (min-width: 768px) {
   .grid-divider {
-      position: relative;
-      padding: 0;
+    position: relative;
+    padding: 0;
   }
-  .grid-divider>[class*='col-'] {
-      position: static;
+  .grid-divider > [class*="col-"] {
+    position: static;
   }
-  .grid-divider>[class*='col-']:nth-child(n+2):before {
-      content: "";
-      border-left: 1px solid #DDD;
-      position: absolute;
-      top: 0;
-      bottom: 0;
+  .grid-divider > [class*="col-"]:nth-child(n + 2):before {
+    content: "";
+    border-left: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    bottom: 0;
   }
   .col-padding {
-      padding: 0 15px;
+    padding: 0 15px;
   }
 }
-
 
 /////////////////////projects info ///////////////////
 
-
-
 .section-title {
-	position: relative
+  position: relative;
 }
 .section-title p {
-	font-size: 16px;
-	margin-bottom: 5px;
-	font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 400;
 }
 .section-title h4 {
-	font-size: 40px;
-	font-weight: 600;
-	text-transform: capitalize;
-	position: relative;
-	padding-bottom: 20px;
-	display: inline-block
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 20px;
+  display: inline-block;
 }
 .section-title h4:before {
-	position: absolute;
-	content: "";
-	width: 80px;
-	height: 2px;
-	background-color: #d8d8d8;
-	bottom: 0;
-	left: 50%;
-	margin-left: -40px;
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: #d8d8d8;
+  bottom: 0;
+  left: 50%;
+  margin-left: -40px;
 }
 .section-title h4:after {
-	position: absolute;
-	content: "";
-	width: 50px;
-	height: 2px;
-	background-color: #FF7200;
-	left: 0;
-	bottom: 0;
-	left: 50%;
-	margin-left: -25px;
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #ff7200;
+  left: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
 }
 .pt-100 {
-	padding-top: 100px;
+  padding-top: 100px;
 }
 .pb-100 {
-	padding-bottom: 100px;
+  padding-bottom: 100px;
 }
-.mb-100{
-    margin-bottom:100px;
+.mb-100 {
+  margin-bottom: 100px;
 }
 .services {
-	background-color: #FBFBFB;
+  background-color: #fbfbfb;
 }
 .single-service {
-	position: relative;
-	text-align: center;
-	margin-bottom: 50px;
-	-webkit-transition: .3s;
-	transition: .3s;
-	padding: 30px 20px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16)
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 30px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
 }
 .single-service:before {
-	position: absolute;
-	width: 0;
-	height: 0;
-	background-color: rgb(0, 8, 255);
-	left: 0;
-	top: 0;
-	content: "";
-	-webkit-transition: .3s;
-	transition: .3s
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: rgb(0, 8, 255);
+  left: 0;
+  top: 0;
+  content: "";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .single-service:after {
-	position: absolute;
-	width: 0;
-	height: 0;
-	background-color: rgb(0, 8, 255);
-	right: 0;
-	bottom: 0;
-	content: "";
-	-webkit-transition: .3s;
-	transition: .3s
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: rgb(0, 8, 255);
+  right: 0;
+  bottom: 0;
+  content: "";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .single-service:hover:after,
 .single-service:hover:before {
-	width: 50%;
-	height: 2px;
-	-webkit-transition: .3s;
-	transition: .3s
+  width: 50%;
+  height: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .single-service:hover {
-	box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.10)
+  box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.1);
 }
 .single-service i.fa {
-	font-size: 20px;
-	width: 60px;
-	height: 60px;
-	border: 1px solid #ddd;
-	line-height: 60px;
-	margin-bottom: 30px;
-	border-radius: 50%;
-	-webkit-transition: .3s;
-	transition: .3s
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ddd;
+  line-height: 60px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .single-service:hover i.fa {
-	background-color: rgb(255, 255, 255);
-	color: #fff;
-	border-color: rgb(255, 255, 255);
-	border-radius: 0;
+  background-color: rgb(255, 255, 255);
+  color: #fff;
+  border-color: rgb(255, 255, 255);
+  border-radius: 0;
 }
 .single-service h4 {
-	font-size: 20px;
-	font-weight: 400;
-	margin-bottom: 15px;
-	text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-transform: capitalize;
 }
 .single-service p {
-	font-size: 15px;
-	line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.8;
 }
