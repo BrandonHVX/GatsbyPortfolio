@@ -8,6 +8,7 @@ import SalonModal from "../components/projects/salon"
 import VibesModal from "../components/projects/vibesvideo"
 import BandsModal from "../components/projects/bands"
 import NyxModal from "../components/projects/nyx"
+import ReelModal from "../components/projects/portvideo"
 import MphModal from "../components/projects/mph"
 import ViewsModal from "../components/projects/views"
 import UffModal from "../components/projects/uff"
@@ -585,9 +586,6 @@ export default class IndexPage extends React.Component {
                     </Nav.Item>
 
                     <Nav.Item>
-                      <Nav.Link eventKey="third">GRAPHIC DESIGN</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
                       <Nav.Link eventKey="fourth">MOTION GRAPHICS</Nav.Link>
                     </Nav.Item>
                   </Nav>
@@ -755,91 +753,42 @@ export default class IndexPage extends React.Component {
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </section>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <section id="portfolio">
-                        <div className="container-fluid p-0">
-                          <div className="row gutters justify-content-md-center">
-                            <div className="col-lg-6 col-sm-6">
-                              <a
-                                className="portfolio-box"
-                                href="images/portfolio/fullsize/4.jpg"
-                                onClick={this.handlePortfolioClick.bind(
-                                  this,
-                                  6
-                                )}
-                              >
-                                <Img
-                                  fluid={
-                                    this.props.data.images.edges[6].node
-                                      .childImageSharp.fluid
-                                  }
-                                />
-                                <div className="portfolio-box-caption">
-                                  <div className="project-category text-white-50">
-                                    Category
+                            <div className="col-lg-6 col-md-6">
+                              <div className="col">
+                                <div class="cards">
+                                  <div class="arrow-right">
+                                    <ReelModal />
                                   </div>
-                                  <div className="project-name"></div>
+                                  <h4 class="pg-title">
+                                    Brandon Gines' Reel 2020
+                                  </h4>
+                                  <p class="pg-text">
+                                    Director - Editor - Motion Graphics{" "}
+                                  </p>
+                                  <div class="pic">
+                                    <Img
+                                      fluid={
+                                        this.props.data.images.edges[6].node
+                                          .childImageSharp.fluid
+                                      }
+                                    />
+                                  </div>
+
+                                  <div class="social">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-github"></i>
+                                  </div>
+                                  <button></button>
                                 </div>
-                              </a>
-                            </div>
-                            <div className="col-lg-6 col-sm-6">
-                              <a
-                                className="portfolio-box"
-                                href="img/portfolio/fullsize/5.jpg"
-                                onClick={this.handlePortfolioClick.bind(
-                                  this,
-                                  0
-                                )}
-                              >
-                                <Img
-                                  fluid={
-                                    this.props.data.images.edges[0].node
-                                      .childImageSharp.fluid
-                                  }
-                                />
-                                <div className="portfolio-box-caption">
-                                  <div className="project-category text-white-50">
-                                    Category
-                                  </div>
-                                  <div className="project-name">
-                                    Project Name
-                                  </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div className="col-lg-6 col-sm-6">
-                              <a
-                                className="portfolio-box"
-                                href="img/portfolio/fullsize/6.jpg"
-                                onClick={this.handlePortfolioClick.bind(
-                                  this,
-                                  6
-                                )}
-                              >
-                                <Img
-                                  fluid={
-                                    this.props.data.images.edges[6].node
-                                      .childImageSharp.fluid
-                                  }
-                                />
-                                <div className="portfolio-box-caption p-3">
-                                  <div className="project-category text-white-50">
-                                    Category
-                                  </div>
-                                  <div className="project-name">
-                                    Project Name
-                                  </div>
-                                </div>
-                              </a>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </section>
                     </Tab.Pane>
+
                     <Tab.Pane eventKey="fourth">
                       <section id="portfolio">
                         <div>
