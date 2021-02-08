@@ -579,19 +579,19 @@ export default class IndexPage extends React.Component {
                 <Tab.Container defaultActiveKey="first">
                   <Nav variant="pills" style={navtabs}>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">VIDEO PR0DUCTION</Nav.Link>
+                      <Nav.Link eventKey="first">VIDEO PR0DUCTION</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="first">WEB DEVELOPMENT</Nav.Link>
+                      <Nav.Link eventKey="second">WEB DEVELOPMENT</Nav.Link>
                     </Nav.Item>
 
                     <Nav.Item>
-                      <Nav.Link eventKey="fourth">MOTION GRAPHICS</Nav.Link>
+                      <Nav.Link eventKey="third">MOTION GRAPHICS</Nav.Link>
                     </Nav.Item>
                   </Nav>
 
                   <Tab.Content style={{ margin: "40px auto" }}>
-                    <Tab.Pane eventKey="first">
+                    <Tab.Pane eventKey="second">
                       <section id="portfolio">
                         <div>
                           <div className="row gutters">
@@ -660,7 +660,7 @@ export default class IndexPage extends React.Component {
                         </div>
                       </section>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">
+                    <Tab.Pane eventKey="first">
                       <section id="portfolio">
                         <div>
                           <div className="row gutters">
@@ -789,7 +789,7 @@ export default class IndexPage extends React.Component {
                       </section>
                     </Tab.Pane>
 
-                    <Tab.Pane eventKey="fourth">
+                    <Tab.Pane eventKey="third">
                       <section id="portfolio">
                         <div>
                           <div className="row gutters">

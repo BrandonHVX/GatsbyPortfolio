@@ -64,7 +64,7 @@ function Vibes(props) {
       </div>
       <Modal.Body style={{ color: "white", backgroundColor: "#000000b7" }}>
         <div class="d-flex justify-content-center  mb-3">
-          <ReactPlayer url="https://youtu.be/ckOG2bDNt5g" playing />
+          <ReactPlayer url="https://youtu.be/98RVpwoASQE" playing />
         </div>
       </Modal.Body>
 
